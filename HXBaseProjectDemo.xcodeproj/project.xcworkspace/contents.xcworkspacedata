@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:HXImitationMogujieCamera.xcodeproj">
+      location = "self:/Users/Love/Desktop/HXImitationMogujieCamera/HXBaseProjectDemo.xcodeproj">
    </FileRef>
 </Workspace>

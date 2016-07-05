@@ -1,12 +1,13 @@
 //
 //  AppDelegate.m
-//  HXImitationMogujieCamera
+//  黄轩博客 blog.libuqing.com
 //
-//  Created by 黄轩 on 16/7/5.
-//  Copyright © 2016年 黄轩. All rights reserved.
+//  Created by 黄轩 on 16/1/14.
+//  Copyright © 2016年 IT小子. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "BaseTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    BaseTabBarController *baseTabBar = [BaseTabBarController new];
+    self.window.rootViewController = baseTabBar;
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
