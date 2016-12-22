@@ -301,16 +301,16 @@
 
 #pragma mark - 懒加载
 
-- (SHUploadImageManager *)uploadImageManager {
+- (UploadImageManager *)uploadImageManager {
     if (!_uploadImageManager) {
-        _uploadImageManager = [SHUploadImageManager new];
+        _uploadImageManager = [UploadImageManager new];
     }
     return _uploadImageManager;
 }
 
-- (SHDownloadImageManager *)downloadImageManager {
+- (DownloadImageManager *)downloadImageManager {
     if (!_downloadImageManager) {
-        _downloadImageManager = [SHDownloadImageManager new];
+        _downloadImageManager = [DownloadImageManager new];
     }
     return _downloadImageManager;
 }
