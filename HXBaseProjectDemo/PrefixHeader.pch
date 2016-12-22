@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  HXCamouflageCalculator
+//
+//  Created by 黄轩 on 16/10/14.
+//  Copyright © 2016年 黄轩. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "PublicDefine.h"
+
+#import "UIView+Helpers.h"
+#import "NSString+Extension.h"
+#import "UIImage+Extension.h"
+
+#import "AssetHelper.h"
+
+#endif /* PrefixHeader_pch */
