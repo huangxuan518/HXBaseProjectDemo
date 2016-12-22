@@ -21,10 +21,12 @@
 		E4BFFE8A1E0B982C00219462 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BFFE7D1E0B982C00219462 /* NSString+Extension.m */; };
 		E4BFFE8B1E0B982C00219462 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BFFE7F1E0B982C00219462 /* UIImage+Extension.m */; };
 		E4BFFE8C1E0B982C00219462 /* UIView+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BFFE811E0B982C00219462 /* UIView+Helpers.m */; };
-		E4BFFE8F1E0B98EA00219462 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4BFFE8E1E0B98EA00219462 /* Info.plist */; };
 		E4BFFE921E0B9EE600219462 /* UITabBar+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BFFE911E0B9EE600219462 /* UITabBar+Badge.m */; };
-		E4BFFEAA1E0BA09000219462 /* SHDownloadImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BFFEA91E0BA09000219462 /* SHDownloadImageManager.m */; };
-		E4BFFEBB1E0BA09900219462 /* SHUploadImageManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4BFFEB31E0BA09900219462 /* SHUploadImageManager.mm */; };
+		E4BFFEAA1E0BA09000219462 /* DownloadImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BFFEA91E0BA09000219462 /* DownloadImageManager.m */; };
+		E4BFFEBB1E0BA09900219462 /* UploadImageManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4BFFEB31E0BA09900219462 /* UploadImageManager.mm */; };
+		E4CAFCAE1E0BB12E00E60C35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4CAFCAD1E0BB12E00E60C35 /* InfoPlist.strings */; };
+		E4CAFCB01E0BB1B400E60C35 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFCAF1E0BB1B400E60C35 /* README.md */; };
+		E4CAFCB21E0BB4BA00E60C35 /* xiaoguo.png in Resources */ = {isa = PBXBuildFile; fileRef = E4CAFCB11E0BB4BA00E60C35 /* xiaoguo.png */; };
 		EECD39754773CEDB4A77D0A7 /* libPods-HXBaseProjectDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77D75645CFC321176D59BA5A /* libPods-HXBaseProjectDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -64,10 +66,13 @@
 		E4BFFE8E1E0B98EA00219462 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4BFFE901E0B9EE600219462 /* UITabBar+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+Badge.h"; sourceTree = "<group>"; };
 		E4BFFE911E0B9EE600219462 /* UITabBar+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+Badge.m"; sourceTree = "<group>"; };
-		E4BFFEA81E0BA09000219462 /* SHDownloadImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDownloadImageManager.h; sourceTree = "<group>"; };
-		E4BFFEA91E0BA09000219462 /* SHDownloadImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHDownloadImageManager.m; sourceTree = "<group>"; };
-		E4BFFEB21E0BA09900219462 /* SHUploadImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHUploadImageManager.h; sourceTree = "<group>"; };
-		E4BFFEB31E0BA09900219462 /* SHUploadImageManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SHUploadImageManager.mm; sourceTree = "<group>"; };
+		E4BFFEA81E0BA09000219462 /* DownloadImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadImageManager.h; sourceTree = "<group>"; };
+		E4BFFEA91E0BA09000219462 /* DownloadImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadImageManager.m; sourceTree = "<group>"; };
+		E4BFFEB21E0BA09900219462 /* UploadImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadImageManager.h; sourceTree = "<group>"; };
+		E4BFFEB31E0BA09900219462 /* UploadImageManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UploadImageManager.mm; sourceTree = "<group>"; };
+		E4CAFCAD1E0BB12E00E60C35 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		E4CAFCAF1E0BB1B400E60C35 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E4CAFCB11E0BB4BA00E60C35 /* xiaoguo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xiaoguo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +107,8 @@
 		E49F71BB1D2B98A100A6A746 = {
 			isa = PBXGroup;
 			children = (
+				E4CAFCAF1E0BB1B400E60C35 /* README.md */,
+				E4CAFCB11E0BB4BA00E60C35 /* xiaoguo.png */,
 				E49F71C61D2B98A100A6A746 /* HXBaseProjectDemo */,
 				E49F71C51D2B98A100A6A746 /* Products */,
 				ACDC6AE909646697814F851F /* Pods */,
@@ -120,6 +127,7 @@
 		E49F71C61D2B98A100A6A746 /* HXBaseProjectDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E4BFFE6A1E0B982C00219462 /* Base */,
 				E4BFFE661E0B982C00219462 /* Public */,
 				E49F71CA1D2B98A100A6A746 /* AppDelegate.h */,
 				E49F71CB1D2B98A100A6A746 /* AppDelegate.m */,
@@ -135,6 +143,7 @@
 				E4BFFE8E1E0B98EA00219462 /* Info.plist */,
 				E49F71C81D2B98A100A6A746 /* main.m */,
 				E4BFFE8D1E0B988700219462 /* PrefixHeader.pch */,
+				E4CAFCAD1E0BB12E00E60C35 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -142,7 +151,6 @@
 		E4BFFE661E0B982C00219462 /* Public */ = {
 			isa = PBXGroup;
 			children = (
-				E4BFFE6A1E0B982C00219462 /* Base */,
 				E4BFFE791E0B982C00219462 /* Define */,
 				E4BFFE7B1E0B982C00219462 /* Extension */,
 				E4BFFE671E0B982C00219462 /* Asset */,
@@ -179,7 +187,8 @@
 				E4BFFE771E0B982C00219462 /* BaseViewController.h */,
 				E4BFFE781E0B982C00219462 /* BaseViewController.mm */,
 			);
-			path = Base;
+			name = Base;
+			path = Public/Base;
 			sourceTree = "<group>";
 		};
 		E4BFFE791E0B982C00219462 /* Define */ = {
@@ -208,8 +217,8 @@
 		E4BFFEA71E0BA09000219462 /* DownloadImages */ = {
 			isa = PBXGroup;
 			children = (
-				E4BFFEA81E0BA09000219462 /* SHDownloadImageManager.h */,
-				E4BFFEA91E0BA09000219462 /* SHDownloadImageManager.m */,
+				E4BFFEA81E0BA09000219462 /* DownloadImageManager.h */,
+				E4BFFEA91E0BA09000219462 /* DownloadImageManager.m */,
 			);
 			path = DownloadImages;
 			sourceTree = "<group>";
@@ -217,8 +226,8 @@
 		E4BFFEAB1E0BA09900219462 /* UploadImages */ = {
 			isa = PBXGroup;
 			children = (
-				E4BFFEB21E0BA09900219462 /* SHUploadImageManager.h */,
-				E4BFFEB31E0BA09900219462 /* SHUploadImageManager.mm */,
+				E4BFFEB21E0BA09900219462 /* UploadImageManager.h */,
+				E4BFFEB31E0BA09900219462 /* UploadImageManager.mm */,
 			);
 			path = UploadImages;
 			sourceTree = "<group>";
@@ -252,7 +261,7 @@
 		E49F71BC1D2B98A100A6A746 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "黄轩";
 				TargetAttributes = {
 					E49F71C31D2B98A100A6A746 = {
@@ -284,8 +293,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4BFFE8F1E0B98EA00219462 /* Info.plist in Resources */,
 				E49F71D41D2B98A100A6A746 /* Assets.xcassets in Resources */,
+				E4CAFCB21E0BB4BA00E60C35 /* xiaoguo.png in Resources */,
+				E4CAFCAE1E0BB12E00E60C35 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4BFFEAA1E0BA09000219462 /* SHDownloadImageManager.m in Sources */,
+				E4BFFEAA1E0BA09000219462 /* DownloadImageManager.m in Sources */,
 				E4BFFE871E0B982C00219462 /* BaseTableViewCell.m in Sources */,
 				E4BFFE841E0B982C00219462 /* BaseCollectionViewController.mm in Sources */,
 				E49F71CC1D2B98A100A6A746 /* AppDelegate.m in Sources */,
@@ -355,7 +365,8 @@
 				E4BFFE831E0B982C00219462 /* BaseCollectionViewCell.m in Sources */,
 				E4BFFE851E0B982C00219462 /* BaseNavigationController.m in Sources */,
 				E4BFFE861E0B982C00219462 /* BaseTabBarController.mm in Sources */,
-				E4BFFEBB1E0BA09900219462 /* SHUploadImageManager.mm in Sources */,
+				E4CAFCB01E0BB1B400E60C35 /* README.md in Sources */,
+				E4BFFEBB1E0BA09900219462 /* UploadImageManager.mm in Sources */,
 				E4BFFE821E0B982C00219462 /* AssetHelper.m in Sources */,
 				E4BFFE891E0B982C00219462 /* BaseViewController.mm in Sources */,
 				E4BFFE8C1E0B982C00219462 /* UIView+Helpers.m in Sources */,
@@ -379,8 +390,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -422,8 +435,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -457,7 +472,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HXBaseProjectDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = HXBaseProjectDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = blog.libuqing.com.HXImitationMogujieCamera;
 				PRODUCT_NAME = HXBaseProjectDemo;
@@ -475,7 +490,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HXBaseProjectDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = HXBaseProjectDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = blog.libuqing.com.HXImitationMogujieCamera;
 				PRODUCT_NAME = HXBaseProjectDemo;

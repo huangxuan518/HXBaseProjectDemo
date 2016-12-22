@@ -1,17 +1,17 @@
 //
-//  SHUploadImageManager.m
+//  UploadImageManager.m
 //  Dongdaemun
 //
 //  Created by 刘伟 on 15/7/15.
 //  Copyright (c) 2015年 sure. All rights reserved.
 //
 
-#import "SHUploadImageManager.h"
+#import "UploadImageManager.h"
 #import "NSString+Extension.h"
 #import "SVProgressHUD.h"
 #import "UIImage+Extension.h"
 
-@interface SHUploadImageManager ()
+@interface UploadImageManager ()
 
 @property (nonatomic,strong) NSMutableArray *imagesAry;//图片数组
 @property (nonatomic,strong) NSMutableArray *completeImagesUrlArr;
@@ -20,7 +20,7 @@
 
 @end
 
-@implementation SHUploadImageManager
+@implementation UploadImageManager
 
 /**
  *  图片上传成功
@@ -192,7 +192,7 @@
     completeBlock:(void(^)(NSError *error, NSString *resultUrl, BOOL isSuccess))completeBlock {
 //    
 //    //图片进行尺寸压缩
-//    UIImage *imageCompressionRatioImage = [SHUploadImageManager imageCompressionRatio:uploadImg];
+//    UIImage *imageCompressionRatioImage = [UploadImageManager imageCompressionRatio:uploadImg];
 //
 //    NSData *imgData = UIImageJPEGRepresentation(imageCompressionRatioImage, 1.0);
 }

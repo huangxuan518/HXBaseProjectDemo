@@ -1,5 +1,5 @@
 //
-//  SHUploadImageManager.h
+//  UploadImageManager.h
 //  Dongdaemun
 //
 //  Created by 刘伟 on 15/7/15.
@@ -8,14 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SHUploadImageManager : NSObject
+@interface UploadImageManager : NSObject
 
 @property (nonatomic,assign) BOOL showProgressHUD;
 
 //多张图片上传完成
-@property (nonatomic,copy) void (^completion)(SHUploadImageManager *uploadImageManager,NSArray *urlAry);
+@property (nonatomic,copy) void (^completion)(UploadImageManager *uploadImageManager,NSArray *urlAry);
 //完成一张回调一张的url和原始的图片
-@property (nonatomic,copy) void (^success)(SHUploadImageManager *uploadImageManager, UIImage *uploadImage,NSString *successUrl);
+@property (nonatomic,copy) void (^success)(UploadImageManager *uploadImageManager, UIImage *uploadImage,NSString *successUrl);
 
 /**
  *  多张图片上传

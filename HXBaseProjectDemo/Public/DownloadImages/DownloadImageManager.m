@@ -1,16 +1,16 @@
 //
-//  SHDownloadImageManager.m
+//  DownloadImageManager.m
 //
 //
 //  Created by 黄轩 on 16/6/22.
 //  Copyright (c) 2016年 sure. All rights reserved.
 //
 
-#import "SHDownloadImageManager.h"
+#import "DownloadImageManager.h"
 #import "SDWebImageDownloader.h"
 #import "SVProgressHUD.h"
 
-@interface SHDownloadImageManager ()
+@interface DownloadImageManager ()
 
 @property (nonatomic,strong) NSMutableArray *imageUrlAry;//图片Url数组
 @property (nonatomic,strong) NSMutableArray *completeImageAry;//完成的图片
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation SHDownloadImageManager
+@implementation DownloadImageManager
 
 /**
  *  图片下载成功
