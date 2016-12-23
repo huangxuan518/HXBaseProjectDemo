@@ -9,6 +9,7 @@
 #import "BaseTabBarController.h"
 #import "BaseNavigationController.h"
 #import "BaseTableViewController.h"
+#import "SVProgressHUD.h"
 #import "UITabBar+Badge.h"
 
 @interface BaseTabBarController ()
@@ -50,15 +51,9 @@
                            @"badgeValue":@"0"},
                          
                          @{@"class":BaseTableViewController.class,
-                           @"title":@"我的需求",
+                           @"title":@"理财",
                            @"image":@"home_list1",
                            @"selectedImage":@"home_list2",
-                           @"badgeValue":@"0"},
-                         
-                         @{@"class":BaseTableViewController.class,
-                           @"title":@"我的包裹",
-                           @"image":@"home_package1",
-                           @"selectedImage":@"home_package2",
                            @"badgeValue":@"0"},
                          
                          @{@"class":BaseTableViewController.class,

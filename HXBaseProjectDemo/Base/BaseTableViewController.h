@@ -12,7 +12,9 @@
 @interface BaseTableViewController : BaseViewController <UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic,strong) UITableView *tableview;
-@property (nonatomic,strong) NSMutableArray *dataAry;
+@property (nonatomic,strong) NSArray *dataSource;//cell相关data
+
+- (NSArray *)cellDataSource;
 
 #pragma mark - 上下拉加载
 - (void)removedRefreshing;//去掉上下拉刷新 列表默认添加 如不需要可调用该方法移除

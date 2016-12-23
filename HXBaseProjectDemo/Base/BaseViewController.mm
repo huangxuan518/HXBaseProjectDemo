@@ -9,7 +9,6 @@
 
 #import "BaseViewController.h"
 #import "BaseNavigationController.h"
-#import "AppDelegate.h"
 
 @interface BaseViewController ()
 
@@ -32,6 +31,10 @@
 #pragma mark - 网络请求
 
 - (void)requestData {
+
+}
+
+- (void)gotoLoginViewController {
 
 }
 

@@ -33,34 +33,116 @@
     [self endRefreshing];
 }
 
-#pragma mark - 代理
+#pragma mark - cellDataSource
+
+- (NSArray *)cellDataSource {
+    return self.dataSource;
+}
+
 #pragma mark UITableViewDataSource/UITableViewDelegate
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    if (self.cellDataSource.count > 0) {
+        return self.cellDataSource.count;
+    }
+    return 0;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.dataAry.count;
+    if (self.cellDataSource.count > 0) {
+        NSArray *arr = self.cellDataSource[section];
+        return [arr count];
+    }
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CellID"];
-    if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CellID"];
+    if (self.cellDataSource.count > 0) {
+        NSArray *section = self.cellDataSource[indexPath.section];
+        NSDictionary *cellDict = section[indexPath.row];
+        
+        Class classs = cellDict[@"class"];
+        
+        BaseTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(classs)];
+        if (!cell) {
+            cell = [[BaseTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass(classs)];
+        }
+        
+        [cell setSeperatorLineForIOS7:indexPath numberOfRowsInSection:section.count];
+        
+        NSNumber *delFlag = cellDict[@"delegate"];
+        
+        id delegate = nil;
+        
+        if (delFlag && delFlag.boolValue) {
+            delegate = self;
+        }
+        
+        [cell setData:cellDict delegate:delegate];
+        
+        return cell;
+    } else {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CellID"];
+        if (!cell) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CellID"];
+        }
+        
+        return cell;
     }
-    
-    return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (self.cellDataSource.count > 0) {
+        NSArray *section = self.cellDataSource[indexPath.section];
+        NSDictionary *cellDict = section[indexPath.row];
+        float height = [cellDict[@"height"] floatValue];
+        return height;
+    }
     return 44;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.frameSizeWidth, 10)];
+    view.backgroundColor = [UIColor clearColor];
+    return view;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return 10;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if (self.cellDataSource.count > 0) {
+        NSArray *section = self.cellDataSource[indexPath.section];
+        NSDictionary *cellDict = section[indexPath.row];
+        
+        if ([cellDict[@"action"] length] > 0) {
+            NSString *actiongStr = cellDict[@"action"];
+            SEL customSelector = NSSelectorFromString(actiongStr);
+            #pragma clang diagnostic push
+            #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+            [self performSelector:customSelector];
+            #pragma clang diagnostic pop
+        }
+    }
     [self.view endEditing:YES];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     [self.view endEditing:YES];
+}
+
+#pragma mark - refreshData
+
+/**
+ *  刷新tableView
+ */
+- (void)refreshData {
+    self.dataSource = nil;
+    [self.tableview reloadData];
 }
 
 #pragma mark - 返回顶部
@@ -168,13 +250,6 @@
         _tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
     }
     return _tableview;
-}
-
-- (NSMutableArray *)dataAry {
-    if (!_dataAry) {
-        _dataAry = [NSMutableArray new];
-    }
-    return _dataAry;
 }
 
 - (void)didReceiveMemoryWarning {

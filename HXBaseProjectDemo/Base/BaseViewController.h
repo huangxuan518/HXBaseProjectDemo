@@ -22,6 +22,7 @@
 #pragma mark 公用方法
 - (void)requestData;//网络请求
 - (void)backAction:(UIButton *)sender;//返回
+- (void)gotoLoginViewController;//去登陆界面
 
 #pragma mark 界面切换
 //不需要传参数的push 只需告诉类名字符串
