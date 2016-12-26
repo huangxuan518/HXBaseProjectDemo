@@ -19,9 +19,10 @@
         Ivar var = vars[i];
         const char *name = ivar_getName(var);
         NSString *key = [NSString stringWithUTF8String:name];
-        
         id value = [self valueForKey:key];
-        [aCoder encodeObject:value forKey:key];
+        if (value) {
+            [aCoder encodeObject:value forKey:key];
+        }
     }
 }
 
@@ -34,7 +35,9 @@
             const char *name = ivar_getName(var);
             NSString *key = [NSString stringWithUTF8String:name];
             id value = [aDecoder decodeObjectForKey:key];
-            [self setValue:value forKey:key];
+            if (value) {
+                [self setValue:value forKey:key];
+            }
         }
     }
     return self;
