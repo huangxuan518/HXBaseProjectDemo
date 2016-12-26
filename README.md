@@ -36,6 +36,10 @@ BaseTableViewCell
 
 BaseCollectionViewCell
 
+## 模型基类
+
+BaseModel
+
 # Public
 
 ## Define

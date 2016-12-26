@@ -27,6 +27,7 @@
 		E4CAFDD51E0CCF5F00E60C35 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFDCC1E0CCF5F00E60C35 /* BaseTableViewCell.m */; };
 		E4CAFDD61E0CCF5F00E60C35 /* BaseTableViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFDCE1E0CCF5F00E60C35 /* BaseTableViewController.mm */; };
 		E4CAFDD71E0CCF5F00E60C35 /* BaseViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFDD01E0CCF5F00E60C35 /* BaseViewController.mm */; };
+		E4FD21DD1E10FCA20025E7B7 /* BaseModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4FD21DC1E10FCA20025E7B7 /* BaseModel.mm */; };
 		EECD39754773CEDB4A77D0A7 /* libPods-HXBaseProjectDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77D75645CFC321176D59BA5A /* libPods-HXBaseProjectDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,8 @@
 		E4CAFDCE1E0CCF5F00E60C35 /* BaseTableViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BaseTableViewController.mm; sourceTree = "<group>"; };
 		E4CAFDCF1E0CCF5F00E60C35 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		E4CAFDD01E0CCF5F00E60C35 /* BaseViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BaseViewController.mm; sourceTree = "<group>"; };
+		E4FD21DB1E10FCA20025E7B7 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		E4FD21DC1E10FCA20025E7B7 /* BaseModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BaseModel.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +230,8 @@
 				E4CAFDCE1E0CCF5F00E60C35 /* BaseTableViewController.mm */,
 				E4CAFDCF1E0CCF5F00E60C35 /* BaseViewController.h */,
 				E4CAFDD01E0CCF5F00E60C35 /* BaseViewController.mm */,
+				E4FD21DB1E10FCA20025E7B7 /* BaseModel.h */,
+				E4FD21DC1E10FCA20025E7B7 /* BaseModel.mm */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -359,6 +364,7 @@
 				E49F71CC1D2B98A100A6A746 /* AppDelegate.m in Sources */,
 				E4CAFDD61E0CCF5F00E60C35 /* BaseTableViewController.mm in Sources */,
 				E49F71C91D2B98A100A6A746 /* main.m in Sources */,
+				E4FD21DD1E10FCA20025E7B7 /* BaseModel.mm in Sources */,
 				E4BFFE8B1E0B982C00219462 /* UIImage+Extension.m in Sources */,
 				E4CAFDD11E0CCF5F00E60C35 /* BaseCollectionViewCell.m in Sources */,
 				E4CAFDD31E0CCF5F00E60C35 /* BaseNavigationController.m in Sources */,

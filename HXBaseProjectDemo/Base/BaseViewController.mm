@@ -106,6 +106,7 @@
         [self.navigationController.viewControllers enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(__kindof UIViewController * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             if ([obj isKindOfClass:classs]) {
                 [self.navigationController popToViewController:obj animated:YES];
+                *stop = YES;
                 return;
             }
         }];
