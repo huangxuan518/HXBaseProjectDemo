@@ -50,8 +50,12 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (self.cellDataSource.count > 0) {
-        NSArray *arr = self.cellDataSource[section];
-        return [arr count];
+        id obj = self.cellDataSource[section];
+        if ([obj isKindOfClass:[NSArray class]]) {
+            NSArray *arr = (NSArray *)obj;
+            return [arr count];
+        }
+        return 1;
     }
     return 0;
 }
@@ -59,73 +63,88 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (self.cellDataSource.count > 0) {
-        NSArray *section = self.cellDataSource[indexPath.section];
-        NSDictionary *cellDict = section[indexPath.row];
         
-        Class classs = cellDict[@"class"];
-        
-        BaseTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(classs)];
-        if (!cell) {
-            cell = [[BaseTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass(classs)];
+        id obj = self.cellDataSource[indexPath.section];
+        if ([obj isKindOfClass:[NSArray class]]) {
+            NSArray *section = (NSArray *)obj;
+            
+            id dicObj = section[indexPath.row];
+            if ([dicObj isKindOfClass:[NSDictionary class]]) {
+                NSDictionary *cellDict = (NSDictionary *)dicObj;
+                
+                Class classs = cellDict[@"class"];
+                
+                BaseTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(classs)];
+                if (!cell) {
+                    cell = [[BaseTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass(classs)];
+                }
+                
+                [cell setSeperatorLineForIOS7:indexPath numberOfRowsInSection:section.count];
+                
+                NSNumber *delFlag = cellDict[@"delegate"];
+                
+                id delegate = nil;
+                
+                if (delFlag && delFlag.boolValue) {
+                    delegate = self;
+                }
+                
+                [cell setData:cellDict delegate:delegate];
+                
+                return cell;
+            }
         }
-        
-        [cell setSeperatorLineForIOS7:indexPath numberOfRowsInSection:section.count];
-        
-        NSNumber *delFlag = cellDict[@"delegate"];
-        
-        id delegate = nil;
-        
-        if (delFlag && delFlag.boolValue) {
-            delegate = self;
-        }
-        
-        [cell setData:cellDict delegate:delegate];
-        
-        return cell;
-    } else {
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CellID"];
-        if (!cell) {
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CellID"];
-        }
-        
-        return cell;
     }
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CellID"];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CellID"];
+    }
+    
+    return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (self.cellDataSource.count > 0) {
-        NSArray *section = self.cellDataSource[indexPath.section];
-        NSDictionary *cellDict = section[indexPath.row];
-        float height = [cellDict[@"height"] floatValue];
-        return height;
+        id obj = self.cellDataSource[indexPath.section];
+        if ([obj isKindOfClass:[NSArray class]]) {
+            NSArray *section = (NSArray *)obj;
+            
+            id dicObj = section[indexPath.row];
+            if ([dicObj isKindOfClass:[NSDictionary class]]) {
+                NSDictionary *cellDict = (NSDictionary *)dicObj;
+                float height = [cellDict[@"height"] floatValue];
+                return height;
+            }
+        } else {
+            return 44;
+        }
     }
     return 44;
-}
-
-- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.frameSizeWidth, 10)];
-    view.backgroundColor = [UIColor clearColor];
-    return view;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return 10;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     if (self.cellDataSource.count > 0) {
-        NSArray *section = self.cellDataSource[indexPath.section];
-        NSDictionary *cellDict = section[indexPath.row];
         
-        if ([cellDict[@"action"] length] > 0) {
-            NSString *actiongStr = cellDict[@"action"];
-            SEL customSelector = NSSelectorFromString(actiongStr);
-            #pragma clang diagnostic push
-            #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-            [self performSelector:customSelector];
-            #pragma clang diagnostic pop
+        id obj = self.cellDataSource[indexPath.section];
+        if ([obj isKindOfClass:[NSArray class]]) {
+            NSArray *section = (NSArray *)obj;
+            
+            id dicObj = section[indexPath.row];
+            if ([dicObj isKindOfClass:[NSDictionary class]]) {
+                NSDictionary *cellDict = (NSDictionary *)dicObj;
+                
+                if ([cellDict[@"action"] length] > 0) {
+                    NSString *actiongStr = cellDict[@"action"];
+                    SEL customSelector = NSSelectorFromString(actiongStr);
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+                    [self performSelector:customSelector];
+#pragma clang diagnostic pop
+                }
+            }
         }
     }
     [self.view endEditing:YES];
