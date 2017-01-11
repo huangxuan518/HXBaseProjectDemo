@@ -37,7 +37,7 @@
         subarr = [NSMutableArray arrayWithCapacity:1];
         dict =  @{@"class":HXDemoCurrencyCell.class,
                   @"height":@([HXDemoCurrencyCell getCellFrame:nil]),
-                  @"data":@"",
+                  @"data":[HXDemoCurrencyCellModel ittemModelWithIcoName:@"" title:@"测试1" isLittleRedDot:YES],
                   @"action":@"gotoDemoViewController",
                   @"delegate":@YES};
         [subarr addObject:dict];
@@ -49,7 +49,7 @@
         //row 0
         dict =  @{@"class":HXDemoCurrencyCell.class,
                   @"height":@([HXDemoCurrencyCell getCellFrame:nil]),
-                  @"data":@"",
+                  @"data":[HXDemoCurrencyCellModel ittemModelWithIcoName:@"" title:@"测试2" isLittleRedDot:NO],
                   @"action":@"gotoDemoViewController",
                   @"delegate":@YES};
         [subarr addObject:dict];
@@ -57,7 +57,7 @@
         //row 1
         dict =  @{@"class":HXDemoCurrencyCell.class,
                   @"height":@([HXDemoCurrencyCell getCellFrame:nil]),
-                  @"data":@"",
+                  @"data":[HXDemoCurrencyCellModel ittemModelWithIcoName:@"" title:@"测试3" isLittleRedDot:YES],
                   @"action":@"gotoDemoViewController",
                   @"delegate":@YES};
         [subarr addObject:dict];

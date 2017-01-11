@@ -33,6 +33,12 @@
         if (height > 0) {
             return height;
         }
+    } else if ([msg isKindOfClass:[HXDemoCurrencyCellModel class]]) {
+        //如果高度需要根据特定字段计算，可以在这里计算 至于根据哪个字段计算，这个看实际情况
+        HXDemoCurrencyCellModel *model = (HXDemoCurrencyCellModel *)msg;
+        float titleFont = 12;
+        CGSize titleSize = [model.title ex_sizeWithFont:[UIFont systemFontOfSize:titleFont] constrainedToSize:CGSizeMake(kScreenWidth, MAXFLOAT)];
+        return 50 + titleSize.height - titleFont;
     }
     return 50;
 }
