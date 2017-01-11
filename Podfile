@@ -3,9 +3,10 @@ platform :ios, '7.0'
 
 target 'HXBaseProjectDemo' do
 
-pod 'AFNetworking'
+pod 'AFNetworking','~> 3.0.4'
 pod 'SVProgressHUD'
 pod 'SDWebImage'
 pod 'MJRefresh'
+pod 'Qiniu'
 
 end

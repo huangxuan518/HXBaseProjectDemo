@@ -549,7 +549,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HXBaseProjectDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = HXBaseProjectDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = blog.libuqing.com.HXImitationMogujieCamera;
 				PRODUCT_NAME = HXBaseProjectDemo;
@@ -567,7 +567,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HXBaseProjectDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = HXBaseProjectDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = blog.libuqing.com.HXImitationMogujieCamera;
 				PRODUCT_NAME = HXBaseProjectDemo;

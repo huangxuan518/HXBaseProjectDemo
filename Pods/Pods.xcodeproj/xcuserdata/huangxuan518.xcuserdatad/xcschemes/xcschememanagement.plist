@@ -9,12 +9,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>HappyDNS.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MJRefresh.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-HXBaseProjectDemo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Qiniu.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,22 +47,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4ED882A4267A14364701C4136C47F9A4</key>
+		<key>2AD882C14488488D921F0EE49DB08C9E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4EE16AAF832B1730BC9AE334E7E06709</key>
+		<key>385C5C5A5F219F95D2404C0B652F0EEC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>945480D4E83189F9B34D5A4858B654E8</key>
+		<key>3DD0E1B0E492AA13814F8025641A2937</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>53B2B897D64E4516E75AC86348B86622</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>9E033EDB5EC0819481B0546434FA577B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ED4106D4B1274D68830BDFA6247EE7F2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
