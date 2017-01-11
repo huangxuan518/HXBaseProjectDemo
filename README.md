@@ -119,12 +119,13 @@ BaseTableViewController使用,记得添加头文件
 
 //保存
 
-- (void)saveData:(id)obj {
-  NSData *archiveCarPriceData = [NSKeyedArchiver archivedDataWithRootObject:obj];
-  NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-  [userDefaults setObject:archiveCarPriceData forKey:@"someKey"];
-  [userDefaults synchronize];
-}
+    - (void)saveData:(id)obj {
+
+          NSData *archiveCarPriceData = [NSKeyedArchiver archivedDataWithRootObject:obj];
+          NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+          [userDefaults setObject:archiveCarPriceData forKey:@"someKey"];
+          [userDefaults synchronize];
+    }
 
 //获取
 
