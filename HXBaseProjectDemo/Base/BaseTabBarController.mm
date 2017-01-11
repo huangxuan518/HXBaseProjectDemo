@@ -9,6 +9,7 @@
 #import "BaseTabBarController.h"
 #import "BaseNavigationController.h"
 #import "BaseTableViewController.h"
+#import "HXDemoViewController.h"
 #import "SVProgressHUD.h"
 #import "UITabBar+Badge.h"
 
@@ -44,7 +45,7 @@
 
 - (void)setViewControllers {
     //UITabBarController 数据源
-    NSArray *dataAry = @[@{@"class":BaseTableViewController.class,
+    NSArray *dataAry = @[@{@"class":HXDemoViewController.class,
                            @"title":@"首页",
                            @"image":@"home_fuexpress1",
                            @"selectedImage":@"home_fuexpress2",

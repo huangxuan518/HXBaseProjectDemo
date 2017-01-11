@@ -4,6 +4,12 @@
 # 效果展示
 ![image](https://github.com/huangxuan518/HXBaseProjectDemo/blob/master/xiaoguo.png)
 
+# 使用说明
+标签控制器对应的界面请在BaseTabBarController里面添加和更改，导航样式请在BaseNavigationController里面修改
+
+# 示例
+HXDemoViewController
+
 # 工程包含第三方
 AFNetworking
 

@@ -27,6 +27,9 @@
 		E4CAFDD51E0CCF5F00E60C35 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFDCC1E0CCF5F00E60C35 /* BaseTableViewCell.m */; };
 		E4CAFDD61E0CCF5F00E60C35 /* BaseTableViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFDCE1E0CCF5F00E60C35 /* BaseTableViewController.mm */; };
 		E4CAFDD71E0CCF5F00E60C35 /* BaseViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFDD01E0CCF5F00E60C35 /* BaseViewController.mm */; };
+		E4DCF6191E25C8710011ED7A /* HXDemoCurrencyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCF6151E25C8710011ED7A /* HXDemoCurrencyCell.m */; };
+		E4DCF61A1E25C8710011ED7A /* HXDemoCurrencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4DCF6161E25C8710011ED7A /* HXDemoCurrencyCell.xib */; };
+		E4DCF61B1E25C8710011ED7A /* HXDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCF6181E25C8710011ED7A /* HXDemoViewController.m */; };
 		E4FD21DD1E10FCA20025E7B7 /* BaseModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4FD21DC1E10FCA20025E7B7 /* BaseModel.mm */; };
 		EECD39754773CEDB4A77D0A7 /* libPods-HXBaseProjectDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77D75645CFC321176D59BA5A /* libPods-HXBaseProjectDemo.a */; };
 /* End PBXBuildFile section */
@@ -74,6 +77,11 @@
 		E4CAFDCE1E0CCF5F00E60C35 /* BaseTableViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BaseTableViewController.mm; sourceTree = "<group>"; };
 		E4CAFDCF1E0CCF5F00E60C35 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		E4CAFDD01E0CCF5F00E60C35 /* BaseViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BaseViewController.mm; sourceTree = "<group>"; };
+		E4DCF6141E25C8710011ED7A /* HXDemoCurrencyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXDemoCurrencyCell.h; sourceTree = "<group>"; };
+		E4DCF6151E25C8710011ED7A /* HXDemoCurrencyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXDemoCurrencyCell.m; sourceTree = "<group>"; };
+		E4DCF6161E25C8710011ED7A /* HXDemoCurrencyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HXDemoCurrencyCell.xib; sourceTree = "<group>"; };
+		E4DCF6171E25C8710011ED7A /* HXDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXDemoViewController.h; sourceTree = "<group>"; };
+		E4DCF6181E25C8710011ED7A /* HXDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXDemoViewController.m; sourceTree = "<group>"; };
 		E4FD21DB1E10FCA20025E7B7 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		E4FD21DC1E10FCA20025E7B7 /* BaseModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BaseModel.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +140,7 @@
 			children = (
 				E49F71CA1D2B98A100A6A746 /* AppDelegate.h */,
 				E49F71CB1D2B98A100A6A746 /* AppDelegate.m */,
+				E4DCF6131E25C8710011ED7A /* Demo */,
 				E4CAFDC21E0CCF5F00E60C35 /* Base */,
 				E4BFFE661E0B982C00219462 /* Public */,
 				E49F71C71D2B98A100A6A746 /* Supporting Files */,
@@ -236,6 +245,18 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		E4DCF6131E25C8710011ED7A /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				E4DCF6141E25C8710011ED7A /* HXDemoCurrencyCell.h */,
+				E4DCF6151E25C8710011ED7A /* HXDemoCurrencyCell.m */,
+				E4DCF6161E25C8710011ED7A /* HXDemoCurrencyCell.xib */,
+				E4DCF6171E25C8710011ED7A /* HXDemoViewController.h */,
+				E4DCF6181E25C8710011ED7A /* HXDemoViewController.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -300,6 +321,7 @@
 				E49F71D41D2B98A100A6A746 /* Assets.xcassets in Resources */,
 				E4CAFCB21E0BB4BA00E60C35 /* xiaoguo.png in Resources */,
 				E4CAFCAE1E0BB12E00E60C35 /* InfoPlist.strings in Resources */,
+				E4DCF61A1E25C8710011ED7A /* HXDemoCurrencyCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,8 +390,10 @@
 				E4BFFE8B1E0B982C00219462 /* UIImage+Extension.m in Sources */,
 				E4CAFDD11E0CCF5F00E60C35 /* BaseCollectionViewCell.m in Sources */,
 				E4CAFDD31E0CCF5F00E60C35 /* BaseNavigationController.m in Sources */,
+				E4DCF6191E25C8710011ED7A /* HXDemoCurrencyCell.m in Sources */,
 				E4BFFE8A1E0B982C00219462 /* NSString+Extension.m in Sources */,
 				E4CAFDD41E0CCF5F00E60C35 /* BaseTabBarController.mm in Sources */,
+				E4DCF61B1E25C8710011ED7A /* HXDemoViewController.m in Sources */,
 				E4CAFCB01E0BB1B400E60C35 /* README.md in Sources */,
 				E4BFFEBB1E0BA09900219462 /* UploadImageManager.mm in Sources */,
 				E4BFFE821E0B982C00219462 /* AssetHelper.m in Sources */,
