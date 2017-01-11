@@ -4,6 +4,69 @@
 # 效果展示
 ![image](https://github.com/huangxuan518/HXBaseProjectDemo/blob/master/xiaoguo.png)
 
+# 示例
+HXDemoViewController
+
+# 工程包含第三方
+AFNetworking
+
+MJRefresh
+
+SDWebImage
+
+SVProgressHUD
+
+# 说明
+基础类都在Base文件夹里面
+
+常用的类和扩展都在Public文件夹里面
+
+# Base
+
+## 界面基类
+BaseTabBarController
+
+BaseNavigationController
+
+BaseViewController
+
+BaseTableViewController
+
+BaseCollectionViewController
+
+## Cell基类
+BaseTableViewCell
+
+BaseCollectionViewCell
+
+## 模型基类
+
+BaseModel
+
+# Public
+
+## Define
+PublicDefine //宏
+
+## Extension
+UIView+Helpers //UIView扩展
+
+UIImage+Extension //UIImage扩展
+
+NSString+Extension //字符串扩展
+
+UITabBar+Badge //TabBar小红点扩展
+
+## Asset
+AssetHelper //相册
+
+## UploadImages
+UploadImageManager //图片上传
+
+## DownloadImages
+DownloadImageManager //图片下载
+
+
 # 使用说明
 标签控制器对应的界面请在BaseTabBarController里面添加和更改
 进入BaseTabBarController.m文件，找到如下方法
@@ -234,65 +297,3 @@ NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 //获取
 NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 id obj = [NSKeyedUnarchiver unarchiveObjectWithData:[userDefaults objectForKey:@"someKey"]] ;
-
-# 示例
-HXDemoViewController
-
-# 工程包含第三方
-AFNetworking
-
-MJRefresh
-
-SDWebImage
-
-SVProgressHUD
-
-# 说明
-基础类都在Base文件夹里面
-
-常用的类和扩展都在Public文件夹里面
-
-# Base
-
-## 界面基类
-BaseTabBarController
-
-BaseNavigationController
-
-BaseViewController
-
-BaseTableViewController
-
-BaseCollectionViewController
-
-## Cell基类
-BaseTableViewCell
-
-BaseCollectionViewCell
-
-## 模型基类
-
-BaseModel
-
-# Public
-
-## Define
-PublicDefine //宏
-
-## Extension
-UIView+Helpers //UIView扩展
-
-UIImage+Extension //UIImage扩展
-
-NSString+Extension //字符串扩展
-
-UITabBar+Badge //TabBar小红点扩展
-
-## Asset
-AssetHelper //相册
-
-## UploadImages
-UploadImageManager //图片上传
-
-## DownloadImages
-DownloadImageManager //图片下载
