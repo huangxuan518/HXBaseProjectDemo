@@ -83,25 +83,22 @@ DownloadImageManager //图片下载
 
 ![image](https://github.com/huangxuan518/HXBaseProjectDemo/blob/master/HXBaseProjectDemo/ShiLiImage/3.png)
 
-设置小红点数值
-
-#pragma 设置小红点数值
 //设置指定tabar 小红点的值
 
 ![image](https://github.com/huangxuan518/HXBaseProjectDemo/blob/master/HXBaseProjectDemo/ShiLiImage/4.png)
 
 如果标签不需要显示数值，只需要显示一个小红点，可以通过下面2个方法控制
 
-#pragma 设置小红点显示或者隐藏
-
 //显示小红点 没有数值
 
 ![image](https://github.com/huangxuan518/HXBaseProjectDemo/blob/master/HXBaseProjectDemo/ShiLiImage/6.png)
 
 //隐藏小红点 没有数值
+
 ![image](https://github.com/huangxuan518/HXBaseProjectDemo/blob/master/HXBaseProjectDemo/ShiLiImage/7.png)
 
 如何在其他界面获取BaseTabBarController，可以通过
+
 BaseTabBarController *baseTabBar = ((AppDelegate *)[UIApplication sharedApplication].delegate).baseTabBar获取，然后调用设置小红点的方法
 
 导航样式请在BaseNavigationController里面修改
@@ -130,5 +127,6 @@ BaseTableViewController使用,记得添加头文件
 }
 
 //获取
+
 NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 id obj = [NSKeyedUnarchiver unarchiveObjectWithData:[userDefaults objectForKey:@"someKey"]] ;
