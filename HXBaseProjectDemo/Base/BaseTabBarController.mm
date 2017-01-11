@@ -121,12 +121,12 @@
 
 //显示小红点 没有数值
 - (void)showBadgeWithIndex:(int)index {
-    [self.tabBar showBadgeOnItemIndex:2];
+    [self.tabBar showBadgeOnItemIndex:index];
 }
 
 //隐藏小红点 没有数值
 - (void)hideBadgeWithIndex:(int)index {
-    [self.tabBar hideBadgeOnItemIndex:2];
+    [self.tabBar hideBadgeOnItemIndex:index];
 }
 
 #pragma mark - 去掉tabBar顶部线条

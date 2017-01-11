@@ -30,6 +30,16 @@
 		E4DCF6191E25C8710011ED7A /* HXDemoCurrencyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCF6151E25C8710011ED7A /* HXDemoCurrencyCell.m */; };
 		E4DCF61A1E25C8710011ED7A /* HXDemoCurrencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4DCF6161E25C8710011ED7A /* HXDemoCurrencyCell.xib */; };
 		E4DCF61B1E25C8710011ED7A /* HXDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCF6181E25C8710011ED7A /* HXDemoViewController.m */; };
+		E4DCF6271E25D3ED0011ED7A /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = E4DCF61D1E25D3ED0011ED7A /* 1.png */; };
+		E4DCF6281E25D3ED0011ED7A /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = E4DCF61E1E25D3ED0011ED7A /* 10.png */; };
+		E4DCF6291E25D3ED0011ED7A /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = E4DCF61F1E25D3ED0011ED7A /* 11.png */; };
+		E4DCF62A1E25D3ED0011ED7A /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = E4DCF6201E25D3ED0011ED7A /* 2.png */; };
+		E4DCF62B1E25D3ED0011ED7A /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = E4DCF6211E25D3ED0011ED7A /* 3.png */; };
+		E4DCF62C1E25D3ED0011ED7A /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = E4DCF6221E25D3ED0011ED7A /* 4.png */; };
+		E4DCF62D1E25D3ED0011ED7A /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = E4DCF6231E25D3ED0011ED7A /* 6.png */; };
+		E4DCF62E1E25D3ED0011ED7A /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = E4DCF6241E25D3ED0011ED7A /* 7.png */; };
+		E4DCF62F1E25D3ED0011ED7A /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = E4DCF6251E25D3ED0011ED7A /* 8.png */; };
+		E4DCF6301E25D3ED0011ED7A /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = E4DCF6261E25D3ED0011ED7A /* 9.png */; };
 		E4FD21DD1E10FCA20025E7B7 /* BaseModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4FD21DC1E10FCA20025E7B7 /* BaseModel.mm */; };
 		EECD39754773CEDB4A77D0A7 /* libPods-HXBaseProjectDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77D75645CFC321176D59BA5A /* libPods-HXBaseProjectDemo.a */; };
 /* End PBXBuildFile section */
@@ -82,6 +92,16 @@
 		E4DCF6161E25C8710011ED7A /* HXDemoCurrencyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HXDemoCurrencyCell.xib; sourceTree = "<group>"; };
 		E4DCF6171E25C8710011ED7A /* HXDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXDemoViewController.h; sourceTree = "<group>"; };
 		E4DCF6181E25C8710011ED7A /* HXDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXDemoViewController.m; sourceTree = "<group>"; };
+		E4DCF61D1E25D3ED0011ED7A /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		E4DCF61E1E25D3ED0011ED7A /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
+		E4DCF61F1E25D3ED0011ED7A /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
+		E4DCF6201E25D3ED0011ED7A /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		E4DCF6211E25D3ED0011ED7A /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		E4DCF6221E25D3ED0011ED7A /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		E4DCF6231E25D3ED0011ED7A /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		E4DCF6241E25D3ED0011ED7A /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		E4DCF6251E25D3ED0011ED7A /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
+		E4DCF6261E25D3ED0011ED7A /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
 		E4FD21DB1E10FCA20025E7B7 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		E4FD21DC1E10FCA20025E7B7 /* BaseModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BaseModel.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +171,7 @@
 		E49F71C71D2B98A100A6A746 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E4DCF61C1E25D3ED0011ED7A /* ShiLiImage */,
 				E49F71D31D2B98A100A6A746 /* Assets.xcassets */,
 				E4BFFE8E1E0B98EA00219462 /* Info.plist */,
 				E49F71C81D2B98A100A6A746 /* main.m */,
@@ -257,6 +278,23 @@
 			path = Demo;
 			sourceTree = "<group>";
 		};
+		E4DCF61C1E25D3ED0011ED7A /* ShiLiImage */ = {
+			isa = PBXGroup;
+			children = (
+				E4DCF61D1E25D3ED0011ED7A /* 1.png */,
+				E4DCF61E1E25D3ED0011ED7A /* 10.png */,
+				E4DCF61F1E25D3ED0011ED7A /* 11.png */,
+				E4DCF6201E25D3ED0011ED7A /* 2.png */,
+				E4DCF6211E25D3ED0011ED7A /* 3.png */,
+				E4DCF6221E25D3ED0011ED7A /* 4.png */,
+				E4DCF6231E25D3ED0011ED7A /* 6.png */,
+				E4DCF6241E25D3ED0011ED7A /* 7.png */,
+				E4DCF6251E25D3ED0011ED7A /* 8.png */,
+				E4DCF6261E25D3ED0011ED7A /* 9.png */,
+			);
+			path = ShiLiImage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -318,10 +356,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4DCF62D1E25D3ED0011ED7A /* 6.png in Resources */,
 				E49F71D41D2B98A100A6A746 /* Assets.xcassets in Resources */,
 				E4CAFCB21E0BB4BA00E60C35 /* xiaoguo.png in Resources */,
+				E4DCF62E1E25D3ED0011ED7A /* 7.png in Resources */,
+				E4DCF62A1E25D3ED0011ED7A /* 2.png in Resources */,
+				E4DCF62B1E25D3ED0011ED7A /* 3.png in Resources */,
+				E4DCF6281E25D3ED0011ED7A /* 10.png in Resources */,
 				E4CAFCAE1E0BB12E00E60C35 /* InfoPlist.strings in Resources */,
 				E4DCF61A1E25C8710011ED7A /* HXDemoCurrencyCell.xib in Resources */,
+				E4DCF6301E25D3ED0011ED7A /* 9.png in Resources */,
+				E4DCF62F1E25D3ED0011ED7A /* 8.png in Resources */,
+				E4DCF6291E25D3ED0011ED7A /* 11.png in Resources */,
+				E4DCF62C1E25D3ED0011ED7A /* 4.png in Resources */,
+				E4DCF6271E25D3ED0011ED7A /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
