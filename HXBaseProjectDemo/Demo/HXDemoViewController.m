@@ -10,6 +10,8 @@
 
 #import "HXDemoCurrencyCell.h"
 
+#import "UploadManager.h"
+
 @interface HXDemoViewController ()
 
 @end
@@ -72,6 +74,16 @@
 #pragma mark - goto
 
 - (void)gotoDemoViewController {
+    UIImage *image = [UIImage imageNamed:@"xiaoguo"];
+    NSData *imgData = UIImageJPEGRepresentation(image, 1.0);
+    
+    [self.uploadManager uploadData:imgData progress:^(float percent) {
+        
+    } completion:^(NSError *error, NSString *link, NSInteger index) {
+        
+    }];
+    
+    return;
     HXDemoViewController *vc = [HXDemoViewController new];
     [self.navigationController pushViewController:vc animated:YES];
 }

@@ -9,13 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <MJRefresh/MJRefresh.h>
 #import <SVProgressHUD/SVProgressHUD.h>
-#import "UploadImageManager.h"
+#import "UploadManager.h"
 #import "DownloadImageManager.h"
 
 @interface BaseViewController : UIViewController
 
 @property (nonatomic,assign) BOOL isRequest;//是否正在请求 默认NO
-@property (nonatomic,strong) UploadImageManager *uploadImageManager;//图片上传
+@property (nonatomic,strong) UploadManager *uploadManager;//数据上传
 @property (nonatomic,strong) DownloadImageManager *downloadImageManager;//图片下载
 @property(nonatomic,assign) NSInteger pageIndex;
 

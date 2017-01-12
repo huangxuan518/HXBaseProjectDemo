@@ -305,11 +305,11 @@
 
 #pragma mark - 懒加载
 
-- (UploadImageManager *)uploadImageManager {
-    if (!_uploadImageManager) {
-        _uploadImageManager = [UploadImageManager new];
+- (UploadManager *)uploadManager {
+    if (!_uploadManager) {
+        _uploadManager = [UploadManager new];
     }
-    return _uploadImageManager;
+    return _uploadManager;
 }
 
 - (DownloadImageManager *)downloadImageManager {

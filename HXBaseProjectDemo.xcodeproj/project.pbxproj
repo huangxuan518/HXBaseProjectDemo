@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E470C9631E27308400212BA2 /* UploadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9621E27308400212BA2 /* UploadManager.m */; };
 		E49F71C91D2B98A100A6A746 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E49F71C81D2B98A100A6A746 /* main.m */; };
 		E49F71CC1D2B98A100A6A746 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E49F71CB1D2B98A100A6A746 /* AppDelegate.m */; };
 		E49F71D41D2B98A100A6A746 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E49F71D31D2B98A100A6A746 /* Assets.xcassets */; };
@@ -16,7 +17,6 @@
 		E4BFFE8C1E0B982C00219462 /* UIView+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BFFE811E0B982C00219462 /* UIView+Helpers.m */; };
 		E4BFFE921E0B9EE600219462 /* UITabBar+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BFFE911E0B9EE600219462 /* UITabBar+Badge.m */; };
 		E4BFFEAA1E0BA09000219462 /* DownloadImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BFFEA91E0BA09000219462 /* DownloadImageManager.m */; };
-		E4BFFEBB1E0BA09900219462 /* UploadImageManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4BFFEB31E0BA09900219462 /* UploadImageManager.mm */; };
 		E4CAFCAE1E0BB12E00E60C35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4CAFCAD1E0BB12E00E60C35 /* InfoPlist.strings */; };
 		E4CAFCB01E0BB1B400E60C35 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFCAF1E0BB1B400E60C35 /* README.md */; };
 		E4CAFCB21E0BB4BA00E60C35 /* xiaoguo.png in Resources */ = {isa = PBXBuildFile; fileRef = E4CAFCB11E0BB4BA00E60C35 /* xiaoguo.png */; };
@@ -48,6 +48,8 @@
 		2CDB3B120C9302E0F3232DA6 /* Pods-HXBaseProjectDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXBaseProjectDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HXBaseProjectDemo/Pods-HXBaseProjectDemo.release.xcconfig"; sourceTree = "<group>"; };
 		77D75645CFC321176D59BA5A /* libPods-HXBaseProjectDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HXBaseProjectDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8914676EFABBE5F3F1FD619 /* Pods-HXBaseProjectDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXBaseProjectDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HXBaseProjectDemo/Pods-HXBaseProjectDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E470C9611E27308400212BA2 /* UploadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadManager.h; sourceTree = "<group>"; };
+		E470C9621E27308400212BA2 /* UploadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadManager.m; sourceTree = "<group>"; };
 		E49F71C41D2B98A100A6A746 /* HXBaseProjectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HXBaseProjectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49F71C81D2B98A100A6A746 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E49F71CA1D2B98A100A6A746 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -68,8 +70,6 @@
 		E4BFFE911E0B9EE600219462 /* UITabBar+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+Badge.m"; sourceTree = "<group>"; };
 		E4BFFEA81E0BA09000219462 /* DownloadImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadImageManager.h; sourceTree = "<group>"; };
 		E4BFFEA91E0BA09000219462 /* DownloadImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadImageManager.m; sourceTree = "<group>"; };
-		E4BFFEB21E0BA09900219462 /* UploadImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadImageManager.h; sourceTree = "<group>"; };
-		E4BFFEB31E0BA09900219462 /* UploadImageManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UploadImageManager.mm; sourceTree = "<group>"; };
 		E4CAFCAD1E0BB12E00E60C35 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		E4CAFCAF1E0BB1B400E60C35 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E4CAFCB11E0BB4BA00E60C35 /* xiaoguo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xiaoguo.png; sourceTree = "<group>"; };
@@ -237,8 +237,8 @@
 		E4BFFEAB1E0BA09900219462 /* UploadImages */ = {
 			isa = PBXGroup;
 			children = (
-				E4BFFEB21E0BA09900219462 /* UploadImageManager.h */,
-				E4BFFEB31E0BA09900219462 /* UploadImageManager.mm */,
+				E470C9611E27308400212BA2 /* UploadManager.h */,
+				E470C9621E27308400212BA2 /* UploadManager.m */,
 			);
 			path = UploadImages;
 			sourceTree = "<group>";
@@ -435,6 +435,7 @@
 				E4CAFDD61E0CCF5F00E60C35 /* BaseTableViewController.mm in Sources */,
 				E49F71C91D2B98A100A6A746 /* main.m in Sources */,
 				E4FD21DD1E10FCA20025E7B7 /* BaseModel.mm in Sources */,
+				E470C9631E27308400212BA2 /* UploadManager.m in Sources */,
 				E4BFFE8B1E0B982C00219462 /* UIImage+Extension.m in Sources */,
 				E4CAFDD11E0CCF5F00E60C35 /* BaseCollectionViewCell.m in Sources */,
 				E4CAFDD31E0CCF5F00E60C35 /* BaseNavigationController.m in Sources */,
@@ -443,7 +444,6 @@
 				E4CAFDD41E0CCF5F00E60C35 /* BaseTabBarController.mm in Sources */,
 				E4DCF61B1E25C8710011ED7A /* HXDemoViewController.m in Sources */,
 				E4CAFCB01E0BB1B400E60C35 /* README.md in Sources */,
-				E4BFFEBB1E0BA09900219462 /* UploadImageManager.mm in Sources */,
 				E4BFFE821E0B982C00219462 /* AssetHelper.m in Sources */,
 				E4CAFDD71E0CCF5F00E60C35 /* BaseViewController.mm in Sources */,
 				E4BFFE8C1E0B982C00219462 /* UIView+Helpers.m in Sources */,
