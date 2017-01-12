@@ -77,7 +77,7 @@
 }
 
 - (void)uploadData {
-    UIImage *image = [UIImage imageNamed:@"xiaoguo"];
+    UIImage *image = [UIImage imageNamed:@"ceshi"];
     NSData *imgData = UIImageJPEGRepresentation(image, 1.0);
     
     [self.uploadManager uploadData:imgData progress:^(float percent) {

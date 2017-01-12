@@ -2,7 +2,9 @@
 一个项目的基类工程
 
 # 效果展示
-![image](https://github.com/huangxuan518/HXBaseProjectDemo/blob/master/xiaoguo.png)
+
+![image](https://github.com/huangxuan518/HXBaseProjectDemo/blob/master/HXBaseProjectDemo/ShiLiImage/yulan1.png)
+![image](https://github.com/huangxuan518/HXBaseProjectDemo/blob/master/HXBaseProjectDemo/ShiLiImage/yulan2.png)
 
 # 示例
 HXDemoViewController
