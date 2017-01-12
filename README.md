@@ -17,9 +17,16 @@ SDWebImage
 SVProgressHUD
 
 # 说明
+
+配置都在Config文件夹里面
+
 基础类都在Base文件夹里面
 
 常用的类和扩展都在Public文件夹里面
+
+# Config
+
+AppConfig //App的一些常用参数配置
 
 # Base
 
