@@ -23,12 +23,12 @@
 		E4CAFCAE1E0BB12E00E60C35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4CAFCAD1E0BB12E00E60C35 /* InfoPlist.strings */; };
 		E4CAFCB01E0BB1B400E60C35 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFCAF1E0BB1B400E60C35 /* README.md */; };
 		E4CAFDD11E0CCF5F00E60C35 /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFDC41E0CCF5F00E60C35 /* BaseCollectionViewCell.m */; };
-		E4CAFDD21E0CCF5F00E60C35 /* BaseCollectionViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFDC61E0CCF5F00E60C35 /* BaseCollectionViewController.mm */; };
+		E4CAFDD21E0CCF5F00E60C35 /* BaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFDC61E0CCF5F00E60C35 /* BaseCollectionViewController.m */; };
 		E4CAFDD31E0CCF5F00E60C35 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFDC81E0CCF5F00E60C35 /* BaseNavigationController.m */; };
-		E4CAFDD41E0CCF5F00E60C35 /* BaseTabBarController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFDCA1E0CCF5F00E60C35 /* BaseTabBarController.mm */; };
+		E4CAFDD41E0CCF5F00E60C35 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFDCA1E0CCF5F00E60C35 /* BaseTabBarController.m */; };
 		E4CAFDD51E0CCF5F00E60C35 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFDCC1E0CCF5F00E60C35 /* BaseTableViewCell.m */; };
-		E4CAFDD61E0CCF5F00E60C35 /* BaseTableViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFDCE1E0CCF5F00E60C35 /* BaseTableViewController.mm */; };
-		E4CAFDD71E0CCF5F00E60C35 /* BaseViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFDD01E0CCF5F00E60C35 /* BaseViewController.mm */; };
+		E4CAFDD61E0CCF5F00E60C35 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFDCE1E0CCF5F00E60C35 /* BaseTableViewController.m */; };
+		E4CAFDD71E0CCF5F00E60C35 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFDD01E0CCF5F00E60C35 /* BaseViewController.m */; };
 		E4DCF6191E25C8710011ED7A /* HXDemoCurrencyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCF6151E25C8710011ED7A /* HXDemoCurrencyCell.m */; };
 		E4DCF61A1E25C8710011ED7A /* HXDemoCurrencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4DCF6161E25C8710011ED7A /* HXDemoCurrencyCell.xib */; };
 		E4DCF61B1E25C8710011ED7A /* HXDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCF6181E25C8710011ED7A /* HXDemoViewController.m */; };
@@ -81,17 +81,17 @@
 		E4CAFDC31E0CCF5F00E60C35 /* BaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewCell.h; sourceTree = "<group>"; };
 		E4CAFDC41E0CCF5F00E60C35 /* BaseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewCell.m; sourceTree = "<group>"; };
 		E4CAFDC51E0CCF5F00E60C35 /* BaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewController.h; sourceTree = "<group>"; };
-		E4CAFDC61E0CCF5F00E60C35 /* BaseCollectionViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BaseCollectionViewController.mm; sourceTree = "<group>"; };
+		E4CAFDC61E0CCF5F00E60C35 /* BaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewController.m; sourceTree = "<group>"; };
 		E4CAFDC71E0CCF5F00E60C35 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		E4CAFDC81E0CCF5F00E60C35 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		E4CAFDC91E0CCF5F00E60C35 /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
-		E4CAFDCA1E0CCF5F00E60C35 /* BaseTabBarController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BaseTabBarController.mm; sourceTree = "<group>"; };
+		E4CAFDCA1E0CCF5F00E60C35 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
 		E4CAFDCB1E0CCF5F00E60C35 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
 		E4CAFDCC1E0CCF5F00E60C35 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		E4CAFDCD1E0CCF5F00E60C35 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
-		E4CAFDCE1E0CCF5F00E60C35 /* BaseTableViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BaseTableViewController.mm; sourceTree = "<group>"; };
+		E4CAFDCE1E0CCF5F00E60C35 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
 		E4CAFDCF1E0CCF5F00E60C35 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		E4CAFDD01E0CCF5F00E60C35 /* BaseViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BaseViewController.mm; sourceTree = "<group>"; };
+		E4CAFDD01E0CCF5F00E60C35 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		E4DCF6141E25C8710011ED7A /* HXDemoCurrencyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXDemoCurrencyCell.h; sourceTree = "<group>"; };
 		E4DCF6151E25C8710011ED7A /* HXDemoCurrencyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXDemoCurrencyCell.m; sourceTree = "<group>"; };
 		E4DCF6161E25C8710011ED7A /* HXDemoCurrencyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HXDemoCurrencyCell.xib; sourceTree = "<group>"; };
@@ -262,17 +262,17 @@
 				E4CAFDC31E0CCF5F00E60C35 /* BaseCollectionViewCell.h */,
 				E4CAFDC41E0CCF5F00E60C35 /* BaseCollectionViewCell.m */,
 				E4CAFDC51E0CCF5F00E60C35 /* BaseCollectionViewController.h */,
-				E4CAFDC61E0CCF5F00E60C35 /* BaseCollectionViewController.mm */,
+				E4CAFDC61E0CCF5F00E60C35 /* BaseCollectionViewController.m */,
 				E4CAFDC71E0CCF5F00E60C35 /* BaseNavigationController.h */,
 				E4CAFDC81E0CCF5F00E60C35 /* BaseNavigationController.m */,
 				E4CAFDC91E0CCF5F00E60C35 /* BaseTabBarController.h */,
-				E4CAFDCA1E0CCF5F00E60C35 /* BaseTabBarController.mm */,
+				E4CAFDCA1E0CCF5F00E60C35 /* BaseTabBarController.m */,
 				E4CAFDCB1E0CCF5F00E60C35 /* BaseTableViewCell.h */,
 				E4CAFDCC1E0CCF5F00E60C35 /* BaseTableViewCell.m */,
 				E4CAFDCD1E0CCF5F00E60C35 /* BaseTableViewController.h */,
-				E4CAFDCE1E0CCF5F00E60C35 /* BaseTableViewController.mm */,
+				E4CAFDCE1E0CCF5F00E60C35 /* BaseTableViewController.m */,
 				E4CAFDCF1E0CCF5F00E60C35 /* BaseViewController.h */,
-				E4CAFDD01E0CCF5F00E60C35 /* BaseViewController.mm */,
+				E4CAFDD01E0CCF5F00E60C35 /* BaseViewController.m */,
 				E4FD21DB1E10FCA20025E7B7 /* BaseModel.h */,
 				E4FD21DC1E10FCA20025E7B7 /* BaseModel.mm */,
 			);
@@ -448,9 +448,9 @@
 			files = (
 				E4CAFDD51E0CCF5F00E60C35 /* BaseTableViewCell.m in Sources */,
 				E4BFFEAA1E0BA09000219462 /* DownloadImageManager.m in Sources */,
-				E4CAFDD21E0CCF5F00E60C35 /* BaseCollectionViewController.mm in Sources */,
+				E4CAFDD21E0CCF5F00E60C35 /* BaseCollectionViewController.m in Sources */,
 				E49F71CC1D2B98A100A6A746 /* AppDelegate.m in Sources */,
-				E4CAFDD61E0CCF5F00E60C35 /* BaseTableViewController.mm in Sources */,
+				E4CAFDD61E0CCF5F00E60C35 /* BaseTableViewController.m in Sources */,
 				E49F71C91D2B98A100A6A746 /* main.m in Sources */,
 				E4FD21DD1E10FCA20025E7B7 /* BaseModel.mm in Sources */,
 				E470C9631E27308400212BA2 /* UploadManager.m in Sources */,
@@ -459,11 +459,11 @@
 				E4CAFDD31E0CCF5F00E60C35 /* BaseNavigationController.m in Sources */,
 				E4DCF6191E25C8710011ED7A /* HXDemoCurrencyCell.m in Sources */,
 				E4BFFE8A1E0B982C00219462 /* NSString+Extension.m in Sources */,
-				E4CAFDD41E0CCF5F00E60C35 /* BaseTabBarController.mm in Sources */,
+				E4CAFDD41E0CCF5F00E60C35 /* BaseTabBarController.m in Sources */,
 				E4DCF61B1E25C8710011ED7A /* HXDemoViewController.m in Sources */,
 				E4CAFCB01E0BB1B400E60C35 /* README.md in Sources */,
 				E4BFFE821E0B982C00219462 /* AssetHelper.m in Sources */,
-				E4CAFDD71E0CCF5F00E60C35 /* BaseViewController.mm in Sources */,
+				E4CAFDD71E0CCF5F00E60C35 /* BaseViewController.m in Sources */,
 				E4BFFE8C1E0B982C00219462 /* UIView+Helpers.m in Sources */,
 				E4BFFE921E0B9EE600219462 /* UITabBar+Badge.m in Sources */,
 			);
