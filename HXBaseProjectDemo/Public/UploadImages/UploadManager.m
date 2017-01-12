@@ -15,7 +15,7 @@
 #import "QN_GTM_Base64.h"
 
 static NSInteger defaultLiveTime = 5;
-static NSString *QiNiuHost = @"http://up.qiniu.com";
+static NSString *QiNiuHost = kQiNiuHost; //外链默认域名
 
 @interface UploadManager ()
 
@@ -42,8 +42,9 @@ static NSString *QiNiuHost = @"http://up.qiniu.com";
           progress:(void (^)(float percent))progress
         completion:(void (^)(NSError *error, NSString *link, NSInteger index))completion {
     QNUploadManager *manager = [[QNUploadManager alloc] init];
+    
     [manager putData:data
-                 key:nil
+                 key:[self ittemKey]
                token:self.uploadToken
             complete:^(QNResponseInfo *info, NSString *key, NSDictionary *resp) {
                 if (completion) {
@@ -91,6 +92,15 @@ static NSString *QiNiuHost = @"http://up.qiniu.com";
         }
         self.index = 0;
     }
+}
+
+//上传到云存储的key 可以随便设置格式 类似 http://ojnjkctvf.bkt.clouddn.com/2017/01/12/134334.png
+- (NSString *)ittemKey {
+    NSDateFormatter *dateFormatter =[[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"YYYY/MM/dd/HHmmss"];
+    NSString *dateString = [dateFormatter stringFromDate:[NSDate date]];
+    NSString *key = [NSString stringWithFormat:@"%@.png",dateString];
+    return key;
 }
 
 - (void)createToken {

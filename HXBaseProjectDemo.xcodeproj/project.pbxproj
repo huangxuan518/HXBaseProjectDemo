@@ -50,6 +50,7 @@
 		D8914676EFABBE5F3F1FD619 /* Pods-HXBaseProjectDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXBaseProjectDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HXBaseProjectDemo/Pods-HXBaseProjectDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E470C9611E27308400212BA2 /* UploadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadManager.h; sourceTree = "<group>"; };
 		E470C9621E27308400212BA2 /* UploadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadManager.m; sourceTree = "<group>"; };
+		E470C9651E27506400212BA2 /* AppConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
 		E49F71C41D2B98A100A6A746 /* HXBaseProjectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HXBaseProjectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49F71C81D2B98A100A6A746 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E49F71CA1D2B98A100A6A746 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -135,6 +136,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E470C9641E27504F00212BA2 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				E470C9651E27506400212BA2 /* AppConfig.h */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		E49F71BB1D2B98A100A6A746 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +170,7 @@
 				E49F71CA1D2B98A100A6A746 /* AppDelegate.h */,
 				E49F71CB1D2B98A100A6A746 /* AppDelegate.m */,
 				E4DCF6131E25C8710011ED7A /* Demo */,
+				E470C9641E27504F00212BA2 /* Config */,
 				E4CAFDC21E0CCF5F00E60C35 /* Base */,
 				E4BFFE661E0B982C00219462 /* Public */,
 				E49F71C71D2B98A100A6A746 /* Supporting Files */,

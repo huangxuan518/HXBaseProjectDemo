@@ -10,8 +10,6 @@
 
 #import "HXDemoCurrencyCell.h"
 
-#import "UploadManager.h"
-
 @interface HXDemoViewController ()
 
 @end
@@ -39,8 +37,8 @@
         subarr = [NSMutableArray arrayWithCapacity:1];
         dict =  @{@"class":HXDemoCurrencyCell.class,
                   @"height":@([HXDemoCurrencyCell getCellFrame:nil]),
-                  @"data":[HXDemoCurrencyCellModel ittemModelWithIcoName:@"" title:@"测试1" isLittleRedDot:YES],
-                  @"action":@"gotoDemoViewController",
+                  @"data":[HXDemoCurrencyCellModel ittemModelWithIcoName:@"" title:@"上传" isLittleRedDot:YES],
+                  @"action":@"uploadData",
                   @"delegate":@YES};
         [subarr addObject:dict];
         [arr addObject:subarr];
@@ -74,18 +72,19 @@
 #pragma mark - goto
 
 - (void)gotoDemoViewController {
+    HXDemoViewController *vc = [HXDemoViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)uploadData {
     UIImage *image = [UIImage imageNamed:@"xiaoguo"];
     NSData *imgData = UIImageJPEGRepresentation(image, 1.0);
     
     [self.uploadManager uploadData:imgData progress:^(float percent) {
         
     } completion:^(NSError *error, NSString *link, NSInteger index) {
-        
+        NSLog(@"上传成功 图片地址:%@",link);
     }];
-    
-    return;
-    HXDemoViewController *vc = [HXDemoViewController new];
-    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -8,10 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#define kScope @"huangxuan518"
-#define kAccessKey @"qsR-Kbno05P7UKiw76WbgIuMUT1XBJS3uOaWbbkr"
-#define kSecretKey @"hh_PlPwxtK08DvK88iIJwc9y0sQJQgPPNPzIxmIj"
-
 @interface UploadManager : NSObject
 
 /**
