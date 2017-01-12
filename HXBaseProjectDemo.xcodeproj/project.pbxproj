@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E470C9631E27308400212BA2 /* UploadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9621E27308400212BA2 /* UploadManager.m */; };
+		E470C9691E2754B300212BA2 /* yulan2.png in Resources */ = {isa = PBXBuildFile; fileRef = E470C9661E2754B300212BA2 /* yulan2.png */; };
+		E470C96A1E2754B300212BA2 /* yulan1.png in Resources */ = {isa = PBXBuildFile; fileRef = E470C9671E2754B300212BA2 /* yulan1.png */; };
+		E470C96B1E2754B300212BA2 /* ceshi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E470C9681E2754B300212BA2 /* ceshi.jpg */; };
 		E49F71C91D2B98A100A6A746 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E49F71C81D2B98A100A6A746 /* main.m */; };
 		E49F71CC1D2B98A100A6A746 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E49F71CB1D2B98A100A6A746 /* AppDelegate.m */; };
 		E49F71D41D2B98A100A6A746 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E49F71D31D2B98A100A6A746 /* Assets.xcassets */; };
@@ -19,7 +22,6 @@
 		E4BFFEAA1E0BA09000219462 /* DownloadImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BFFEA91E0BA09000219462 /* DownloadImageManager.m */; };
 		E4CAFCAE1E0BB12E00E60C35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4CAFCAD1E0BB12E00E60C35 /* InfoPlist.strings */; };
 		E4CAFCB01E0BB1B400E60C35 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFCAF1E0BB1B400E60C35 /* README.md */; };
-		E4CAFCB21E0BB4BA00E60C35 /* xiaoguo.png in Resources */ = {isa = PBXBuildFile; fileRef = E4CAFCB11E0BB4BA00E60C35 /* xiaoguo.png */; };
 		E4CAFDD11E0CCF5F00E60C35 /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFDC41E0CCF5F00E60C35 /* BaseCollectionViewCell.m */; };
 		E4CAFDD21E0CCF5F00E60C35 /* BaseCollectionViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFDC61E0CCF5F00E60C35 /* BaseCollectionViewController.mm */; };
 		E4CAFDD31E0CCF5F00E60C35 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFDC81E0CCF5F00E60C35 /* BaseNavigationController.m */; };
@@ -51,6 +53,9 @@
 		E470C9611E27308400212BA2 /* UploadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadManager.h; sourceTree = "<group>"; };
 		E470C9621E27308400212BA2 /* UploadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadManager.m; sourceTree = "<group>"; };
 		E470C9651E27506400212BA2 /* AppConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
+		E470C9661E2754B300212BA2 /* yulan2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yulan2.png; sourceTree = "<group>"; };
+		E470C9671E2754B300212BA2 /* yulan1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yulan1.png; sourceTree = "<group>"; };
+		E470C9681E2754B300212BA2 /* ceshi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ceshi.jpg; sourceTree = "<group>"; };
 		E49F71C41D2B98A100A6A746 /* HXBaseProjectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HXBaseProjectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49F71C81D2B98A100A6A746 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E49F71CA1D2B98A100A6A746 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -73,7 +78,6 @@
 		E4BFFEA91E0BA09000219462 /* DownloadImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadImageManager.m; sourceTree = "<group>"; };
 		E4CAFCAD1E0BB12E00E60C35 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		E4CAFCAF1E0BB1B400E60C35 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		E4CAFCB11E0BB4BA00E60C35 /* xiaoguo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xiaoguo.png; sourceTree = "<group>"; };
 		E4CAFDC31E0CCF5F00E60C35 /* BaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewCell.h; sourceTree = "<group>"; };
 		E4CAFDC41E0CCF5F00E60C35 /* BaseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewCell.m; sourceTree = "<group>"; };
 		E4CAFDC51E0CCF5F00E60C35 /* BaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewController.h; sourceTree = "<group>"; };
@@ -148,7 +152,6 @@
 			isa = PBXGroup;
 			children = (
 				E4CAFCAF1E0BB1B400E60C35 /* README.md */,
-				E4CAFCB11E0BB4BA00E60C35 /* xiaoguo.png */,
 				E49F71C61D2B98A100A6A746 /* HXBaseProjectDemo */,
 				E49F71C51D2B98A100A6A746 /* Products */,
 				ACDC6AE909646697814F851F /* Pods */,
@@ -291,6 +294,9 @@
 		E4DCF61C1E25D3ED0011ED7A /* ShiLiImage */ = {
 			isa = PBXGroup;
 			children = (
+				E470C9661E2754B300212BA2 /* yulan2.png */,
+				E470C9671E2754B300212BA2 /* yulan1.png */,
+				E470C9681E2754B300212BA2 /* ceshi.jpg */,
 				E4DCF61D1E25D3ED0011ED7A /* 1.png */,
 				E4DCF61E1E25D3ED0011ED7A /* 10.png */,
 				E4DCF61F1E25D3ED0011ED7A /* 11.png */,
@@ -366,13 +372,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E470C96A1E2754B300212BA2 /* yulan1.png in Resources */,
 				E4DCF62D1E25D3ED0011ED7A /* 6.png in Resources */,
 				E49F71D41D2B98A100A6A746 /* Assets.xcassets in Resources */,
-				E4CAFCB21E0BB4BA00E60C35 /* xiaoguo.png in Resources */,
 				E4DCF62E1E25D3ED0011ED7A /* 7.png in Resources */,
+				E470C96B1E2754B300212BA2 /* ceshi.jpg in Resources */,
 				E4DCF62A1E25D3ED0011ED7A /* 2.png in Resources */,
 				E4DCF62B1E25D3ED0011ED7A /* 3.png in Resources */,
 				E4DCF6281E25D3ED0011ED7A /* 10.png in Resources */,
+				E470C9691E2754B300212BA2 /* yulan2.png in Resources */,
 				E4CAFCAE1E0BB12E00E60C35 /* InfoPlist.strings in Resources */,
 				E4DCF61A1E25C8710011ED7A /* HXDemoCurrencyCell.xib in Resources */,
 				E4DCF6301E25D3ED0011ED7A /* 9.png in Resources */,
