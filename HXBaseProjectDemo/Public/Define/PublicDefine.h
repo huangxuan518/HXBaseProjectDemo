@@ -33,5 +33,4 @@
 #define UIColorFromHexA(hexValue, a)     [UIColor colorWithRed:(((hexValue & 0xFF0000) >> 16))/255.0f green:(((hexValue & 0xFF00) >> 8))/255.0f blue:((hexValue & 0xFF))/255.0f alpha:a]
 #define UIColorFromHex(hexValue)        UIColorFromHexA(hexValue, 1.0f)
 
-
 #endif /* PublicDefine_h */

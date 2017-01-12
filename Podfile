@@ -3,6 +3,7 @@ platform :ios, '7.0'
 
 target 'HXBaseProjectDemo' do
 
+pod 'ReactiveCocoa'
 pod 'AFNetworking','~> 3.0.4'
 pod 'SVProgressHUD'
 pod 'SDWebImage'

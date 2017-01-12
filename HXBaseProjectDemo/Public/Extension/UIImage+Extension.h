@@ -66,4 +66,7 @@
 
 + (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo;
 
+//图片等比处理
++ (UIImage *)imageCompressionRatio:(UIImage *)image;
+
 @end

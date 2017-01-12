@@ -19,7 +19,7 @@
  */
 - (void)uploadData:(NSData *)data
           progress:(void (^)(float percent))progress
-        completion:(void (^)(NSError *error, NSString *link, NSInteger index))completion;
+        completion:(void (^)(NSError *error, NSString *link,NSData *data,NSInteger index))completion;
 
 /**
  *  上传多个数据
@@ -31,7 +31,7 @@
  */
 - (void)uploadDatas:(NSArray<NSData *> *)datas
            progress:(void(^)(float percent))progress
-  oneTaskCompletion:(void (^)(NSError *error, NSString *link, NSInteger index))oneTaskCompletion
+  oneTaskCompletion:(void (^)(NSError *error, NSString *link,NSData *data,NSInteger index))oneTaskCompletion
  allTasksCompletion:(void (^)())allTasksCompletion;
 
 @end

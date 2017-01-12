@@ -43,7 +43,7 @@
             //休息每上传完一张图片休息0.5秒,让界面有充足的时间展示下载动画
             _currentDisposeIndex++;
             float progress = _currentDisposeIndex/(self.imageUrlAry.count*1.0);
-            [SVProgressHUD showProgress:progress status:[NSString stringWithFormat:NSLocalizedString(@"download_img_tips", @"图片下载中%ld/%lu"),(long)_currentDisposeIndex,(unsigned long)self.imageUrlAry.count]];
+            [SVProgressHUD showProgress:progress status:[NSString stringWithFormat:@"图片下载中%ld/%lu",(long)_currentDisposeIndex,(unsigned long)self.imageUrlAry.count]];
             
             if (_currentDisposeIndex > self.imageUrlAry.count - 1) {
                 [self queueComplete];

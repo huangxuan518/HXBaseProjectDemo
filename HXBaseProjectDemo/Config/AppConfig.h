@@ -1,9 +1,9 @@
 //
 //  AppConfig.h
-//  SalesAssistant
+//  黄轩博客 blog.libuqing.com
 //
-//  Created by haifeng on 15/6/12.
-//  Copyright (c) 2015年 haifeng. All rights reserved.
+//  Created by 黄轩 on 16/1/14.
+//  Copyright © 2016年 IT小子. All rights reserved.
 //
 
 #ifndef AppConfig_h
@@ -34,5 +34,7 @@ typedef enum ServerType {
 #define kAccessKey @"qsR-Kbno05P7UKiw76WbgIuMUT1XBJS3uOaWbbkr" //AccessKey 见密钥管理
 #define kSecretKey @"hh_PlPwxtK08DvK88iIJwc9y0sQJQgPPNPzIxmIj" //SecretKey 见密钥管理
 #define kQiNiuHost @"http://ojnjkctvf.bkt.clouddn.com"; //见存储空间内容管理 外链默认域名
+
+#define knavigationBarBackgroundColor UIColorFromHex(0xffc947) //导航背景颜色
 
 #endif

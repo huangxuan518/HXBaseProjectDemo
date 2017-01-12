@@ -1,7 +1,7 @@
 
 //
 //  BaseViewController.m
-//  FuKuaiDi
+//  黄轩博客 blog.libuqing.com
 //
 //  Created by 黄轩 on 16/5/9.
 //  Copyright © 2016年 YISS. All rights reserved.
@@ -118,16 +118,11 @@
 - (void)showBack {
     if (self.navigationController.viewControllers.count > 1) {
         UIViewController *vc = self.navigationController.viewControllers[self.navigationController.viewControllers.count - 2];
-        if ([vc.title isEqualToString:NSLocalizedString(@"Home_title", @"Dongdaemun")]) {
-            [self showBackWithTitle:NSLocalizedString(@"Home_title2", @"首页")];
+        if (vc.title.length > 0) {
+            [self showBackWithTitle:vc.title];
         } else {
-            if (vc.title.length > 0) {
-                [self showBackWithTitle:vc.title];
-            } else {
-                [self showBackWithTitle:vc.navigationItem.title];
-            }
+            [self showBackWithTitle:vc.navigationItem.title];
         }
-        
     }
 }
 

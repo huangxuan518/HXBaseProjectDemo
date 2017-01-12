@@ -40,7 +40,7 @@ static NSString *QiNiuHost = kQiNiuHost; //外链默认域名
 
 - (void)uploadData:(NSData *)data
           progress:(void (^)(float percent))progress
-        completion:(void (^)(NSError *error, NSString *link, NSInteger index))completion {
+        completion:(void (^)(NSError *error, NSString *link,NSData *data,NSInteger index))completion {
     QNUploadManager *manager = [[QNUploadManager alloc] init];
     
     [manager putData:data
@@ -49,11 +49,11 @@ static NSString *QiNiuHost = kQiNiuHost; //外链默认域名
             complete:^(QNResponseInfo *info, NSString *key, NSDictionary *resp) {
                 if (completion) {
                     if (info.error) {
-                        completion(info.error, nil, self.index);
+                        completion(info.error,nil,data,self.index);
                     } else {
                         NSString *link =
                         [NSString stringWithFormat:@"%@/%@", QiNiuHost, resp[@"key"]];
-                        completion(nil, link, self.index);
+                        completion(nil, link,data, self.index);
                     }
                 }
             }
@@ -66,7 +66,7 @@ static NSString *QiNiuHost = kQiNiuHost; //外链默认域名
 
 - (void)uploadDatas:(NSArray<NSData *> *)datas
            progress:(void(^)(float percent))progress
-  oneTaskCompletion:(void (^)(NSError *error, NSString *link, NSInteger index))oneTaskCompletion
+  oneTaskCompletion:(void (^)(NSError *error, NSString *link,NSData *data,NSInteger index))oneTaskCompletion
  allTasksCompletion:(void (^)())allTasksCompletion {
     if (self.index < datas.count) {
         [self uploadData:datas[self.index]
@@ -75,10 +75,10 @@ static NSString *QiNiuHost = kQiNiuHost; //外链默认域名
                 progress(percent);
             }
         }
-        completion:^(NSError *error, NSString *link, NSInteger index) {
+        completion:^(NSError *error, NSString *link,NSData *data,NSInteger index) {
             NSLog(@"oneTaskCompletion");
             if (oneTaskCompletion) {
-                oneTaskCompletion(error, link, index);
+                oneTaskCompletion(error, link,data,index);
             }
             self.index++;
             [self uploadDatas:datas

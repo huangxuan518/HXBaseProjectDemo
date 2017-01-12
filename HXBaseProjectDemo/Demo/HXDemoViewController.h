@@ -1,9 +1,9 @@
 //
 //  HXDemoViewController.h
-//  HXBaseProjectDemo
+//  黄轩博客 blog.libuqing.com
 //
-//  Created by 黄轩 on 2017/1/11.
-//  Copyright © 2017年 黄轩. All rights reserved.
+//  Created by 黄轩 on 16/1/14.
+//  Copyright © 2016年 IT小子. All rights reserved.
 //
 
 #import "BaseTableViewController.h"

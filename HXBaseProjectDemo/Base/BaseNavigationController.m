@@ -1,6 +1,6 @@
 //
 //  BaseNavigationController.m
-//  FuKuaiDi
+//  黄轩博客 blog.libuqing.com
 //
 //  Created by 黄轩 on 16/5/26.
 //  Copyright © 2016年 YISS. All rights reserved.
@@ -18,7 +18,7 @@
 - (void)loadView {
     [super loadView];
     // bg.png为自己ps出来的想要的背景颜色。
-    [self.navigationBar setBackgroundImage:[UIImage imageWithColor:UIColorFromHex(0xffc947) size:CGSizeMake(self.navigationBar.frame.size.width, self.navigationBar.frame.size.height + 20)]
+    [self.navigationBar setBackgroundImage:[UIImage imageWithColor:knavigationBarBackgroundColor size:CGSizeMake(self.navigationBar.frame.size.width, self.navigationBar.frame.size.height + 20)]
                             forBarPosition:UIBarPositionAny
                                 barMetrics:UIBarMetricsDefault];
     [self.navigationBar setShadowImage:[UIImage new]];
@@ -31,7 +31,7 @@
     
     if ([UIDevice currentDevice].systemVersion.floatValue > 7.0) {
         //导航背景颜色
-        self.navigationBar.barTintColor = UIColorFromHex(0xffc947);
+        self.navigationBar.barTintColor = knavigationBarBackgroundColor;
     }
     
     //系统返回按钮图片设置

@@ -10,6 +10,7 @@
 #import "BaseNavigationController.h"
 #import "BaseTableViewController.h"
 #import "HXDemoViewController.h"
+#import "HXAddImageViewController.h"
 #import "SVProgressHUD.h"
 #import "UITabBar+Badge.h"
 
@@ -51,14 +52,14 @@
                            @"selectedImage":@"home_fuexpress2",
                            @"badgeValue":@"0"},
                          
-                         @{@"class":BaseTableViewController.class,
-                           @"title":@"理财",
+                         @{@"class":HXAddImageViewController.class,
+                           @"title":@"图片",
                            @"image":@"home_list1",
                            @"selectedImage":@"home_list2",
                            @"badgeValue":@"0"},
                          
                          @{@"class":BaseTableViewController.class,
-                           @"title":@"我",
+                           @"title":@"其他",
                            @"image":@"home_me1",
                            @"selectedImage":@"home_me2",
                            @"badgeValue":@"0"}];

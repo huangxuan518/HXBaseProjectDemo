@@ -19,4 +19,6 @@
 
 #import "AssetHelper.h"
 
+#import <ReactiveCocoa/ReactiveCocoa.h>
+
 #endif /* PrefixHeader_pch */

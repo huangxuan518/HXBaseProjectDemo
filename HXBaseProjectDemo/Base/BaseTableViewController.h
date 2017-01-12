@@ -1,6 +1,6 @@
 //
 //  BaseTableViewController.h
-//  FuKuaiDi
+//  黄轩博客 blog.libuqing.com
 //
 //  Created by 黄轩 on 16/5/10.
 //  Copyright © 2016年 YISS. All rights reserved.
@@ -27,5 +27,8 @@
 #pragma mark - 返回顶部
 - (void)showBackToTopBtn;//显示返回顶部按钮
 - (void)hideBackToTopBtn;//隐藏返回顶部按钮
+
+//刷新数据
+- (void)refreshData;
 
 @end

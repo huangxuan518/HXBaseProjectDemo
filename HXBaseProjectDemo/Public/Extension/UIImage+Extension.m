@@ -170,7 +170,7 @@ static inline CGFloat DegreesToRadians(CGFloat degrees)
             break;
             
         default:
-            [NSException raise:NSInvalidArgumentException format:NSLocalizedString(@"AddCommodity_Unsupported", @"Unsupported content mode: %ld"), (long)contentMode];
+            [NSException raise:NSInvalidArgumentException format:@"Unsupported content mode: %ld", (long)contentMode];
     }
     
     CGSize newSize = CGSizeMake(self.size.width * ratio, self.size.height * ratio);
@@ -434,12 +434,53 @@ static inline CGFloat DegreesToRadians(CGFloat degrees)
 
 + (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo {
     if (error != NULL) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"AddCommodity_errorTip", @"出错了!") message:NSLocalizedString(@"AddCommodity_errorMessageTip", @"存不了T_T") delegate:self cancelButtonTitle:NSLocalizedString(@"AddCommodity_okBtn", @"Ok") otherButtonTitles:nil, nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"出错了!" message:@"存不了T_T" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
         [alert show];
     } else {
         
     }
 }
 
+//1000PX以下不缩放； 1000-2000PX缩放至1/2大小；2000-4800PX缩放至1/4大小；4800PX以上缩放至1/8大小。
++ (UIImage *)imageCompressionRatio:(UIImage *)image {
+    int width = image.size.width;
+    int height = image.size.height;
+    
+    float size;
+    if (width > height) {
+        size = width;
+    } else {
+        size = height;
+    }
+    
+    UIImage *croppedImage;
+    if (size > 4800) {
+        croppedImage = [image imageCompressForSize:image targetSize:CGSizeMake(image.size.width/8, image.size.height/8)];
+    } else if (size > 2000) {
+        croppedImage = [image imageCompressForSize:image targetSize:CGSizeMake(image.size.width/4, image.size.height/4)];
+    } else if (size > 1000) {
+        croppedImage = [image imageCompressForSize:image targetSize:CGSizeMake(image.size.width/2, image.size.height/2)];
+    } else {
+        croppedImage = [image imageCompressForSize:image targetSize:CGSizeMake(image.size.width, image.size.height)];
+    }
+    
+    UIDeviceOrientation orientation = [UIDevice currentDevice].orientation;
+    if (orientation != UIDeviceOrientationPortrait) {
+        
+        CGFloat degree = 0;
+        if (orientation == UIDeviceOrientationPortraitUpsideDown) {
+            degree = 180;// M_PI;
+        } else if (orientation == UIDeviceOrientationLandscapeLeft) {
+            degree = -90;// -M_PI_2;
+        } else if (orientation == UIDeviceOrientationLandscapeRight) {
+            degree = 90;// M_PI_2;
+        }
+        croppedImage = [croppedImage rotatedByDegrees:degree];
+    }
+    
+    NSLog(@"width:%f height:%f",croppedImage.size.width,croppedImage.size.height);
+    
+    return croppedImage;
+}
 
 @end

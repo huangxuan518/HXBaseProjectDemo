@@ -1,12 +1,14 @@
 //
 //  HXDemoViewController.m
-//  HXBaseProjectDemo
+//  黄轩博客 blog.libuqing.com
 //
-//  Created by 黄轩 on 2017/1/11.
-//  Copyright © 2017年 黄轩. All rights reserved.
+//  Created by 黄轩 on 16/1/14.
+//  Copyright © 2016年 IT小子. All rights reserved.
 //
 
 #import "HXDemoViewController.h"
+
+#import "HXAddImageViewController.h"
 
 #import "HXDemoCurrencyCell.h"
 
@@ -50,7 +52,7 @@
         dict =  @{@"class":HXDemoCurrencyCell.class,
                   @"height":@([HXDemoCurrencyCell getCellFrame:nil]),
                   @"data":[HXDemoCurrencyCellModel ittemModelWithIcoName:@"" title:@"测试2" isLittleRedDot:NO],
-                  @"action":@"gotoDemoViewController",
+                  @"action":@"gotoAddImageViewController",
                   @"delegate":@YES};
         [subarr addObject:dict];
         
@@ -71,18 +73,18 @@
 
 #pragma mark - goto
 
-- (void)gotoDemoViewController {
-    HXDemoViewController *vc = [HXDemoViewController new];
+- (void)gotoAddImageViewController {
+    HXAddImageViewController *vc = [HXAddImageViewController new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)uploadData {
-    UIImage *image = [UIImage imageNamed:@"ceshi"];
+    UIImage *image = [UIImage imageNamed:@"ceshi.jpg"];
     NSData *imgData = UIImageJPEGRepresentation(image, 1.0);
     
     [self.uploadManager uploadData:imgData progress:^(float percent) {
         
-    } completion:^(NSError *error, NSString *link, NSInteger index) {
+    } completion:^(NSError *error, NSString *link,NSData *data,NSInteger index) {
         NSLog(@"上传成功 图片地址:%@",link);
     }];
 }

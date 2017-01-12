@@ -10,13 +10,19 @@
 HXDemoViewController
 
 # 工程包含第三方
-AFNetworking
 
-MJRefresh
+AFNetworking (3.0.4) //网络
 
-SDWebImage
+Qiniu (7.1.4) //七牛存储
+HappyDNS (0.3.10) //七牛依赖
 
-SVProgressHUD
+MJRefresh (3.1.12) //上下拉刷新
+
+ReactiveCocoa (2.5) //RAC 是一个 iOS 中的函数式响应式编程框架
+
+SDWebImage (3.8.2) //图片显示
+
+SVProgressHUD (2.1.1) //提示
 
 # 说明
 

@@ -11,6 +11,32 @@
 		E470C9691E2754B300212BA2 /* yulan2.png in Resources */ = {isa = PBXBuildFile; fileRef = E470C9661E2754B300212BA2 /* yulan2.png */; };
 		E470C96A1E2754B300212BA2 /* yulan1.png in Resources */ = {isa = PBXBuildFile; fileRef = E470C9671E2754B300212BA2 /* yulan1.png */; };
 		E470C96B1E2754B300212BA2 /* ceshi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E470C9681E2754B300212BA2 /* ceshi.jpg */; };
+		E470C99D1E275B1500212BA2 /* UIImage-Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9711E275B1500212BA2 /* UIImage-Extension.m */; };
+		E470C99E1E275B1500212BA2 /* UzysImageCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9731E275B1500212BA2 /* UzysImageCropper.m */; };
+		E470C99F1E275B1500212BA2 /* HXCutPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9751E275B1500212BA2 /* HXCutPhotoViewController.m */; };
+		E470C9A01E275B1500212BA2 /* AJPhotoTapDetectingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9791E275B1500212BA2 /* AJPhotoTapDetectingImageView.m */; };
+		E470C9A11E275B1500212BA2 /* AJPhotoZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C97B1E275B1500212BA2 /* AJPhotoZoomingScrollView.m */; };
+		E470C9A21E275B1500212BA2 /* AJTapDetectingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C97D1E275B1500212BA2 /* AJTapDetectingView.m */; };
+		E470C9A31E275B1500212BA2 /* HXPhotoPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C97F1E275B1500212BA2 /* HXPhotoPreviewViewController.m */; };
+		E470C9A91E275B1500212BA2 /* HXPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C98D1E275B1500212BA2 /* HXPhotosViewController.m */; };
+		E470C9AB1E275B1500212BA2 /* HXPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9931E275B1500212BA2 /* HXPhotoCell.m */; };
+		E470C9AC1E275B1500212BA2 /* HXPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E470C9941E275B1500212BA2 /* HXPhotoCell.xib */; };
+		E470C9AD1E275B1500212BA2 /* HXPhotoFirstCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9961E275B1500212BA2 /* HXPhotoFirstCollectionViewCell.m */; };
+		E470C9AE1E275B1500212BA2 /* HXPhotoFirstCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E470C9971E275B1500212BA2 /* HXPhotoFirstCollectionViewCell.xib */; };
+		E470C9AF1E275B1500212BA2 /* HXPhotoSecondCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9991E275B1500212BA2 /* HXPhotoSecondCollectionViewCell.m */; };
+		E470C9B01E275B1500212BA2 /* HXPhotoSecondCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E470C99A1E275B1500212BA2 /* HXPhotoSecondCollectionViewCell.xib */; };
+		E470C9BA1E275ED600212BA2 /* HXCardSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9B41E275ED600212BA2 /* HXCardSwitchView.m */; };
+		E470C9BB1E275ED600212BA2 /* SXImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9B61E275ED600212BA2 /* SXImageCell.m */; };
+		E470C9BC1E275ED600212BA2 /* SXImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E470C9B71E275ED600212BA2 /* SXImageCell.xib */; };
+		E470C9BD1E275ED600212BA2 /* SXLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9B91E275ED600212BA2 /* SXLineLayout.m */; };
+		E470C9C31E275F0900212BA2 /* SCCaptureSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9C01E275F0900212BA2 /* SCCaptureSessionManager.m */; };
+		E470C9C41E275F0900212BA2 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9C21E275F0900212BA2 /* UIImage+Resize.m */; };
+		E470C9C71E275FA900212BA2 /* HXAddImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9C61E275FA900212BA2 /* HXAddImageViewController.m */; };
+		E470C9CB1E275FF300212BA2 /* HXCurrencyAddPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9C91E275FF300212BA2 /* HXCurrencyAddPhotoCell.m */; };
+		E470C9CC1E275FF300212BA2 /* HXCurrencyAddPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E470C9CA1E275FF300212BA2 /* HXCurrencyAddPhotoCell.xib */; };
+		E470C9D01E27605F00212BA2 /* HXCurrencyAddPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9CE1E27605F00212BA2 /* HXCurrencyAddPhotoCollectionViewCell.m */; };
+		E470C9D11E27605F00212BA2 /* HXCurrencyAddPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E470C9CF1E27605F00212BA2 /* HXCurrencyAddPhotoCollectionViewCell.xib */; };
+		E470C9D41E27620200212BA2 /* HXImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9D31E27620200212BA2 /* HXImageModel.m */; };
 		E49F71C91D2B98A100A6A746 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E49F71C81D2B98A100A6A746 /* main.m */; };
 		E49F71CC1D2B98A100A6A746 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E49F71CB1D2B98A100A6A746 /* AppDelegate.m */; };
 		E49F71D41D2B98A100A6A746 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E49F71D31D2B98A100A6A746 /* Assets.xcassets */; };
@@ -56,6 +82,52 @@
 		E470C9661E2754B300212BA2 /* yulan2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yulan2.png; sourceTree = "<group>"; };
 		E470C9671E2754B300212BA2 /* yulan1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yulan1.png; sourceTree = "<group>"; };
 		E470C9681E2754B300212BA2 /* ceshi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ceshi.jpg; sourceTree = "<group>"; };
+		E470C9701E275B1500212BA2 /* UIImage-Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-Extension.h"; sourceTree = "<group>"; };
+		E470C9711E275B1500212BA2 /* UIImage-Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage-Extension.m"; sourceTree = "<group>"; };
+		E470C9721E275B1500212BA2 /* UzysImageCropper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UzysImageCropper.h; sourceTree = "<group>"; };
+		E470C9731E275B1500212BA2 /* UzysImageCropper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UzysImageCropper.m; sourceTree = "<group>"; };
+		E470C9741E275B1500212BA2 /* HXCutPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXCutPhotoViewController.h; sourceTree = "<group>"; };
+		E470C9751E275B1500212BA2 /* HXCutPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXCutPhotoViewController.m; sourceTree = "<group>"; };
+		E470C9781E275B1500212BA2 /* AJPhotoTapDetectingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJPhotoTapDetectingImageView.h; sourceTree = "<group>"; };
+		E470C9791E275B1500212BA2 /* AJPhotoTapDetectingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJPhotoTapDetectingImageView.m; sourceTree = "<group>"; };
+		E470C97A1E275B1500212BA2 /* AJPhotoZoomingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJPhotoZoomingScrollView.h; sourceTree = "<group>"; };
+		E470C97B1E275B1500212BA2 /* AJPhotoZoomingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJPhotoZoomingScrollView.m; sourceTree = "<group>"; };
+		E470C97C1E275B1500212BA2 /* AJTapDetectingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJTapDetectingView.h; sourceTree = "<group>"; };
+		E470C97D1E275B1500212BA2 /* AJTapDetectingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJTapDetectingView.m; sourceTree = "<group>"; };
+		E470C97E1E275B1500212BA2 /* HXPhotoPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXPhotoPreviewViewController.h; sourceTree = "<group>"; };
+		E470C97F1E275B1500212BA2 /* HXPhotoPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXPhotoPreviewViewController.m; sourceTree = "<group>"; };
+		E470C98C1E275B1500212BA2 /* HXPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXPhotosViewController.h; sourceTree = "<group>"; };
+		E470C98D1E275B1500212BA2 /* HXPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXPhotosViewController.m; sourceTree = "<group>"; };
+		E470C9921E275B1500212BA2 /* HXPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXPhotoCell.h; sourceTree = "<group>"; };
+		E470C9931E275B1500212BA2 /* HXPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXPhotoCell.m; sourceTree = "<group>"; };
+		E470C9941E275B1500212BA2 /* HXPhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HXPhotoCell.xib; sourceTree = "<group>"; };
+		E470C9951E275B1500212BA2 /* HXPhotoFirstCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXPhotoFirstCollectionViewCell.h; sourceTree = "<group>"; };
+		E470C9961E275B1500212BA2 /* HXPhotoFirstCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXPhotoFirstCollectionViewCell.m; sourceTree = "<group>"; };
+		E470C9971E275B1500212BA2 /* HXPhotoFirstCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HXPhotoFirstCollectionViewCell.xib; sourceTree = "<group>"; };
+		E470C9981E275B1500212BA2 /* HXPhotoSecondCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXPhotoSecondCollectionViewCell.h; sourceTree = "<group>"; };
+		E470C9991E275B1500212BA2 /* HXPhotoSecondCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXPhotoSecondCollectionViewCell.m; sourceTree = "<group>"; };
+		E470C99A1E275B1500212BA2 /* HXPhotoSecondCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HXPhotoSecondCollectionViewCell.xib; sourceTree = "<group>"; };
+		E470C9B31E275ED600212BA2 /* HXCardSwitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXCardSwitchView.h; sourceTree = "<group>"; };
+		E470C9B41E275ED600212BA2 /* HXCardSwitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXCardSwitchView.m; sourceTree = "<group>"; };
+		E470C9B51E275ED600212BA2 /* SXImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXImageCell.h; sourceTree = "<group>"; };
+		E470C9B61E275ED600212BA2 /* SXImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXImageCell.m; sourceTree = "<group>"; };
+		E470C9B71E275ED600212BA2 /* SXImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SXImageCell.xib; sourceTree = "<group>"; };
+		E470C9B81E275ED600212BA2 /* SXLineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXLineLayout.h; sourceTree = "<group>"; };
+		E470C9B91E275ED600212BA2 /* SXLineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXLineLayout.m; sourceTree = "<group>"; };
+		E470C9BF1E275F0900212BA2 /* SCCaptureSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCaptureSessionManager.h; sourceTree = "<group>"; };
+		E470C9C01E275F0900212BA2 /* SCCaptureSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCaptureSessionManager.m; sourceTree = "<group>"; };
+		E470C9C11E275F0900212BA2 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		E470C9C21E275F0900212BA2 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		E470C9C51E275FA900212BA2 /* HXAddImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXAddImageViewController.h; sourceTree = "<group>"; };
+		E470C9C61E275FA900212BA2 /* HXAddImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXAddImageViewController.m; sourceTree = "<group>"; };
+		E470C9C81E275FF300212BA2 /* HXCurrencyAddPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXCurrencyAddPhotoCell.h; sourceTree = "<group>"; };
+		E470C9C91E275FF300212BA2 /* HXCurrencyAddPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXCurrencyAddPhotoCell.m; sourceTree = "<group>"; };
+		E470C9CA1E275FF300212BA2 /* HXCurrencyAddPhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HXCurrencyAddPhotoCell.xib; sourceTree = "<group>"; };
+		E470C9CD1E27605F00212BA2 /* HXCurrencyAddPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXCurrencyAddPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		E470C9CE1E27605F00212BA2 /* HXCurrencyAddPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXCurrencyAddPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		E470C9CF1E27605F00212BA2 /* HXCurrencyAddPhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HXCurrencyAddPhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		E470C9D21E27620200212BA2 /* HXImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXImageModel.h; sourceTree = "<group>"; };
+		E470C9D31E27620200212BA2 /* HXImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXImageModel.m; sourceTree = "<group>"; };
 		E49F71C41D2B98A100A6A746 /* HXBaseProjectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HXBaseProjectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49F71C81D2B98A100A6A746 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E49F71CA1D2B98A100A6A746 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -148,6 +220,150 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		E470C96C1E275B1500212BA2 /* 相机/相册 */ = {
+			isa = PBXGroup;
+			children = (
+				E470C96D1E275B1500212BA2 /* Controller */,
+				E470C9911E275B1500212BA2 /* View */,
+			);
+			name = "相机/相册";
+			path = CameraRoll;
+			sourceTree = "<group>";
+		};
+		E470C96D1E275B1500212BA2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E470C96E1E275B1500212BA2 /* 图片裁剪 */,
+				E470C9761E275B1500212BA2 /* 图片预览 */,
+				E470C9801E275B1500212BA2 /* 图片添加 */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E470C96E1E275B1500212BA2 /* 图片裁剪 */ = {
+			isa = PBXGroup;
+			children = (
+				E470C96F1E275B1500212BA2 /* Cut */,
+				E470C9741E275B1500212BA2 /* HXCutPhotoViewController.h */,
+				E470C9751E275B1500212BA2 /* HXCutPhotoViewController.m */,
+			);
+			name = "图片裁剪";
+			path = Crop;
+			sourceTree = "<group>";
+		};
+		E470C96F1E275B1500212BA2 /* Cut */ = {
+			isa = PBXGroup;
+			children = (
+				E470C9701E275B1500212BA2 /* UIImage-Extension.h */,
+				E470C9711E275B1500212BA2 /* UIImage-Extension.m */,
+				E470C9721E275B1500212BA2 /* UzysImageCropper.h */,
+				E470C9731E275B1500212BA2 /* UzysImageCropper.m */,
+			);
+			path = Cut;
+			sourceTree = "<group>";
+		};
+		E470C9761E275B1500212BA2 /* 图片预览 */ = {
+			isa = PBXGroup;
+			children = (
+				E470C9771E275B1500212BA2 /* AJPhotoBrowser */,
+				E470C97E1E275B1500212BA2 /* HXPhotoPreviewViewController.h */,
+				E470C97F1E275B1500212BA2 /* HXPhotoPreviewViewController.m */,
+			);
+			name = "图片预览";
+			path = PhotoPreview;
+			sourceTree = "<group>";
+		};
+		E470C9771E275B1500212BA2 /* AJPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				E470C9781E275B1500212BA2 /* AJPhotoTapDetectingImageView.h */,
+				E470C9791E275B1500212BA2 /* AJPhotoTapDetectingImageView.m */,
+				E470C97A1E275B1500212BA2 /* AJPhotoZoomingScrollView.h */,
+				E470C97B1E275B1500212BA2 /* AJPhotoZoomingScrollView.m */,
+				E470C97C1E275B1500212BA2 /* AJTapDetectingView.h */,
+				E470C97D1E275B1500212BA2 /* AJTapDetectingView.m */,
+			);
+			path = AJPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		E470C9801E275B1500212BA2 /* 图片添加 */ = {
+			isa = PBXGroup;
+			children = (
+				E470C98C1E275B1500212BA2 /* HXPhotosViewController.h */,
+				E470C98D1E275B1500212BA2 /* HXPhotosViewController.m */,
+			);
+			name = "图片添加";
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		E470C9911E275B1500212BA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E470C9BE1E275F0900212BA2 /* SCCaptureCamera */,
+				E470C9B21E275ED600212BA2 /* HXCardSwitchView */,
+				E470C9921E275B1500212BA2 /* HXPhotoCell.h */,
+				E470C9931E275B1500212BA2 /* HXPhotoCell.m */,
+				E470C9941E275B1500212BA2 /* HXPhotoCell.xib */,
+				E470C9951E275B1500212BA2 /* HXPhotoFirstCollectionViewCell.h */,
+				E470C9961E275B1500212BA2 /* HXPhotoFirstCollectionViewCell.m */,
+				E470C9971E275B1500212BA2 /* HXPhotoFirstCollectionViewCell.xib */,
+				E470C9981E275B1500212BA2 /* HXPhotoSecondCollectionViewCell.h */,
+				E470C9991E275B1500212BA2 /* HXPhotoSecondCollectionViewCell.m */,
+				E470C99A1E275B1500212BA2 /* HXPhotoSecondCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E470C9B21E275ED600212BA2 /* HXCardSwitchView */ = {
+			isa = PBXGroup;
+			children = (
+				E470C9B31E275ED600212BA2 /* HXCardSwitchView.h */,
+				E470C9B41E275ED600212BA2 /* HXCardSwitchView.m */,
+				E470C9B51E275ED600212BA2 /* SXImageCell.h */,
+				E470C9B61E275ED600212BA2 /* SXImageCell.m */,
+				E470C9B71E275ED600212BA2 /* SXImageCell.xib */,
+				E470C9B81E275ED600212BA2 /* SXLineLayout.h */,
+				E470C9B91E275ED600212BA2 /* SXLineLayout.m */,
+			);
+			path = HXCardSwitchView;
+			sourceTree = "<group>";
+		};
+		E470C9BE1E275F0900212BA2 /* SCCaptureCamera */ = {
+			isa = PBXGroup;
+			children = (
+				E470C9BF1E275F0900212BA2 /* SCCaptureSessionManager.h */,
+				E470C9C01E275F0900212BA2 /* SCCaptureSessionManager.m */,
+				E470C9C11E275F0900212BA2 /* UIImage+Resize.h */,
+				E470C9C21E275F0900212BA2 /* UIImage+Resize.m */,
+			);
+			path = SCCaptureCamera;
+			sourceTree = "<group>";
+		};
+		E470C9D51E276A7100212BA2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E4DCF6141E25C8710011ED7A /* HXDemoCurrencyCell.h */,
+				E4DCF6151E25C8710011ED7A /* HXDemoCurrencyCell.m */,
+				E4DCF6161E25C8710011ED7A /* HXDemoCurrencyCell.xib */,
+				E470C9CD1E27605F00212BA2 /* HXCurrencyAddPhotoCollectionViewCell.h */,
+				E470C9CE1E27605F00212BA2 /* HXCurrencyAddPhotoCollectionViewCell.m */,
+				E470C9CF1E27605F00212BA2 /* HXCurrencyAddPhotoCollectionViewCell.xib */,
+				E470C9C81E275FF300212BA2 /* HXCurrencyAddPhotoCell.h */,
+				E470C9C91E275FF300212BA2 /* HXCurrencyAddPhotoCell.m */,
+				E470C9CA1E275FF300212BA2 /* HXCurrencyAddPhotoCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		E470C9D61E276A8300212BA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E470C9D21E27620200212BA2 /* HXImageModel.h */,
+				E470C9D31E27620200212BA2 /* HXImageModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		E49F71BB1D2B98A100A6A746 = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +413,7 @@
 		E4BFFE661E0B982C00219462 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				E470C96C1E275B1500212BA2 /* 相机/相册 */,
 				E4BFFE791E0B982C00219462 /* Define */,
 				E4BFFE7B1E0B982C00219462 /* Extension */,
 				E4BFFE671E0B982C00219462 /* Asset */,
@@ -282,11 +499,12 @@
 		E4DCF6131E25C8710011ED7A /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				E4DCF6141E25C8710011ED7A /* HXDemoCurrencyCell.h */,
-				E4DCF6151E25C8710011ED7A /* HXDemoCurrencyCell.m */,
-				E4DCF6161E25C8710011ED7A /* HXDemoCurrencyCell.xib */,
+				E470C9D61E276A8300212BA2 /* Model */,
+				E470C9D51E276A7100212BA2 /* Cell */,
 				E4DCF6171E25C8710011ED7A /* HXDemoViewController.h */,
 				E4DCF6181E25C8710011ED7A /* HXDemoViewController.m */,
+				E470C9C51E275FA900212BA2 /* HXAddImageViewController.h */,
+				E470C9C61E275FA900212BA2 /* HXAddImageViewController.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -372,8 +590,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E470C9AE1E275B1500212BA2 /* HXPhotoFirstCollectionViewCell.xib in Resources */,
 				E470C96A1E2754B300212BA2 /* yulan1.png in Resources */,
+				E470C9BC1E275ED600212BA2 /* SXImageCell.xib in Resources */,
 				E4DCF62D1E25D3ED0011ED7A /* 6.png in Resources */,
+				E470C9B01E275B1500212BA2 /* HXPhotoSecondCollectionViewCell.xib in Resources */,
 				E49F71D41D2B98A100A6A746 /* Assets.xcassets in Resources */,
 				E4DCF62E1E25D3ED0011ED7A /* 7.png in Resources */,
 				E470C96B1E2754B300212BA2 /* ceshi.jpg in Resources */,
@@ -381,8 +602,11 @@
 				E4DCF62B1E25D3ED0011ED7A /* 3.png in Resources */,
 				E4DCF6281E25D3ED0011ED7A /* 10.png in Resources */,
 				E470C9691E2754B300212BA2 /* yulan2.png in Resources */,
+				E470C9CC1E275FF300212BA2 /* HXCurrencyAddPhotoCell.xib in Resources */,
+				E470C9AC1E275B1500212BA2 /* HXPhotoCell.xib in Resources */,
 				E4CAFCAE1E0BB12E00E60C35 /* InfoPlist.strings in Resources */,
 				E4DCF61A1E25C8710011ED7A /* HXDemoCurrencyCell.xib in Resources */,
+				E470C9D11E27605F00212BA2 /* HXCurrencyAddPhotoCollectionViewCell.xib in Resources */,
 				E4DCF6301E25D3ED0011ED7A /* 9.png in Resources */,
 				E4DCF62F1E25D3ED0011ED7A /* 8.png in Resources */,
 				E4DCF6291E25D3ED0011ED7A /* 11.png in Resources */,
@@ -448,11 +672,23 @@
 			files = (
 				E4CAFDD51E0CCF5F00E60C35 /* BaseTableViewCell.m in Sources */,
 				E4BFFEAA1E0BA09000219462 /* DownloadImageManager.m in Sources */,
+				E470C9C31E275F0900212BA2 /* SCCaptureSessionManager.m in Sources */,
+				E470C9D41E27620200212BA2 /* HXImageModel.m in Sources */,
+				E470C9CB1E275FF300212BA2 /* HXCurrencyAddPhotoCell.m in Sources */,
+				E470C9D01E27605F00212BA2 /* HXCurrencyAddPhotoCollectionViewCell.m in Sources */,
 				E4CAFDD21E0CCF5F00E60C35 /* BaseCollectionViewController.m in Sources */,
+				E470C9A31E275B1500212BA2 /* HXPhotoPreviewViewController.m in Sources */,
+				E470C9C41E275F0900212BA2 /* UIImage+Resize.m in Sources */,
 				E49F71CC1D2B98A100A6A746 /* AppDelegate.m in Sources */,
+				E470C9BB1E275ED600212BA2 /* SXImageCell.m in Sources */,
+				E470C99E1E275B1500212BA2 /* UzysImageCropper.m in Sources */,
+				E470C99D1E275B1500212BA2 /* UIImage-Extension.m in Sources */,
 				E4CAFDD61E0CCF5F00E60C35 /* BaseTableViewController.m in Sources */,
 				E49F71C91D2B98A100A6A746 /* main.m in Sources */,
 				E4FD21DD1E10FCA20025E7B7 /* BaseModel.mm in Sources */,
+				E470C9A91E275B1500212BA2 /* HXPhotosViewController.m in Sources */,
+				E470C9A21E275B1500212BA2 /* AJTapDetectingView.m in Sources */,
+				E470C9AD1E275B1500212BA2 /* HXPhotoFirstCollectionViewCell.m in Sources */,
 				E470C9631E27308400212BA2 /* UploadManager.m in Sources */,
 				E4BFFE8B1E0B982C00219462 /* UIImage+Extension.m in Sources */,
 				E4CAFDD11E0CCF5F00E60C35 /* BaseCollectionViewCell.m in Sources */,
@@ -460,10 +696,18 @@
 				E4DCF6191E25C8710011ED7A /* HXDemoCurrencyCell.m in Sources */,
 				E4BFFE8A1E0B982C00219462 /* NSString+Extension.m in Sources */,
 				E4CAFDD41E0CCF5F00E60C35 /* BaseTabBarController.m in Sources */,
+				E470C9A01E275B1500212BA2 /* AJPhotoTapDetectingImageView.m in Sources */,
 				E4DCF61B1E25C8710011ED7A /* HXDemoViewController.m in Sources */,
 				E4CAFCB01E0BB1B400E60C35 /* README.md in Sources */,
+				E470C9A11E275B1500212BA2 /* AJPhotoZoomingScrollView.m in Sources */,
+				E470C9BD1E275ED600212BA2 /* SXLineLayout.m in Sources */,
 				E4BFFE821E0B982C00219462 /* AssetHelper.m in Sources */,
 				E4CAFDD71E0CCF5F00E60C35 /* BaseViewController.m in Sources */,
+				E470C9AB1E275B1500212BA2 /* HXPhotoCell.m in Sources */,
+				E470C99F1E275B1500212BA2 /* HXCutPhotoViewController.m in Sources */,
+				E470C9C71E275FA900212BA2 /* HXAddImageViewController.m in Sources */,
+				E470C9AF1E275B1500212BA2 /* HXPhotoSecondCollectionViewCell.m in Sources */,
+				E470C9BA1E275ED600212BA2 /* HXCardSwitchView.m in Sources */,
 				E4BFFE8C1E0B982C00219462 /* UIView+Helpers.m in Sources */,
 				E4BFFE921E0B9EE600219462 /* UITabBar+Badge.m in Sources */,
 			);
