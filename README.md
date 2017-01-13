@@ -5,9 +5,11 @@
 
 ![image](https://github.com/huangxuan518/HXBaseProjectDemo/blob/master/HXBaseProjectDemo/ShiLiImage/yulan1.png)
 ![image](https://github.com/huangxuan518/HXBaseProjectDemo/blob/master/HXBaseProjectDemo/ShiLiImage/yulan2.png)
+![image](https://github.com/huangxuan518/HXBaseProjectDemo/blob/master/HXBaseProjectDemo/ShiLiImage/yulan3.png)
 
 # 示例
-HXDemoViewController
+HXHomeViewController
+HXAddImageViewController
 
 # 工程包含第三方
 
@@ -60,6 +62,11 @@ BaseModel
 
 # Public
 
+## 相机/相册
+HXCutPhotoViewController //图片裁剪
+HXPhotoPreviewViewController //图片预览
+HXPhotosViewController //全自定义相机相册
+
 ## Define
 PublicDefine //宏
 
@@ -81,7 +88,18 @@ UploadImageManager //图片上传
 ## DownloadImages
 DownloadImageManager //图片下载
 
+# Supporting Files
+Info.plist
+PrefixHeader.pch
+InfoPlist.strings
+
 # 使用说明
+
+整体色调修改AppConfig.h,改变整体界面色调很简单
+
+![image](https://github.com/huangxuan518/HXBaseProjectDemo/blob/master/HXBaseProjectDemo/ShiLiImage/5.png)
+
+
 标签控制器对应的界面请在BaseTabBarController里面添加和更改
 进入BaseTabBarController.m文件，找到如下方法
 

@@ -37,6 +37,8 @@
 		E470C9D01E27605F00212BA2 /* HXCurrencyAddPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9CE1E27605F00212BA2 /* HXCurrencyAddPhotoCollectionViewCell.m */; };
 		E470C9D11E27605F00212BA2 /* HXCurrencyAddPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E470C9CF1E27605F00212BA2 /* HXCurrencyAddPhotoCollectionViewCell.xib */; };
 		E470C9D41E27620200212BA2 /* HXImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9D31E27620200212BA2 /* HXImageModel.m */; };
+		E470C9D91E28AEA800212BA2 /* yulan3.png in Resources */ = {isa = PBXBuildFile; fileRef = E470C9D81E28AEA800212BA2 /* yulan3.png */; };
+		E470C9DB1E28AED800212BA2 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = E470C9DA1E28AED800212BA2 /* 5.png */; };
 		E49F71C91D2B98A100A6A746 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E49F71C81D2B98A100A6A746 /* main.m */; };
 		E49F71CC1D2B98A100A6A746 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E49F71CB1D2B98A100A6A746 /* AppDelegate.m */; };
 		E49F71D41D2B98A100A6A746 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E49F71D31D2B98A100A6A746 /* Assets.xcassets */; };
@@ -57,7 +59,7 @@
 		E4CAFDD71E0CCF5F00E60C35 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFDD01E0CCF5F00E60C35 /* BaseViewController.m */; };
 		E4DCF6191E25C8710011ED7A /* HXDemoCurrencyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCF6151E25C8710011ED7A /* HXDemoCurrencyCell.m */; };
 		E4DCF61A1E25C8710011ED7A /* HXDemoCurrencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4DCF6161E25C8710011ED7A /* HXDemoCurrencyCell.xib */; };
-		E4DCF61B1E25C8710011ED7A /* HXDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCF6181E25C8710011ED7A /* HXDemoViewController.m */; };
+		E4DCF61B1E25C8710011ED7A /* HXHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCF6181E25C8710011ED7A /* HXHomeViewController.m */; };
 		E4DCF6271E25D3ED0011ED7A /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = E4DCF61D1E25D3ED0011ED7A /* 1.png */; };
 		E4DCF6281E25D3ED0011ED7A /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = E4DCF61E1E25D3ED0011ED7A /* 10.png */; };
 		E4DCF6291E25D3ED0011ED7A /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = E4DCF61F1E25D3ED0011ED7A /* 11.png */; };
@@ -128,6 +130,8 @@
 		E470C9CF1E27605F00212BA2 /* HXCurrencyAddPhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HXCurrencyAddPhotoCollectionViewCell.xib; sourceTree = "<group>"; };
 		E470C9D21E27620200212BA2 /* HXImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXImageModel.h; sourceTree = "<group>"; };
 		E470C9D31E27620200212BA2 /* HXImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXImageModel.m; sourceTree = "<group>"; };
+		E470C9D81E28AEA800212BA2 /* yulan3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yulan3.png; sourceTree = "<group>"; };
+		E470C9DA1E28AED800212BA2 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
 		E49F71C41D2B98A100A6A746 /* HXBaseProjectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HXBaseProjectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49F71C81D2B98A100A6A746 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E49F71CA1D2B98A100A6A746 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -167,8 +171,8 @@
 		E4DCF6141E25C8710011ED7A /* HXDemoCurrencyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXDemoCurrencyCell.h; sourceTree = "<group>"; };
 		E4DCF6151E25C8710011ED7A /* HXDemoCurrencyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXDemoCurrencyCell.m; sourceTree = "<group>"; };
 		E4DCF6161E25C8710011ED7A /* HXDemoCurrencyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HXDemoCurrencyCell.xib; sourceTree = "<group>"; };
-		E4DCF6171E25C8710011ED7A /* HXDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXDemoViewController.h; sourceTree = "<group>"; };
-		E4DCF6181E25C8710011ED7A /* HXDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXDemoViewController.m; sourceTree = "<group>"; };
+		E4DCF6171E25C8710011ED7A /* HXHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXHomeViewController.h; sourceTree = "<group>"; };
+		E4DCF6181E25C8710011ED7A /* HXHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXHomeViewController.m; sourceTree = "<group>"; };
 		E4DCF61D1E25D3ED0011ED7A /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		E4DCF61E1E25D3ED0011ED7A /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
 		E4DCF61F1E25D3ED0011ED7A /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
@@ -501,8 +505,8 @@
 			children = (
 				E470C9D61E276A8300212BA2 /* Model */,
 				E470C9D51E276A7100212BA2 /* Cell */,
-				E4DCF6171E25C8710011ED7A /* HXDemoViewController.h */,
-				E4DCF6181E25C8710011ED7A /* HXDemoViewController.m */,
+				E4DCF6171E25C8710011ED7A /* HXHomeViewController.h */,
+				E4DCF6181E25C8710011ED7A /* HXHomeViewController.m */,
 				E470C9C51E275FA900212BA2 /* HXAddImageViewController.h */,
 				E470C9C61E275FA900212BA2 /* HXAddImageViewController.m */,
 			);
@@ -512,9 +516,11 @@
 		E4DCF61C1E25D3ED0011ED7A /* ShiLiImage */ = {
 			isa = PBXGroup;
 			children = (
-				E470C9661E2754B300212BA2 /* yulan2.png */,
+				E470C9D81E28AEA800212BA2 /* yulan3.png */,
 				E470C9671E2754B300212BA2 /* yulan1.png */,
+				E470C9661E2754B300212BA2 /* yulan2.png */,
 				E470C9681E2754B300212BA2 /* ceshi.jpg */,
+				E470C9DA1E28AED800212BA2 /* 5.png */,
 				E4DCF61D1E25D3ED0011ED7A /* 1.png */,
 				E4DCF61E1E25D3ED0011ED7A /* 10.png */,
 				E4DCF61F1E25D3ED0011ED7A /* 11.png */,
@@ -609,7 +615,9 @@
 				E470C9D11E27605F00212BA2 /* HXCurrencyAddPhotoCollectionViewCell.xib in Resources */,
 				E4DCF6301E25D3ED0011ED7A /* 9.png in Resources */,
 				E4DCF62F1E25D3ED0011ED7A /* 8.png in Resources */,
+				E470C9D91E28AEA800212BA2 /* yulan3.png in Resources */,
 				E4DCF6291E25D3ED0011ED7A /* 11.png in Resources */,
+				E470C9DB1E28AED800212BA2 /* 5.png in Resources */,
 				E4DCF62C1E25D3ED0011ED7A /* 4.png in Resources */,
 				E4DCF6271E25D3ED0011ED7A /* 1.png in Resources */,
 			);
@@ -697,7 +705,7 @@
 				E4BFFE8A1E0B982C00219462 /* NSString+Extension.m in Sources */,
 				E4CAFDD41E0CCF5F00E60C35 /* BaseTabBarController.m in Sources */,
 				E470C9A01E275B1500212BA2 /* AJPhotoTapDetectingImageView.m in Sources */,
-				E4DCF61B1E25C8710011ED7A /* HXDemoViewController.m in Sources */,
+				E4DCF61B1E25C8710011ED7A /* HXHomeViewController.m in Sources */,
 				E4CAFCB01E0BB1B400E60C35 /* README.md in Sources */,
 				E470C9A11E275B1500212BA2 /* AJPhotoZoomingScrollView.m in Sources */,
 				E470C9BD1E275ED600212BA2 /* SXLineLayout.m in Sources */,

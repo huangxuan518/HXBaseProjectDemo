@@ -1,22 +1,22 @@
 //
-//  HXDemoViewController.m
+//  HXHomeViewController.m
 //  黄轩博客 blog.libuqing.com
 //
 //  Created by 黄轩 on 16/1/14.
 //  Copyright © 2016年 IT小子. All rights reserved.
 //
 
-#import "HXDemoViewController.h"
+#import "HXHomeViewController.h"
 
 #import "HXAddImageViewController.h"
 
 #import "HXDemoCurrencyCell.h"
 
-@interface HXDemoViewController ()
+@interface HXHomeViewController ()
 
 @end
 
-@implementation HXDemoViewController
+@implementation HXHomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

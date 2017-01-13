@@ -9,7 +9,7 @@
 #import "BaseTabBarController.h"
 #import "BaseNavigationController.h"
 #import "BaseTableViewController.h"
-#import "HXDemoViewController.h"
+#import "HXHomeViewController.h"
 #import "HXAddImageViewController.h"
 #import "SVProgressHUD.h"
 #import "UITabBar+Badge.h"
@@ -46,7 +46,7 @@
 
 - (void)setViewControllers {
     //UITabBarController 数据源
-    NSArray *dataAry = @[@{@"class":HXDemoViewController.class,
+    NSArray *dataAry = @[@{@"class":HXHomeViewController.class,
                            @"title":@"首页",
                            @"image":@"button_home",
                            @"selectedImage":@"button_home1",

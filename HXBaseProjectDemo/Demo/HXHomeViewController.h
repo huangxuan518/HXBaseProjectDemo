@@ -1,5 +1,5 @@
 //
-//  HXDemoViewController.h
+//  HXHomeViewController.h
 //  黄轩博客 blog.libuqing.com
 //
 //  Created by 黄轩 on 16/1/14.
@@ -8,6 +8,6 @@
 
 #import "BaseTableViewController.h"
 
-@interface HXDemoViewController : BaseTableViewController
+@interface HXHomeViewController : BaseTableViewController
 
 @end
