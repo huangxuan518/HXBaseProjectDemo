@@ -64,7 +64,6 @@ typedef NS_ENUM (NSInteger, ImagePickerControllerSourceType) {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         _sourceType = ImagePickerControllerSourceTypeCamera;
-        _fromeType = FromeTypeCommodity;
         _selectAry = [NSMutableArray new];
     }
     return self;
@@ -667,13 +666,8 @@ typedef NS_ENUM (NSInteger, ImagePickerControllerSourceType) {
     if (!_cardSwitchView) {
         _cardSwitchView = [[HXCardSwitchView alloc] initWithFrame:CGRectMake(0,0, self.view.frame.size.width, CardSwitchViewHeight)];
         _cardSwitchView.backgroundColor = kUIToneTextColor;
-        
-        if (_fromeType == FromeTypeMyShop) {
-            _cardSwitchView.layout.itemSize = CGSizeMake(kScreenWidth - 40, 243);
-        } else {
-            _cardSwitchView.layout.itemSize = CGSizeMake(243, 243);
-        }
-    
+        _cardSwitchView.layout.itemSize = CGSizeMake(kScreenWidth - 40, 243);
+
         [self.view addSubview:_cardSwitchView];
         [self.view sendSubviewToBack:_cardSwitchView];
     }

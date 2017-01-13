@@ -232,7 +232,6 @@
     }
     
     HXPhotosViewController *vc = [HXPhotosViewController new];
-    vc.fromeType = FromeTypeCommodity;
     vc.photoCount = count;
     @weakify(self);
     vc.completion = ^(HXPhotosViewController *vc,NSArray *photos) {
