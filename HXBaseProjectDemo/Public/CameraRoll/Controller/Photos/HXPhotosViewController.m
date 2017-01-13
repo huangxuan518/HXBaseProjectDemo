@@ -665,7 +665,7 @@ typedef NS_ENUM (NSInteger, ImagePickerControllerSourceType) {
 - (HXCardSwitchView *)cardSwitchView {
     if (!_cardSwitchView) {
         _cardSwitchView = [[HXCardSwitchView alloc] initWithFrame:CGRectMake(0,0, self.view.frame.size.width, CardSwitchViewHeight)];
-        _cardSwitchView.backgroundColor = kUIToneTextColor;
+        _cardSwitchView.backgroundColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1.0];
         _cardSwitchView.layout.itemSize = CGSizeMake(kScreenWidth - 40, 243);
 
         [self.view addSubview:_cardSwitchView];

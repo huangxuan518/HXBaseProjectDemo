@@ -9,8 +9,6 @@
 #import "BaseTabBarController.h"
 #import "BaseNavigationController.h"
 #import "BaseTableViewController.h"
-#import "HXHomeViewController.h"
-#import "HXAddImageViewController.h"
 #import "SVProgressHUD.h"
 #import "UITabBar+Badge.h"
 
@@ -46,27 +44,12 @@
 
 - (void)setViewControllers {
     //UITabBarController 数据源
-    NSArray *dataAry = @[@{@"class":HXHomeViewController.class,
-                           @"title":@"首页",
-                           @"image":@"button_home",
-                           @"selectedImage":@"button_home1",
-                           @"badgeValue":@"0"},
-                         
-                         @{@"class":HXAddImageViewController.class,
-                           @"title":@"图片",
-                           @"image":@"home_list1",
-                           @"selectedImage":@"home_list2",
-                           @"badgeValue":@"0"},
-                         
-                         @{@"class":BaseTableViewController.class,
-                           @"title":@"我",
-                           @"image":@"home_me1",
-                           @"selectedImage":@"home_me2",
-                           @"badgeValue":@"0"}];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"TabBarConfigure" ofType:@"plist"];
+    NSArray *dataAry = [[NSArray alloc] initWithContentsOfFile:path];
     
     for (NSDictionary *dataDic in dataAry) {
         //每个tabar的数据
-        Class classs = dataDic[@"class"];
+        Class classs = NSClassFromString(dataDic[@"class"]);
         NSString *title = dataDic[@"title"];
         NSString *imageName = dataDic[@"image"];
         NSString *selectedImage = dataDic[@"selectedImage"];

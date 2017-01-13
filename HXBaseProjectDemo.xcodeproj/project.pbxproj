@@ -39,6 +39,7 @@
 		E470C9D41E27620200212BA2 /* HXImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9D31E27620200212BA2 /* HXImageModel.m */; };
 		E470C9D91E28AEA800212BA2 /* yulan3.png in Resources */ = {isa = PBXBuildFile; fileRef = E470C9D81E28AEA800212BA2 /* yulan3.png */; };
 		E470C9DB1E28AED800212BA2 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = E470C9DA1E28AED800212BA2 /* 5.png */; };
+		E470C9DD1E28B7B900212BA2 /* TabBarConfigure.plist in Resources */ = {isa = PBXBuildFile; fileRef = E470C9DC1E28B7B900212BA2 /* TabBarConfigure.plist */; };
 		E49F71C91D2B98A100A6A746 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E49F71C81D2B98A100A6A746 /* main.m */; };
 		E49F71CC1D2B98A100A6A746 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E49F71CB1D2B98A100A6A746 /* AppDelegate.m */; };
 		E49F71D41D2B98A100A6A746 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E49F71D31D2B98A100A6A746 /* Assets.xcassets */; };
@@ -132,6 +133,7 @@
 		E470C9D31E27620200212BA2 /* HXImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXImageModel.m; sourceTree = "<group>"; };
 		E470C9D81E28AEA800212BA2 /* yulan3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yulan3.png; sourceTree = "<group>"; };
 		E470C9DA1E28AED800212BA2 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		E470C9DC1E28B7B900212BA2 /* TabBarConfigure.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TabBarConfigure.plist; sourceTree = "<group>"; };
 		E49F71C41D2B98A100A6A746 /* HXBaseProjectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HXBaseProjectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49F71C81D2B98A100A6A746 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E49F71CA1D2B98A100A6A746 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -407,6 +409,7 @@
 				E4DCF61C1E25D3ED0011ED7A /* ShiLiImage */,
 				E49F71D31D2B98A100A6A746 /* Assets.xcassets */,
 				E4BFFE8E1E0B98EA00219462 /* Info.plist */,
+				E470C9DC1E28B7B900212BA2 /* TabBarConfigure.plist */,
 				E49F71C81D2B98A100A6A746 /* main.m */,
 				E4BFFE8D1E0B988700219462 /* PrefixHeader.pch */,
 				E4CAFCAD1E0BB12E00E60C35 /* InfoPlist.strings */,
@@ -617,6 +620,7 @@
 				E4DCF62F1E25D3ED0011ED7A /* 8.png in Resources */,
 				E470C9D91E28AEA800212BA2 /* yulan3.png in Resources */,
 				E4DCF6291E25D3ED0011ED7A /* 11.png in Resources */,
+				E470C9DD1E28B7B900212BA2 /* TabBarConfigure.plist in Resources */,
 				E470C9DB1E28AED800212BA2 /* 5.png in Resources */,
 				E4DCF62C1E25D3ED0011ED7A /* 4.png in Resources */,
 				E4DCF6271E25D3ED0011ED7A /* 1.png in Resources */,

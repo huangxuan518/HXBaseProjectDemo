@@ -26,7 +26,7 @@ ReactiveCocoa (2.5) //RAC 是一个 iOS 中的函数式响应式编程框架
 
 SDWebImage (3.8.2) //图片显示
 
-SVProgressHUD (2.0.4) //提示
+SVProgressHUD (2.0.4) //提示 请勿更新最新版，最新版颜色设置不起作用
 
 # 说明
 
@@ -105,8 +105,7 @@ InfoPlist.strings
 ![image](https://github.com/huangxuan518/HXBaseProjectDemo/blob/master/HXBaseProjectDemo/ShiLiImage/5.png)
 
 
-标签控制器对应的界面请在BaseTabBarController里面添加和更改
-进入BaseTabBarController.m文件，找到如下方法
+标签控制器对应的界面请在TabBarConfigure.plist里面添加和更改
 
 ![image](https://github.com/huangxuan518/HXBaseProjectDemo/blob/master/HXBaseProjectDemo/ShiLiImage/2.png)
 

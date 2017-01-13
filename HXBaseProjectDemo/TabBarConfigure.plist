@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>class</key>
+		<string>HXHomeViewController</string>
+		<key>title</key>
+		<string>首页</string>
+		<key>image</key>
+		<string>button_home</string>
+		<key>selectedImage</key>
+		<string>button_home1</string>
+		<key>badgeValue</key>
+		<string>0</string>
+	</dict>
+	<dict>
+		<key>class</key>
+		<string>HXAddImageViewController</string>
+		<key>title</key>
+		<string>图片</string>
+		<key>image</key>
+		<string>home_list1</string>
+		<key>selectedImage</key>
+		<string>home_list2</string>
+		<key>badgeValue</key>
+		<string>0</string>
+	</dict>
+	<dict>
+		<key>class</key>
+		<string>BaseTableViewController</string>
+		<key>title</key>
+		<string>我</string>
+		<key>image</key>
+		<string>home_me1</string>
+		<key>selectedImage</key>
+		<string>home_me2</string>
+		<key>badgeValue</key>
+		<string>0</string>
+	</dict>
+</array>
+</plist>
