@@ -8,7 +8,9 @@
 ![image](https://github.com/huangxuan518/HXBaseProjectDemo/blob/master/HXBaseProjectDemo/ShiLiImage/yulan3.png)
 
 # 示例
+
 HXHomeViewController
+
 HXAddImageViewController
 
 # 工程包含第三方
@@ -63,8 +65,11 @@ BaseModel
 # Public
 
 ## 相机/相册
+
 HXCutPhotoViewController //图片裁剪
+
 HXPhotoPreviewViewController //图片预览
+
 HXPhotosViewController //全自定义相机相册
 
 ## Define
@@ -95,7 +100,7 @@ InfoPlist.strings
 
 # 使用说明
 
-整体色调修改AppConfig.h,改变整体界面色调很简单
+整体色调修改AppConfig.h,改变整体界面色调很简单，想怎么换就怎么换
 
 ![image](https://github.com/huangxuan518/HXBaseProjectDemo/blob/master/HXBaseProjectDemo/ShiLiImage/5.png)
 
