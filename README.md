@@ -96,8 +96,11 @@ DownloadImageManager //图片下载
 # Supporting Files
 
 Info.plist
+
 TabBarConfigure.plist
+
 PrefixHeader.pch
+
 InfoPlist.strings
 
 # 使用说明
