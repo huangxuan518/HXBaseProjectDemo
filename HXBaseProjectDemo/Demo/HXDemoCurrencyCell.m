@@ -19,9 +19,7 @@
     if ([data isKindOfClass:[NSDictionary class]]) {
         if ([data[@"data"] isKindOfClass:[HXDemoCurrencyCellModel class]]) {
             HXDemoCurrencyCellModel *model = data[@"data"];
-            _icoImageView.image = [UIImage imageNamed:model.icoName];
             _titleLabel.text = model.title;
-            _littleRedDotLabel.hidden = !model.isLittleRedDot;
         }
     }
 }
@@ -50,11 +48,9 @@
 
 @implementation HXDemoCurrencyCellModel
 
-+ (HXDemoCurrencyCellModel *)ittemModelWithIcoName:(NSString *)icoName title:(NSString *)title isLittleRedDot:(BOOL)isLittleRedDot {
++ (HXDemoCurrencyCellModel *)ittemModelWithTitle:(NSString *)title {
     HXDemoCurrencyCellModel *model = [HXDemoCurrencyCellModel new];
-    model.icoName = icoName.length > 0 ? icoName : @"";
-    model.title = title.length > 0 ? title : @"";;
-    model.isLittleRedDot = isLittleRedDot;
+    model.title = kSafeString(title);
     return model;
 }
 

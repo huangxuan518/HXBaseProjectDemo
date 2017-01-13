@@ -10,6 +10,9 @@
 
 @interface UIImage (Extension)
 
+//给图片着色
+- (UIImage *)imageToColor:(UIColor *)color;
+
 //通过颜色生成图片
 + (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size;
 

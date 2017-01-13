@@ -5,7 +5,7 @@ target 'HXBaseProjectDemo' do
 
 pod 'ReactiveCocoa'
 pod 'AFNetworking','~> 3.0.4'
-pod 'SVProgressHUD'
+pod 'SVProgressHUD','~> 2.0.4'
 pod 'SDWebImage'
 pod 'MJRefresh'
 pod 'Qiniu'

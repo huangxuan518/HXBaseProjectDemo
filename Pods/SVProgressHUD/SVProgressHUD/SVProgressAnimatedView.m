@@ -59,6 +59,7 @@
             [self layoutAnimatedLayer];
         }
     }
+    
 }
 
 - (void)setRadius:(CGFloat)radius {
@@ -88,6 +89,7 @@
     _strokeEnd = strokeEnd;
     _ringAnimatedLayer.strokeEnd = _strokeEnd;
 }
+
 
 - (CGSize)sizeThatFits:(CGSize)size {
     return CGSizeMake((self.radius+self.strokeThickness/2+5)*2, (self.radius+self.strokeThickness/2+5)*2);

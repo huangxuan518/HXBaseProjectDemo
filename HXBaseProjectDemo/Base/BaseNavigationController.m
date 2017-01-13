@@ -18,26 +18,30 @@
 - (void)loadView {
     [super loadView];
     // bg.png为自己ps出来的想要的背景颜色。
-    [self.navigationBar setBackgroundImage:[UIImage imageWithColor:knavigationBarBackgroundColor size:CGSizeMake(self.navigationBar.frame.size.width, self.navigationBar.frame.size.height + 20)]
+    [self.navigationBar setBackgroundImage:[UIImage imageWithColor:kUIToneBackgroundColor size:CGSizeMake(self.navigationBar.frame.size.width, self.navigationBar.frame.size.height + 20)]
                             forBarPosition:UIBarPositionAny
                                 barMetrics:UIBarMetricsDefault];
     [self.navigationBar setShadowImage:[UIImage new]];
     
     //状态栏颜色
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    [[UIApplication sharedApplication] setStatusBarStyle:kStatusBarStyle];
     //title颜色和字体
-    self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:UIColorFromHex(0x333333),
+    self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:kUIToneTextColor,
                                                NSFontAttributeName:[UIFont systemFontOfSize:18]};
     
     if ([UIDevice currentDevice].systemVersion.floatValue > 7.0) {
         //导航背景颜色
-        self.navigationBar.barTintColor = knavigationBarBackgroundColor;
+        self.navigationBar.barTintColor = kUIToneBackgroundColor;
     }
     
     //系统返回按钮图片设置
-    UIImage *image = [UIImage imageNamed:@"back_more"];
+    NSString *imageName = @"back_more1";
+    if (kStatusBarStyle == UIStatusBarStyleLightContent) {
+        imageName = @"back_more";
+    }
+    UIImage *image = [UIImage imageNamed:imageName];
     [[UIBarButtonItem appearance] setBackButtonBackgroundImage:[image resizableImageWithCapInsets:UIEdgeInsetsMake(0, image.size.width-1, 0, 0)] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-    [[UINavigationBar appearance] setTintColor:UIColorFromHex(0x333333)];
+    [[UINavigationBar appearance] setTintColor:kUIToneTextColor];
     [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(5, 0)
                                                          forBarMetrics:UIBarMetricsDefault];
 }

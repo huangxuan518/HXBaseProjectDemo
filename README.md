@@ -22,7 +22,7 @@ ReactiveCocoa (2.5) //RAC 是一个 iOS 中的函数式响应式编程框架
 
 SDWebImage (3.8.2) //图片显示
 
-SVProgressHUD (2.1.1) //提示
+SVProgressHUD (2.0.4) //提示
 
 # 说明
 

@@ -23,10 +23,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self removeTabarTopLine];
-    
-    [self setViewControllers];
     [self setSVProgressHUD];
+    [self removeTabarTopLine];
+    [self setViewControllers];
 }
 
 - (void)viewWillLayoutSubviews{
@@ -39,17 +38,18 @@
 
 - (void)setSVProgressHUD {
     //SVProgressHUDMaskType 设置显示的样式
-    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeNone];
-    [SVProgressHUD setBackgroundColor:[UIColor blackColor]];
-    [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleCustom]; //样式使用自定义
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeNone];// 整个后面的背景选择
+    [SVProgressHUD setBackgroundColor:[UIColor blackColor]];// 弹出框颜色
+    [SVProgressHUD setForegroundColor:[UIColor whiteColor]];// 弹出框内容颜色
 }
 
 - (void)setViewControllers {
     //UITabBarController 数据源
     NSArray *dataAry = @[@{@"class":HXDemoViewController.class,
                            @"title":@"首页",
-                           @"image":@"home_fuexpress1",
-                           @"selectedImage":@"home_fuexpress2",
+                           @"image":@"button_home",
+                           @"selectedImage":@"button_home1",
                            @"badgeValue":@"0"},
                          
                          @{@"class":HXAddImageViewController.class,
@@ -59,7 +59,7 @@
                            @"badgeValue":@"0"},
                          
                          @{@"class":BaseTableViewController.class,
-                           @"title":@"其他",
+                           @"title":@"我",
                            @"image":@"home_me1",
                            @"selectedImage":@"home_me2",
                            @"badgeValue":@"0"}];
@@ -80,14 +80,14 @@
     
     UIViewController *vc = [classs new];
     vc.tabBarItem.image = [[UIImage imageNamed:imageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    vc.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    vc.tabBarItem.selectedImage = [[[UIImage imageNamed:selectedImage] imageToColor:kUIToneBackgroundColor] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     //起点-8图标才会到顶，然后加上计算出来的y坐标
     float origin = -9 + 6;
     vc.tabBarItem.imageInsets = UIEdgeInsetsMake(origin, 0, -origin,0);
     vc.tabBarItem.titlePositionAdjustment = UIOffsetMake(-2 + 8, 2-8);
     //title设置
     [vc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor grayColor],NSFontAttributeName:[UIFont systemFontOfSize:10]} forState:UIControlStateNormal];
-    [vc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:UIColorFromHex(0xe80010),NSFontAttributeName:[UIFont systemFontOfSize:10]} forState:UIControlStateSelected];
+    [vc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:kUIToneBackgroundColor,NSFontAttributeName:[UIFont systemFontOfSize:10]} forState:UIControlStateSelected];
     vc.tabBarItem.title = title;
     
     //小红点

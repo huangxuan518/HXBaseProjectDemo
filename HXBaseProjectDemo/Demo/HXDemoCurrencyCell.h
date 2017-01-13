@@ -10,9 +10,7 @@
 
 @interface HXDemoCurrencyCell : BaseTableViewCell
 
-@property (weak, nonatomic) IBOutlet UIImageView *icoImageView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (weak, nonatomic) IBOutlet UILabel *littleRedDotLabel;
 
 @end
 
@@ -22,10 +20,8 @@
 
 @interface HXDemoCurrencyCellModel : NSObject
 
-@property (nonatomic,copy) NSString *icoName;
 @property (nonatomic,copy) NSString *title;
-@property (nonatomic,assign) BOOL isLittleRedDot;
 
-+ (HXDemoCurrencyCellModel *)ittemModelWithIcoName:(NSString *)icoName title:(NSString *)title isLittleRedDot:(BOOL)isLittleRedDot;
++ (HXDemoCurrencyCellModel *)ittemModelWithTitle:(NSString *)title;
 
 @end

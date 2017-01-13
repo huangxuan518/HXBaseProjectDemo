@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,16 +19,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jJ2-fi-Xg7">
-                        <rect key="frame" x="15" y="17" width="16" height="16"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="16" id="2JB-9J-AU8"/>
-                            <constraint firstAttribute="width" constant="16" id="Pd2-5O-KFW"/>
-                        </constraints>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="帮助" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hD3-1F-et6">
-                        <rect key="frame" x="43" y="18" width="238" height="14"/>
+                        <rect key="frame" x="18" y="18" width="263" height="14"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="14" id="nZe-ZB-CX0"/>
@@ -36,24 +29,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvo-fe-p2c">
-                        <rect key="frame" x="79" y="22" width="6" height="6"/>
-                        <color key="backgroundColor" red="0.98431372549019602" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="6" id="FBV-gc-I2B"/>
-                            <constraint firstAttribute="height" constant="6" id="YYA-fc-UZP"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="3"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                        </userDefinedRuntimeAttributes>
-                    </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PCj-Dt-27p">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="PCj-Dt-27p">
                         <rect key="frame" x="293" y="19" width="12" height="12"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -66,19 +42,16 @@
                     <constraint firstItem="PCj-Dt-27p" firstAttribute="leading" secondItem="hD3-1F-et6" secondAttribute="trailing" constant="12" id="0H7-xY-DW5"/>
                     <constraint firstItem="PCj-Dt-27p" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2wa-Iy-QZK"/>
                     <constraint firstAttribute="trailing" secondItem="PCj-Dt-27p" secondAttribute="trailing" constant="15" id="3gA-8i-Jc3"/>
-                    <constraint firstItem="jJ2-fi-Xg7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="B6k-JQ-dmE"/>
-                    <constraint firstItem="hvo-fe-p2c" firstAttribute="leading" secondItem="jJ2-fi-Xg7" secondAttribute="trailing" constant="48" id="F4N-OW-uiL"/>
+                    <constraint firstItem="hD3-1F-et6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="H3u-qI-PfW"/>
                     <constraint firstItem="hD3-1F-et6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="QBV-Xk-K9c"/>
-                    <constraint firstItem="hvo-fe-p2c" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="RZq-Uh-idq"/>
-                    <constraint firstItem="jJ2-fi-Xg7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cuj-Hz-uYd"/>
-                    <constraint firstItem="hD3-1F-et6" firstAttribute="leading" secondItem="jJ2-fi-Xg7" secondAttribute="trailing" constant="12" id="dxj-Ho-WyM"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="icoImageView" destination="jJ2-fi-Xg7" id="HuW-QK-Bkb"/>
-                <outlet property="littleRedDotLabel" destination="hvo-fe-p2c" id="lbs-ra-8hg"/>
                 <outlet property="titleLabel" destination="hD3-1F-et6" id="U5M-xe-FAz"/>
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="me_arrow" width="12" height="12"/>
+    </resources>
 </document>

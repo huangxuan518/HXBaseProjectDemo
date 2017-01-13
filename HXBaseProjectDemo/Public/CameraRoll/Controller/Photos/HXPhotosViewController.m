@@ -395,6 +395,11 @@ typedef NS_ENUM (NSInteger, ImagePickerControllerSourceType) {
     
     if (_isUp) {
         icon = [UIImage imageNamed:@"arrow_up_up"];
+        
+    }
+    
+    if (kStatusBarStyle == UIStatusBarStyleLightContent) {
+        icon = [icon imageToColor:kUIToneTextColor];
     }
     
     float width = 13;
@@ -406,8 +411,8 @@ typedef NS_ENUM (NSInteger, ImagePickerControllerSourceType) {
     [btn addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
     [btn setTitle:title forState:UIControlStateNormal];
     [btn setTitle:title forState:UIControlStateHighlighted];
-    [btn setTitleColor:UIColorFromHex(0x333333) forState:UIControlStateNormal];
-    [btn setTitleColor:UIColorFromHex(0x333333) forState:UIControlStateHighlighted];
+    [btn setTitleColor:kUIToneTextColor forState:UIControlStateNormal];
+    [btn setTitleColor:kUIToneTextColor forState:UIControlStateHighlighted];
     btn.titleEdgeInsets = UIEdgeInsetsMake(0, -width, 0, width);
     //title与ico的间隔5
     CGSize titleSize = [title ex_sizeWithFont:btn.titleLabel.font constrainedToSize:CGSizeMake(kScreenWidth, MAXFLOAT)];
@@ -630,7 +635,7 @@ typedef NS_ENUM (NSInteger, ImagePickerControllerSourceType) {
 - (HXCardSwitchView *)cardSwitchView {
     if (!_cardSwitchView) {
         _cardSwitchView = [[HXCardSwitchView alloc] initWithFrame:CGRectMake(0,0, self.view.frame.size.width, CardSwitchViewHeight)];
-        _cardSwitchView.backgroundColor = UIColorFromHex(0x333333);
+        _cardSwitchView.backgroundColor = kUIToneTextColor;
         
         if (_fromeType == FromeTypeMyShop) {
             _cardSwitchView.layout.itemSize = CGSizeMake(kScreenWidth - 40, 243);

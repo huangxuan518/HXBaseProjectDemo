@@ -35,6 +35,10 @@ typedef enum ServerType {
 #define kSecretKey @"hh_PlPwxtK08DvK88iIJwc9y0sQJQgPPNPzIxmIj" //SecretKey 见密钥管理
 #define kQiNiuHost @"http://ojnjkctvf.bkt.clouddn.com"; //见存储空间内容管理 外链默认域名
 
-#define knavigationBarBackgroundColor UIColorFromHex(0xffc947) //导航背景颜色
+//UI颜色控制
+#define kUIToneBackgroundColor UIColorFromHex(0x00bd8c) //UI整体背景色调 与文字颜色一一对应
+#define kUIToneTextColor UIColorFromHex(0xffffff) //UI整体文字色调 与背景颜色对应
+#define kStatusBarStyle UIStatusBarStyleLightContent //状态栏样式
+#define kViewBackgroundColor UIColorFromHex(0xf5f5f5) //界面View背景颜色
 
 #endif

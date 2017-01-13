@@ -18,12 +18,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [SVProgressHUD dismiss];
     _pageIndex = 1;
     [self showBack];
     [self requestData];
-    self.view.backgroundColor = UIColorFromHex(0xf1f1f1);
+    self.view.backgroundColor = kViewBackgroundColor;
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
         self.edgesForExtendedLayout = UIRectEdgeNone;   // iOS 7 specific
 }
@@ -162,8 +160,8 @@
     btn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
     [btn setTitle:title forState:UIControlStateNormal];
     [btn setTitle:title forState:UIControlStateHighlighted];
-    [btn setTitleColor:UIColorFromHex(0x333333) forState:UIControlStateNormal];
-    [btn setTitleColor:UIColorFromHex(0x333333) forState:UIControlStateHighlighted];
+    [btn setTitleColor:kUIToneTextColor forState:UIControlStateNormal];
+    [btn setTitleColor:kUIToneTextColor forState:UIControlStateHighlighted];
     CGSize titleSize = [title ex_sizeWithFont:btn.titleLabel.font constrainedToSize:CGSizeMake(kScreenWidth, MAXFLOAT)];
     float leight = titleSize.width;
     [btn setFrame:CGRectMake(0, 0, leight, 30)];
@@ -171,7 +169,11 @@
 }
 
 - (void)showBackWithTitle:(NSString *)title {
-    [self setLeftItemWithIcon:[UIImage imageNamed:@"back_more"] title:title selector:@selector(backAction:)];
+    NSString *imageName = @"back_more1";
+    if (kStatusBarStyle == UIStatusBarStyleLightContent) {
+        imageName = @"back_more";
+    }
+    [self setLeftItemWithIcon:[UIImage imageNamed:imageName] title:title selector:@selector(backAction:)];
 }
 
 - (void)setLeftItemWithIcon:(UIImage *)icon title:(NSString *)title selector:(SEL)selector {
@@ -194,8 +196,8 @@
     }
     [btn setTitle:title forState:UIControlStateNormal];
     [btn setTitle:title forState:UIControlStateHighlighted];
-    [btn setTitleColor:UIColorFromHex(0x333333) forState:UIControlStateNormal];
-    [btn setTitleColor:UIColorFromHex(0x333333) forState:UIControlStateHighlighted];
+    [btn setTitleColor:kUIToneTextColor forState:UIControlStateNormal];
+    [btn setTitleColor:kUIToneTextColor forState:UIControlStateHighlighted];
     CGSize titleSize = [title ex_sizeWithFont:btn.titleLabel.font constrainedToSize:CGSizeMake(kScreenWidth, MAXFLOAT)];
     float leight = titleSize.width;
     if (icon) {
@@ -260,8 +262,8 @@
     }
     [btn setTitle:title forState:UIControlStateNormal];
     [btn setTitle:title forState:UIControlStateHighlighted];
-    [btn setTitleColor:UIColorFromHex(0x333333) forState:UIControlStateNormal];
-    [btn setTitleColor:UIColorFromHex(0x333333) forState:UIControlStateHighlighted];
+    [btn setTitleColor:kUIToneTextColor forState:UIControlStateNormal];
+    [btn setTitleColor:kUIToneTextColor forState:UIControlStateHighlighted];
     CGSize titleSize = [title ex_sizeWithFont:btn.titleLabel.font constrainedToSize:CGSizeMake(kScreenWidth, MAXFLOAT)];
     float leight = titleSize.width;
     [btn setFrame:CGRectMake(0, 0, leight, 30)];

@@ -39,7 +39,7 @@
         subarr = [NSMutableArray arrayWithCapacity:1];
         dict =  @{@"class":HXDemoCurrencyCell.class,
                   @"height":@([HXDemoCurrencyCell getCellFrame:nil]),
-                  @"data":[HXDemoCurrencyCellModel ittemModelWithIcoName:@"" title:@"上传" isLittleRedDot:YES],
+                  @"data":[HXDemoCurrencyCellModel ittemModelWithTitle:@"单张图片上传示例"],
                   @"action":@"uploadData",
                   @"delegate":@YES};
         [subarr addObject:dict];
@@ -51,7 +51,7 @@
         //row 0
         dict =  @{@"class":HXDemoCurrencyCell.class,
                   @"height":@([HXDemoCurrencyCell getCellFrame:nil]),
-                  @"data":[HXDemoCurrencyCellModel ittemModelWithIcoName:@"" title:@"测试2" isLittleRedDot:NO],
+                  @"data":[HXDemoCurrencyCellModel ittemModelWithTitle:@"去图片上传界面"],
                   @"action":@"gotoAddImageViewController",
                   @"delegate":@YES};
         [subarr addObject:dict];
@@ -59,8 +59,7 @@
         //row 1
         dict =  @{@"class":HXDemoCurrencyCell.class,
                   @"height":@([HXDemoCurrencyCell getCellFrame:nil]),
-                  @"data":[HXDemoCurrencyCellModel ittemModelWithIcoName:@"" title:@"测试3" isLittleRedDot:YES],
-                  @"action":@"gotoDemoViewController",
+                  @"data":[HXDemoCurrencyCellModel ittemModelWithTitle:@"无事件响应"],
                   @"delegate":@YES};
         [subarr addObject:dict];
         

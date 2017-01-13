@@ -29,7 +29,7 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
-  - SVProgressHUD (2.1.1)
+  - SVProgressHUD (2.0.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0.4)
@@ -37,7 +37,7 @@ DEPENDENCIES:
   - Qiniu
   - ReactiveCocoa
   - SDWebImage
-  - SVProgressHUD
+  - SVProgressHUD (~> 2.0.4)
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
@@ -46,8 +46,8 @@ SPEC CHECKSUMS:
   Qiniu: a4c962782035ee25b9da3e195181d8c384bb75be
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
-  SVProgressHUD: 1127180503b9a308ddf7006f3cc58fc05cc1092d
+  SVProgressHUD: bfde85ed6c573ea802b9cb37894ed9b629034f1b
 
-PODFILE CHECKSUM: bc0c36a9b648413e8063f4349af99955e9b20278
+PODFILE CHECKSUM: 1977f285ca5fcacc45e2b14365c5d4aee34100cd
 
 COCOAPODS: 1.1.1
