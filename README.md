@@ -87,7 +87,7 @@ UITabBar+Badge //TabBar小红点扩展
 AssetHelper //相册
 
 ## UploadImages
-UploadImageManager //图片上传
+UploadManager //数据上传
 
 ## DownloadImages
 DownloadImageManager //图片下载
