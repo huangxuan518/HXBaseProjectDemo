@@ -464,6 +464,31 @@ typedef NS_ENUM (NSInteger, ImagePickerControllerSourceType) {
     self.navigationItem.rightBarButtonItems = ary;
 }
 
+- (UIView *)ittemRedViewWithRedDotValue:(NSString *)redDotValue {
+    UIView *view = [UIView new];
+    view.backgroundColor = [UIColor clearColor];
+    
+    UILabel *label = [UILabel new];
+    label.backgroundColor = kUIToneTextColor;
+    
+    label.text = redDotValue;
+    label.textAlignment = NSTextAlignmentCenter;
+    label.textColor = kUIToneBackgroundColor;
+    float leight = 20;
+    float height = 20;
+    if (redDotValue.intValue > 9) {
+        leight = 30;
+        height = 20;
+    }
+    label.layer.cornerRadius = height/2;
+    label.layer.masksToBounds = YES;
+    label.frame = CGRectMake(0, 0, leight, height);
+    
+    view.frame = CGRectMake(0, 0, leight, height);
+    [view addSubview:label];
+    return view;
+}
+
 - (void)titleViewButtonAction:(BOOL)isUp {
     //点击事件处理
     if (isUp) {
