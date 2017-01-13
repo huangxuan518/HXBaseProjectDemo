@@ -469,11 +469,17 @@ typedef NS_ENUM (NSInteger, ImagePickerControllerSourceType) {
     view.backgroundColor = [UIColor clearColor];
     
     UILabel *label = [UILabel new];
-    label.backgroundColor = kUIToneTextColor;
+    if (kUIToneTextColor == [UIColor whiteColor]) {
+        label.backgroundColor = [UIColor redColor];
+        label.textColor = [UIColor whiteColor];
+    } else {
+        label.backgroundColor = kUIToneTextColor;
+        label.textColor = kUIToneBackgroundColor;
+    }
     
     label.text = redDotValue;
     label.textAlignment = NSTextAlignmentCenter;
-    label.textColor = kUIToneBackgroundColor;
+    
     float leight = 20;
     float height = 20;
     if (redDotValue.intValue > 9) {
