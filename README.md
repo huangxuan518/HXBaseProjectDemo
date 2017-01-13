@@ -94,7 +94,9 @@ UploadImageManager //图片上传
 DownloadImageManager //图片下载
 
 # Supporting Files
+
 Info.plist
+TabBarConfigure.plist
 PrefixHeader.pch
 InfoPlist.strings
 
