@@ -38,6 +38,7 @@ SVProgressHUD (2.0.4) //提示 请勿更新最新版，最新版颜色设置不�
 # Config
 
 AppConfig //App的一些常用参数配置
+RequestManager //网络请求在此添加
 
 # Base
 

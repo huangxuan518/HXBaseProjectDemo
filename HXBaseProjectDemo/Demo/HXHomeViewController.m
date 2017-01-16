@@ -12,6 +12,8 @@
 
 #import "HXDemoCurrencyCell.h"
 
+#import "RequestManager.h"
+
 @interface HXHomeViewController ()
 
 @end
@@ -59,7 +61,8 @@
         //row 1
         dict =  @{@"class":HXDemoCurrencyCell.class,
                   @"height":@([HXDemoCurrencyCell getCellFrame:nil]),
-                  @"data":[HXDemoCurrencyCellModel ittemModelWithTitle:@"无事件响应"],
+                  @"data":[HXDemoCurrencyCellModel ittemModelWithTitle:@"网络请求示例"],
+                  @"action":@"request",
                   @"delegate":@YES};
         [subarr addObject:dict];
         
@@ -71,6 +74,16 @@
 }
 
 #pragma mark - goto
+
+//网络请求
+- (void)request {
+    [self.requestManager getWeatherWithCith:@"北京" success:^(id responseObject) {
+        NSDictionary *dataDic = (NSDictionary *)responseObject[@"HeWeather data service 3.0"];
+        NSLog(@"%@",dataDic);
+    } failure:^(NSString *errorMsg) {
+        
+    }];
+}
 
 - (void)gotoAddImageViewController {
     HXAddImageViewController *vc = [HXAddImageViewController new];

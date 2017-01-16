@@ -302,6 +302,13 @@
 
 #pragma mark - 懒加载
 
+- (RequestManager *)requestManager {
+    if (!_requestManager) {
+        _requestManager = [RequestManager sharedInstance];
+    }
+    return _requestManager;
+}
+
 - (UploadManager *)uploadManager {
     if (!_uploadManager) {
         _uploadManager = [UploadManager new];

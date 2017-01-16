@@ -58,6 +58,7 @@
 		E4CAFDD51E0CCF5F00E60C35 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFDCC1E0CCF5F00E60C35 /* BaseTableViewCell.m */; };
 		E4CAFDD61E0CCF5F00E60C35 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFDCE1E0CCF5F00E60C35 /* BaseTableViewController.m */; };
 		E4CAFDD71E0CCF5F00E60C35 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFDD01E0CCF5F00E60C35 /* BaseViewController.m */; };
+		E4D457A61E2C605E006B8946 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D457A51E2C605E006B8946 /* RequestManager.m */; };
 		E4DCF6191E25C8710011ED7A /* HXDemoCurrencyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCF6151E25C8710011ED7A /* HXDemoCurrencyCell.m */; };
 		E4DCF61A1E25C8710011ED7A /* HXDemoCurrencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4DCF6161E25C8710011ED7A /* HXDemoCurrencyCell.xib */; };
 		E4DCF61B1E25C8710011ED7A /* HXHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCF6181E25C8710011ED7A /* HXHomeViewController.m */; };
@@ -170,6 +171,8 @@
 		E4CAFDCE1E0CCF5F00E60C35 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
 		E4CAFDCF1E0CCF5F00E60C35 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		E4CAFDD01E0CCF5F00E60C35 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		E4D457A41E2C605E006B8946 /* RequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestManager.h; sourceTree = "<group>"; };
+		E4D457A51E2C605E006B8946 /* RequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestManager.m; sourceTree = "<group>"; };
 		E4DCF6141E25C8710011ED7A /* HXDemoCurrencyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXDemoCurrencyCell.h; sourceTree = "<group>"; };
 		E4DCF6151E25C8710011ED7A /* HXDemoCurrencyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXDemoCurrencyCell.m; sourceTree = "<group>"; };
 		E4DCF6161E25C8710011ED7A /* HXDemoCurrencyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HXDemoCurrencyCell.xib; sourceTree = "<group>"; };
@@ -222,6 +225,8 @@
 			isa = PBXGroup;
 			children = (
 				E470C9651E27506400212BA2 /* AppConfig.h */,
+				E4D457A41E2C605E006B8946 /* RequestManager.h */,
+				E4D457A51E2C605E006B8946 /* RequestManager.m */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -695,6 +700,7 @@
 				E470C9BB1E275ED600212BA2 /* SXImageCell.m in Sources */,
 				E470C99E1E275B1500212BA2 /* UzysImageCropper.m in Sources */,
 				E470C99D1E275B1500212BA2 /* UIImage-Extension.m in Sources */,
+				E4D457A61E2C605E006B8946 /* RequestManager.m in Sources */,
 				E4CAFDD61E0CCF5F00E60C35 /* BaseTableViewController.m in Sources */,
 				E49F71C91D2B98A100A6A746 /* main.m in Sources */,
 				E4FD21DD1E10FCA20025E7B7 /* BaseModel.mm in Sources */,
