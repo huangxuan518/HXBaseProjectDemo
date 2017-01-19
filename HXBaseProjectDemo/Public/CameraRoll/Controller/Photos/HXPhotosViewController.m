@@ -487,7 +487,7 @@ typedef NS_ENUM (NSInteger, ImagePickerControllerSourceType) {
     }
     label.layer.cornerRadius = height/2;
     label.layer.masksToBounds = YES;
-    label.frame = CGRectMake(0, 0, leight, height);
+    label.frame = CGRectMake(10, 0, leight, height);
     
     view.frame = CGRectMake(0, 0, leight, height);
     [view addSubview:label];

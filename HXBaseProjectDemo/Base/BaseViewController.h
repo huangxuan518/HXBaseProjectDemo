@@ -27,16 +27,13 @@
 - (void)gotoLoginViewController;//去登陆界面
 
 #pragma mark 界面切换
+
 //不需要传参数的push 只需告诉类名字符串
 - (void)pushViewControllerWithName:(id)classOrName;
 //回到当前模块导航下的某一个页面
 - (void)returnViewControllerWithName:(id)classOrName;
 //切到指定模块下
 - (void)popToHomePageWithTabIndex:(NSInteger)index completion:(void (^)(void))completion;
-
-#pragma mark titleView定制
-//设置纯文字titleVIew
-- (void)setNavigationItemTitleViewWithTitle:(NSString *)title;
 
 #pragma mark 左边按钮定制
 
@@ -57,17 +54,6 @@
 - (void)setLeftItemWithIcon:(UIImage *)icon title:(NSString *)title selector:(SEL)selector;
 - (UIBarButtonItem *)ittemLeftItemWithIcon:(UIImage *)icon title:(NSString *)title selector:(SEL)selector;
 
-#pragma mark 小红点View定制
-
-/**
- *  小红点View定制
- *
- *  @param redDotValue <#redDotValue description#>
- *
- *  @return <#return value description#>
- */
-- (UIView *)ittemRedViewWithRedDotValue:(NSString *)redDotValue;
-
 #pragma mark 右边按钮定制
 
 /**
@@ -78,7 +64,7 @@
  */
 - (void)setRightItemWithTitle:(NSString *)title selector:(SEL)selector;
 - (UIBarButtonItem *)ittemRightItemWithTitle:(NSString *)title selector:(SEL)selector;
-- (void)setRightItemWithTitle:(NSString *)title selector:(SEL)selector color:(UIColor *)color;
+
 /**
  *  通过ico定制右侧按钮
  *
@@ -88,8 +74,23 @@
 - (void)setRightItemWithIcon:(UIImage *)icon selector:(SEL)selector;
 - (UIBarButtonItem *)ittemRightItemWithIcon:(UIImage *)icon selector:(SEL)selector;
 
-#pragma mark - MJRefresh国际化处理
+#pragma mark titleView定制
 
+//设置纯文字titleVIew
+- (void)setNavigationItemTitleViewWithTitle:(NSString *)title;
+
+#pragma mark - 小红点
+
+/**
+ *  小红点View定制
+ *
+ *  @param redDotValue <#redDotValue description#>
+ *
+ *  @return <#return value description#>
+ */
+- (UIView *)ittemRedViewWithRedDotValue:(NSString *)redDotValue;
+
+#pragma mark - MJRefresh
 - (MJRefreshNormalHeader *)setRefreshNormalHeaderParameter:(MJRefreshNormalHeader *)header;
 - (MJRefreshBackNormalFooter *)setRefreshBackNormalFooterParameter:(MJRefreshBackNormalFooter *)footer;
 - (MJRefreshAutoNormalFooter *)setRefreshAutoNormalFooterParameter:(MJRefreshAutoNormalFooter *)footer;

@@ -187,6 +187,9 @@
         return item;
     }
     
+    UIView *view = [UIView new];
+    view.backgroundColor = [UIColor clearColor];
+    
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.backgroundColor = [UIColor clearColor];
     btn.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -206,17 +209,16 @@
         [btn setImage:icon forState:UIControlStateHighlighted];
         btn.imageEdgeInsets = UIEdgeInsetsMake(0, -3, 0, 3);
     }
-    [btn setFrame:CGRectMake(0, 0, leight, 30)];
-    item = [[UIBarButtonItem alloc] initWithCustomView:btn];
+    view.frame = CGRectMake(0, 0, leight, 30);
+    btn.frame = CGRectMake(-5, 0, leight, 30);
+    [view addSubview:btn];
+    
+    item = [[UIBarButtonItem alloc] initWithCustomView:view];
     return item;
 }
 
 - (void)setRightItemWithTitle:(NSString *)title selector:(SEL)selector {
     UIBarButtonItem *item = [self ittemRightItemWithTitle:title selector:selector];
-    self.navigationItem.rightBarButtonItem = item;
-}
-- (void)setRightItemWithTitle:(NSString *)title selector:(SEL)selector color:(UIColor *)color{
-    UIBarButtonItem *item = [self ittemRightItemWithTitle:title selector:selector color:color];
     self.navigationItem.rightBarButtonItem = item;
 }
 
@@ -267,33 +269,11 @@
     CGSize titleSize = [title ex_sizeWithFont:btn.titleLabel.font constrainedToSize:CGSizeMake(kScreenWidth, MAXFLOAT)];
     float leight = titleSize.width;
     [btn setFrame:CGRectMake(0, 0, leight, 30)];
-    btn.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
+    btn.titleEdgeInsets = UIEdgeInsetsMake(0, 5, 0, -5);
     item = [[UIBarButtonItem alloc] initWithCustomView:btn];
     return item;
 }
-- (UIBarButtonItem *)ittemRightItemWithTitle:(NSString *)title selector:(SEL)selector color:(UIColor *)color{
-    UIBarButtonItem *item;
-    if (title.length == 0) {
-        item = [[UIBarButtonItem new] initWithCustomView:[UIView new]];
-        return item;
-    }
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.backgroundColor = [UIColor clearColor];
-    btn.titleLabel.font = [UIFont systemFontOfSize:14];
-    btn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
-    if (selector) {
-        [btn addTarget:self action:selector forControlEvents:UIControlEventTouchUpInside];
-    }
-    [btn setTitle:title forState:UIControlStateNormal];
-    [btn setTitle:title forState:UIControlStateHighlighted];
-    [btn setTitleColor:color forState:UIControlStateNormal];
-    CGSize titleSize = [title ex_sizeWithFont:btn.titleLabel.font constrainedToSize:CGSizeMake(kScreenWidth, MAXFLOAT)];
-    float leight = titleSize.width;
-    [btn setFrame:CGRectMake(0, 0, leight, 30)];
-    btn.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
-    item = [[UIBarButtonItem alloc] initWithCustomView:btn];
-    return item;
-}
+
 #pragma mark - Action
 
 - (void)backAction:(UIButton *)sender {
