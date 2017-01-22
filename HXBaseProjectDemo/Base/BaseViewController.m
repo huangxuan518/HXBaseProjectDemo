@@ -209,6 +209,10 @@
         [btn setImage:icon forState:UIControlStateHighlighted];
         btn.imageEdgeInsets = UIEdgeInsetsMake(0, -3, 0, 3);
     }
+    if (title.length == 0) {
+        //文字没有的话，点击区域+10
+        leight = leight + 10;
+    }
     view.frame = CGRectMake(0, 0, leight, 30);
     btn.frame = CGRectMake(-5, 0, leight, 30);
     [view addSubview:btn];
