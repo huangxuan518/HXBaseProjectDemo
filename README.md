@@ -1,4 +1,4 @@
-# HXBaseProjectDemo 如果对你有一点点帮助,请给一颗★,你的支持是对我的最大鼓励！
+# HXBaseProjectDemo 如果对你有一点点帮助,请给一颗★,你的支持是对我的最大鼓励！推荐工具 iOS打包机器人 https://github.com/huangxuan518/HXPackRobot
 一个项目的基类工程，使用此工程可以为您省去很多前期搭框架时间！
 # 效果展示
 
