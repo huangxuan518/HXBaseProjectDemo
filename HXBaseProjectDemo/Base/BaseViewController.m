@@ -207,7 +207,12 @@
         leight += icon.size.width;
         [btn setImage:icon forState:UIControlStateNormal];
         [btn setImage:icon forState:UIControlStateHighlighted];
-        btn.imageEdgeInsets = UIEdgeInsetsMake(0, -3, 0, 3);
+        if (title.length == 0) {
+            //文字没有的话，点击区域+10
+            btn.imageEdgeInsets = UIEdgeInsetsMake(0, -13, 0, 13);
+        } else {
+            btn.imageEdgeInsets = UIEdgeInsetsMake(0, -3, 0, 3);
+        }
     }
     if (title.length == 0) {
         //文字没有的话，点击区域+10
