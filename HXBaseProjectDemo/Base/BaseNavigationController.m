@@ -50,6 +50,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self addGestureRecognizer];
+    self.navigationBar.hidden = YES;
 }
 
 #pragma mark - 侧滑手势

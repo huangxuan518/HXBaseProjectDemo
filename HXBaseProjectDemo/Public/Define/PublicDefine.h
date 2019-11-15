@@ -13,9 +13,10 @@
 #define kSafeString(str) str.length > 0 ? str : @""
 
 //状态栏高度
-#define STATUS_BAR_HEIGHT 20
+#define STATUS_BAR_HEIGHT [[UIApplication sharedApplication] statusBarFrame].size.height
 //NavBar高度
 #define NAVIGATION_BAR_HEIGHT 44
+
 //状态栏 ＋ 导航栏 高度
 #define STATUS_AND_NAVIGATION_HEIGHT ((STATUS_BAR_HEIGHT) + (NAVIGATION_BAR_HEIGHT))
 

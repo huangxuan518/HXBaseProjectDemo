@@ -20,6 +20,10 @@
 @property (nonatomic,strong) UploadManager *uploadManager;//数据上传
 @property (nonatomic,strong) DownloadImageManager *downloadImageManager;//图片下载
 @property(nonatomic,assign) NSInteger pageIndex;
+@property (nonatomic,strong) UIView *navigationBar;
+  
+//navigationBar高度
+- (float)navigationBarHeight;
 
 #pragma mark 公用方法
 - (void)requestData;//网络请求
@@ -52,7 +56,7 @@
  *  @param selector 事件
  */
 - (void)setLeftItemWithIcon:(UIImage *)icon title:(NSString *)title selector:(SEL)selector;
-- (UIBarButtonItem *)ittemLeftItemWithIcon:(UIImage *)icon title:(NSString *)title selector:(SEL)selector;
+- (UIView *)ittemLeftItemWithIcon:(UIImage *)icon title:(NSString *)title selector:(SEL)selector;
 
 #pragma mark 右边按钮定制
 
@@ -63,7 +67,7 @@
  *  @param selector 事件
  */
 - (void)setRightItemWithTitle:(NSString *)title selector:(SEL)selector;
-- (UIBarButtonItem *)ittemRightItemWithTitle:(NSString *)title selector:(SEL)selector;
+- (UIView *)ittemRightItemWithTitle:(NSString *)title selector:(SEL)selector;
 
 /**
  *  通过ico定制右侧按钮
@@ -72,7 +76,7 @@
  *  @param selector 事件
  */
 - (void)setRightItemWithIcon:(UIImage *)icon selector:(SEL)selector;
-- (UIBarButtonItem *)ittemRightItemWithIcon:(UIImage *)icon selector:(SEL)selector;
+- (UIView *)ittemRightItemWithIcon:(UIImage *)icon selector:(SEL)selector;
 
 #pragma mark titleView定制
 

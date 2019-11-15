@@ -261,7 +261,7 @@
 
 - (UITableView *)tableview {
     if (!_tableview) {
-        _tableview = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, self.view.frame.size.height) style:UITableViewStylePlain];
+        _tableview = [[UITableView alloc] initWithFrame:CGRectMake(0, self.navigationBarHeight, kScreenWidth, self.view.frame.size.height - self.navigationBarHeight) style:UITableViewStylePlain];
         _tableview.autoresizingMask = UIViewAutoresizingFlexibleHeight;
         _tableview.dataSource = self;
         _tableview.delegate = self;
@@ -270,7 +270,17 @@
     }
     return _tableview;
 }
-
+    
+- (void)hideNavigationBar:(BOOL)hide {
+    if (hide) {
+        self.navigationBar.hidden = YES;
+        self.tableview.frame = CGRectMake(0, 0, kScreenWidth, self.view.frame.size.height);
+    } else {
+       self.navigationBar.hidden = NO;
+        self.tableview.frame = CGRectMake(0, self.navigationBarHeight, kScreenWidth, self.view.frame.size.height - self.navigationBarHeight);
+    }
+}
+    
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

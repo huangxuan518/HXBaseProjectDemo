@@ -577,6 +577,7 @@
 				TargetAttributes = {
 					E49F71C31D2B98A100A6A746 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 9DULFB78M2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -586,6 +587,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -825,13 +827,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9DULFB78M2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HXBaseProjectDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = HXBaseProjectDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = blog.libuqing.com.HXImitationMogujieCamera;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezoneplanet.app;
 				PRODUCT_NAME = HXBaseProjectDemo;
 			};
 			name = Debug;
@@ -843,13 +845,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9DULFB78M2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HXBaseProjectDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = HXBaseProjectDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = blog.libuqing.com.HXImitationMogujieCamera;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezoneplanet.app;
 				PRODUCT_NAME = HXBaseProjectDemo;
 			};
 			name = Release;

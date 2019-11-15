@@ -11,6 +11,8 @@
 #import "BaseNavigationController.h"
 
 @interface BaseViewController ()
+    
+
 
 @end
 
@@ -18,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.view addSubview:self.navigationBar];
     _pageIndex = 1;
     [self showBack];
     [self requestData];
@@ -153,19 +156,18 @@
     if (title.length == 0) {
         return;
     }
-    
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.backgroundColor = [UIColor clearColor];
     btn.titleLabel.font = [UIFont systemFontOfSize:18];
-    btn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+    btn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
     [btn setTitle:title forState:UIControlStateNormal];
     [btn setTitle:title forState:UIControlStateHighlighted];
     [btn setTitleColor:kUIToneTextColor forState:UIControlStateNormal];
     [btn setTitleColor:kUIToneTextColor forState:UIControlStateHighlighted];
     CGSize titleSize = [title ex_sizeWithFont:btn.titleLabel.font constrainedToSize:CGSizeMake(kScreenWidth, MAXFLOAT)];
     float leight = titleSize.width;
-    [btn setFrame:CGRectMake(0, 0, leight, 30)];
-    self.navigationItem.titleView = btn;
+    [btn setFrame:CGRectMake(kScreenWidth/2 - leight/2, STATUS_BAR_HEIGHT, leight, self.navigationBar.frame.size.height - STATUS_BAR_HEIGHT)];
+    [self.navigationBar addSubview:btn];
 }
 
 - (void)showBackWithTitle:(NSString *)title {
@@ -177,13 +179,85 @@
 }
 
 - (void)setLeftItemWithIcon:(UIImage *)icon title:(NSString *)title selector:(SEL)selector {
-    self.navigationItem.leftBarButtonItem = [self ittemLeftItemWithIcon:icon title:title selector:selector];
+    [self.navigationBar addSubview:[self ittemLeftItemWithIcon:icon title:title selector:selector]];
 }
 
-- (UIBarButtonItem *)ittemLeftItemWithIcon:(UIImage *)icon title:(NSString *)title selector:(SEL)selector {
-    UIBarButtonItem *item;
+- (UIView *)ittemLeftItemWithIcon:(UIImage *)icon title:(NSString *)title selector:(SEL)selector {
+    UIView *item;
     if (!icon && title.length == 0) {
-        item = [[UIBarButtonItem new] initWithCustomView:[UIView new]];
+        item = [UIView new];
+        return item;
+    }
+    
+    UIView *view = [UIView new];
+    view.backgroundColor = [UIColor clearColor];
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.backgroundColor = [UIColor clearColor];
+    btn.titleLabel.font = [UIFont systemFontOfSize:14];
+    btn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+    if (selector) {
+        [btn addTarget:self action:selector forControlEvents:UIControlEventTouchUpInside];
+    }
+    [btn setTitle:[NSString stringWithFormat:@" %@",title] forState:UIControlStateNormal];
+    [btn setTitle:[NSString stringWithFormat:@" %@",title] forState:UIControlStateHighlighted];
+    [btn setTitleColor:kUIToneTextColor forState:UIControlStateNormal];
+    [btn setTitleColor:kUIToneTextColor forState:UIControlStateHighlighted];
+    CGSize titleSize = [[NSString stringWithFormat:@" %@",title] ex_sizeWithFont:btn.titleLabel.font constrainedToSize:CGSizeMake([UIScreen mainScreen].bounds.size.width, MAXFLOAT)];
+    float leight = titleSize.width;
+    if (icon) {
+        leight += icon.size.width;
+        [btn setImage:icon forState:UIControlStateNormal];
+        [btn setImage:icon forState:UIControlStateHighlighted];
+    }
+    if (leight < 60) {
+        leight = 60;
+    }
+    view.frame = CGRectMake(10, STATUS_BAR_HEIGHT, leight, self.navigationBar.frame.size.height - STATUS_BAR_HEIGHT);
+    btn.frame = CGRectMake(0, 0, view.frame.size.width, view.frame.size.height);
+    [view addSubview:btn];
+    return view;
+}
+
+- (void)setRightItemWithTitle:(NSString *)title selector:(SEL)selector {
+    UIView *view = [self ittemRightItemWithTitle:title selector:selector];
+    [self.navigationBar addSubview:view];
+}
+
+- (void)setRightItemWithIcon:(UIImage *)icon selector:(SEL)selector {
+    UIView *view = [self ittemRightItemWithIcon:icon selector:selector];
+    [self.navigationBar addSubview:view];
+}
+
+- (UIView *)ittemRightItemWithIcon:(UIImage *)icon selector:(SEL)selector {
+    UIView *item;
+    if (!icon) {
+        item = [UIView new];
+        return item;
+    }
+    
+    UIView *view = [UIView new];
+    view.backgroundColor = [UIColor clearColor];
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.backgroundColor = [UIColor clearColor];
+    if (selector) {
+        [btn addTarget:self action:selector forControlEvents:UIControlEventTouchUpInside];
+    }
+    float leight = icon.size.width;
+    [btn setImage:icon forState:UIControlStateNormal];
+    [btn setImage:icon forState:UIControlStateHighlighted];
+    
+    view.frame = CGRectMake(kScreenWidth - leight - 10, STATUS_BAR_HEIGHT, leight, self.navigationBar.frame.size.height - STATUS_BAR_HEIGHT);
+    btn.frame = CGRectMake(0, 0, view.frame.size.width, view.frame.size.height);
+    [view addSubview:btn];
+    return view;
+}
+
+- (UIView *)ittemRightItemWithTitle:(NSString *)title selector:(SEL)selector {
+    UIView *item;
+    if (title.length == 0) {
+        item = [UIView new];
         return item;
     }
     
@@ -197,90 +271,19 @@
     if (selector) {
         [btn addTarget:self action:selector forControlEvents:UIControlEventTouchUpInside];
     }
-    [btn setTitle:title forState:UIControlStateNormal];
-    [btn setTitle:title forState:UIControlStateHighlighted];
+    [btn setTitle:[NSString stringWithFormat:@"%@",title] forState:UIControlStateNormal];
+    [btn setTitle:[NSString stringWithFormat:@"%@",title] forState:UIControlStateHighlighted];
     [btn setTitleColor:kUIToneTextColor forState:UIControlStateNormal];
     [btn setTitleColor:kUIToneTextColor forState:UIControlStateHighlighted];
-    CGSize titleSize = [title ex_sizeWithFont:btn.titleLabel.font constrainedToSize:CGSizeMake(kScreenWidth, MAXFLOAT)];
+    CGSize titleSize = [[NSString stringWithFormat:@"%@",title] ex_sizeWithFont:btn.titleLabel.font constrainedToSize:CGSizeMake([UIScreen mainScreen].bounds.size.width, MAXFLOAT)];
     float leight = titleSize.width;
-    if (icon) {
-        leight += icon.size.width;
-        [btn setImage:icon forState:UIControlStateNormal];
-        [btn setImage:icon forState:UIControlStateHighlighted];
-        if (title.length == 0) {
-            //文字没有的话，点击区域+10
-            btn.imageEdgeInsets = UIEdgeInsetsMake(0, -13, 0, 13);
-        } else {
-            btn.imageEdgeInsets = UIEdgeInsetsMake(0, -3, 0, 3);
-        }
+    if (leight < 60) {
+        leight = 60;
     }
-    if (title.length == 0) {
-        //文字没有的话，点击区域+10
-        leight = leight + 10;
-    }
-    view.frame = CGRectMake(0, 0, leight, 30);
-    btn.frame = CGRectMake(-5, 0, leight, 30);
+    view.frame = CGRectMake(kScreenWidth - leight - 10, STATUS_BAR_HEIGHT, leight, self.navigationBar.frame.size.height - STATUS_BAR_HEIGHT);
+    btn.frame = CGRectMake(0, 0, view.frame.size.width, view.frame.size.height);
     [view addSubview:btn];
-    
-    item = [[UIBarButtonItem alloc] initWithCustomView:view];
-    return item;
-}
-
-- (void)setRightItemWithTitle:(NSString *)title selector:(SEL)selector {
-    UIBarButtonItem *item = [self ittemRightItemWithTitle:title selector:selector];
-    self.navigationItem.rightBarButtonItem = item;
-}
-
-- (void)setRightItemWithIcon:(UIImage *)icon selector:(SEL)selector {
-    UIBarButtonItem *item = [self ittemRightItemWithIcon:icon selector:selector];
-    self.navigationItem.rightBarButtonItem = item;
-}
-
-- (UIBarButtonItem *)ittemRightItemWithIcon:(UIImage *)icon selector:(SEL)selector {
-    UIBarButtonItem *item;
-    if (!icon) {
-        item = [[UIBarButtonItem new] initWithCustomView:[UIView new]];
-        return item;
-    }
-    
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.backgroundColor = [UIColor clearColor];
-    if (selector) {
-        [btn addTarget:self action:selector forControlEvents:UIControlEventTouchUpInside];
-    }
-    float leight = icon.size.width;
-    [btn setImage:icon forState:UIControlStateNormal];
-    [btn setImage:icon forState:UIControlStateHighlighted];
-    btn.imageEdgeInsets = UIEdgeInsetsMake(0, 5, 0, -5);
-    [btn setFrame:CGRectMake(0, 0, leight, 30)];
-
-    item = [[UIBarButtonItem alloc] initWithCustomView:btn];
-    return item;
-}
-
-- (UIBarButtonItem *)ittemRightItemWithTitle:(NSString *)title selector:(SEL)selector {
-    UIBarButtonItem *item;
-    if (title.length == 0) {
-        item = [[UIBarButtonItem new] initWithCustomView:[UIView new]];
-        return item;
-    }
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.backgroundColor = [UIColor clearColor];
-    btn.titleLabel.font = [UIFont systemFontOfSize:14];
-    btn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
-    if (selector) {
-        [btn addTarget:self action:selector forControlEvents:UIControlEventTouchUpInside];
-    }
-    [btn setTitle:title forState:UIControlStateNormal];
-    [btn setTitle:title forState:UIControlStateHighlighted];
-    [btn setTitleColor:kUIToneTextColor forState:UIControlStateNormal];
-    [btn setTitleColor:kUIToneTextColor forState:UIControlStateHighlighted];
-    CGSize titleSize = [title ex_sizeWithFont:btn.titleLabel.font constrainedToSize:CGSizeMake(kScreenWidth, MAXFLOAT)];
-    float leight = titleSize.width;
-    [btn setFrame:CGRectMake(0, 0, leight, 30)];
-    btn.titleEdgeInsets = UIEdgeInsetsMake(0, 5, 0, -5);
-    item = [[UIBarButtonItem alloc] initWithCustomView:btn];
-    return item;
+    return view;
 }
 
 #pragma mark - Action
@@ -288,8 +291,38 @@
 - (void)backAction:(UIButton *)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
+    
+#pragma mark - 高度
+    
+- (float)navigationBarHeight {
+    return STATUS_BAR_HEIGHT + NAVIGATION_BAR_HEIGHT;
+}
+    
+#pragma mark - 设备判断
+    
+- (BOOL)isIphoneX {
+    // 先判断当前设备是否为 iPhone 或 iPod touch
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+        // 获取屏幕的宽度和高度，取较大一方判断是否为 812.0 或 896.0
+        CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+        CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
+        CGFloat maxLength = screenWidth > screenHeight ? screenWidth : screenHeight;
+        if (maxLength == 812.0f || maxLength == 896.0f) {
+            return YES;
+        }
+    }
+    return NO;
+}
 
 #pragma mark - 懒加载
+    
+- (UIView *)navigationBar {
+    if (!_navigationBar) {
+        _navigationBar = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.navigationBarHeight)];
+        _navigationBar.backgroundColor = kUIToneBackgroundColor;
+    }
+    return _navigationBar;
+}
 
 - (RequestManager *)requestManager {
     if (!_requestManager) {
