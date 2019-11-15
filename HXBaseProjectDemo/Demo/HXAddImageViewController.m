@@ -29,6 +29,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self removedRefreshing];
+    
+    [self hideNavigationBar:YES];
 
     [self setNavigationItemTitleViewWithTitle:@"添加图片"];
     
