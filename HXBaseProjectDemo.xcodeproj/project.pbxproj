@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45AF27252398A2D50099514E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45AF27242398A2D50099514E /* CoreBluetooth.framework */; };
+		45AF272B2398B8060099514E /* HXBluetoothEquipmentNearbyListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AF272A2398B8060099514E /* HXBluetoothEquipmentNearbyListViewController.m */; };
 		E470C9631E27308400212BA2 /* UploadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9621E27308400212BA2 /* UploadManager.m */; };
 		E470C9691E2754B300212BA2 /* yulan2.png in Resources */ = {isa = PBXBuildFile; fileRef = E470C9661E2754B300212BA2 /* yulan2.png */; };
 		E470C96A1E2754B300212BA2 /* yulan1.png in Resources */ = {isa = PBXBuildFile; fileRef = E470C9671E2754B300212BA2 /* yulan1.png */; };
@@ -31,7 +33,6 @@
 		E470C9BD1E275ED600212BA2 /* SXLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9B91E275ED600212BA2 /* SXLineLayout.m */; };
 		E470C9C31E275F0900212BA2 /* SCCaptureSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9C01E275F0900212BA2 /* SCCaptureSessionManager.m */; };
 		E470C9C41E275F0900212BA2 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9C21E275F0900212BA2 /* UIImage+Resize.m */; };
-		E470C9C71E275FA900212BA2 /* HXAddImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9C61E275FA900212BA2 /* HXAddImageViewController.m */; };
 		E470C9CB1E275FF300212BA2 /* HXCurrencyAddPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9C91E275FF300212BA2 /* HXCurrencyAddPhotoCell.m */; };
 		E470C9CC1E275FF300212BA2 /* HXCurrencyAddPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E470C9CA1E275FF300212BA2 /* HXCurrencyAddPhotoCell.xib */; };
 		E470C9D01E27605F00212BA2 /* HXCurrencyAddPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C9CE1E27605F00212BA2 /* HXCurrencyAddPhotoCollectionViewCell.m */; };
@@ -78,6 +79,9 @@
 
 /* Begin PBXFileReference section */
 		2CDB3B120C9302E0F3232DA6 /* Pods-HXBaseProjectDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXBaseProjectDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HXBaseProjectDemo/Pods-HXBaseProjectDemo.release.xcconfig"; sourceTree = "<group>"; };
+		45AF27242398A2D50099514E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		45AF27292398B8060099514E /* HXBluetoothEquipmentNearbyListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXBluetoothEquipmentNearbyListViewController.h; sourceTree = "<group>"; };
+		45AF272A2398B8060099514E /* HXBluetoothEquipmentNearbyListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXBluetoothEquipmentNearbyListViewController.m; sourceTree = "<group>"; };
 		77D75645CFC321176D59BA5A /* libPods-HXBaseProjectDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HXBaseProjectDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8914676EFABBE5F3F1FD619 /* Pods-HXBaseProjectDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXBaseProjectDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HXBaseProjectDemo/Pods-HXBaseProjectDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E470C9611E27308400212BA2 /* UploadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadManager.h; sourceTree = "<group>"; };
@@ -122,8 +126,6 @@
 		E470C9C01E275F0900212BA2 /* SCCaptureSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCaptureSessionManager.m; sourceTree = "<group>"; };
 		E470C9C11E275F0900212BA2 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
 		E470C9C21E275F0900212BA2 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
-		E470C9C51E275FA900212BA2 /* HXAddImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXAddImageViewController.h; sourceTree = "<group>"; };
-		E470C9C61E275FA900212BA2 /* HXAddImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXAddImageViewController.m; sourceTree = "<group>"; };
 		E470C9C81E275FF300212BA2 /* HXCurrencyAddPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXCurrencyAddPhotoCell.h; sourceTree = "<group>"; };
 		E470C9C91E275FF300212BA2 /* HXCurrencyAddPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXCurrencyAddPhotoCell.m; sourceTree = "<group>"; };
 		E470C9CA1E275FF300212BA2 /* HXCurrencyAddPhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HXCurrencyAddPhotoCell.xib; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45AF27252398A2D50099514E /* CoreBluetooth.framework in Frameworks */,
 				EECD39754773CEDB4A77D0A7 /* libPods-HXBaseProjectDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,6 +210,7 @@
 		0A4C0C56C2FD49C9E9F82E90 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				45AF27242398A2D50099514E /* CoreBluetooth.framework */,
 				77D75645CFC321176D59BA5A /* libPods-HXBaseProjectDemo.a */,
 			);
 			name = Frameworks;
@@ -515,8 +519,8 @@
 				E470C9D51E276A7100212BA2 /* Cell */,
 				E4DCF6171E25C8710011ED7A /* HXHomeViewController.h */,
 				E4DCF6181E25C8710011ED7A /* HXHomeViewController.m */,
-				E470C9C51E275FA900212BA2 /* HXAddImageViewController.h */,
-				E470C9C61E275FA900212BA2 /* HXAddImageViewController.m */,
+				45AF27292398B8060099514E /* HXBluetoothEquipmentNearbyListViewController.h */,
+				45AF272A2398B8060099514E /* HXBluetoothEquipmentNearbyListViewController.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -703,6 +707,7 @@
 				E470C99E1E275B1500212BA2 /* UzysImageCropper.m in Sources */,
 				E470C99D1E275B1500212BA2 /* UIImage-Extension.m in Sources */,
 				E4D457A61E2C605E006B8946 /* RequestManager.m in Sources */,
+				45AF272B2398B8060099514E /* HXBluetoothEquipmentNearbyListViewController.m in Sources */,
 				E4CAFDD61E0CCF5F00E60C35 /* BaseTableViewController.m in Sources */,
 				E49F71C91D2B98A100A6A746 /* main.m in Sources */,
 				E4FD21DD1E10FCA20025E7B7 /* BaseModel.mm in Sources */,
@@ -725,7 +730,6 @@
 				E4CAFDD71E0CCF5F00E60C35 /* BaseViewController.m in Sources */,
 				E470C9AB1E275B1500212BA2 /* HXPhotoCell.m in Sources */,
 				E470C99F1E275B1500212BA2 /* HXCutPhotoViewController.m in Sources */,
-				E470C9C71E275FA900212BA2 /* HXAddImageViewController.m in Sources */,
 				E470C9AF1E275B1500212BA2 /* HXPhotoSecondCollectionViewCell.m in Sources */,
 				E470C9BA1E275ED600212BA2 /* HXCardSwitchView.m in Sources */,
 				E4BFFE8C1E0B982C00219462 /* UIView+Helpers.m in Sources */,

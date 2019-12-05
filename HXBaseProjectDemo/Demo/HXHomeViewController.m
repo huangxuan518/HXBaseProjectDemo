@@ -7,8 +7,7 @@
 //
 
 #import "HXHomeViewController.h"
-
-#import "HXAddImageViewController.h"
+#import "HXBluetoothEquipmentNearbyListViewController.h"
 
 #import "HXDemoCurrencyCell.h"
 
@@ -25,6 +24,10 @@
     // Do any additional setup after loading the view.
     [self setNavigationItemTitleViewWithTitle:@"首页"];
     [self.tableview registerNib:[UINib nibWithNibName:@"HXDemoCurrencyCell" bundle:nil] forCellReuseIdentifier:@"HXDemoCurrencyCell"];
+}
+
+- (void)showBackWithTitle:(NSString *)title {
+    
 }
 
 #pragma mark - cellDataSource
@@ -50,14 +53,6 @@
         //section 1
         subarr = [NSMutableArray arrayWithCapacity:1];
         
-        //row 0
-        dict =  @{@"class":HXDemoCurrencyCell.class,
-                  @"height":@([HXDemoCurrencyCell getCellFrame:nil]),
-                  @"data":[HXDemoCurrencyCellModel ittemModelWithTitle:@"去图片上传界面"],
-                  @"action":@"gotoAddImageViewController",
-                  @"delegate":@YES};
-        [subarr addObject:dict];
-        
         //row 1
         dict =  @{@"class":HXDemoCurrencyCell.class,
                   @"height":@([HXDemoCurrencyCell getCellFrame:nil]),
@@ -66,6 +61,12 @@
                   @"delegate":@YES};
         [subarr addObject:dict];
         
+        dict =  @{@"class":HXDemoCurrencyCell.class,
+                  @"height":@([HXDemoCurrencyCell getCellFrame:nil]),
+                  @"data":[HXDemoCurrencyCellModel ittemModelWithTitle:@"周边蓝牙扫描"],
+                  @"action":@"gotoCoreBluetoothViewController"};
+        [subarr addObject:dict];
+
         [arr addObject:subarr];
         
         self.dataSource = arr;
@@ -77,16 +78,17 @@
 
 //网络请求
 - (void)request {
-    [self.requestManager getWeatherWithCith:@"北京" success:^(id responseObject) {
-        NSDictionary *dataDic = (NSDictionary *)responseObject[@"HeWeather data service 3.0"];
+    [self.requestManager getBankcardsilkRequestWithNum:@"6228480402564890018" success:^(id responseObject) {
+        NSDictionary *dataDic = (NSDictionary *)responseObject[@"result"];
         NSLog(@"%@",dataDic);
     } failure:^(NSString *errorMsg) {
         
     }];
 }
 
-- (void)gotoAddImageViewController {
-    HXAddImageViewController *vc = [HXAddImageViewController new];
+//去蓝牙列表界面
+- (void)gotoCoreBluetoothViewController {
+    HXBluetoothEquipmentNearbyListViewController *vc = [HXBluetoothEquipmentNearbyListViewController new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

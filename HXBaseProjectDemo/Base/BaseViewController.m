@@ -20,7 +20,7 @@
     [super viewDidLoad];
     [self.view addSubview:self.navigationBar];
     _pageIndex = 1;
-    [self showBack];
+    [self showBackWithTitle:@""];
     [self requestData];
     self.view.backgroundColor = kViewBackgroundColor;
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)])

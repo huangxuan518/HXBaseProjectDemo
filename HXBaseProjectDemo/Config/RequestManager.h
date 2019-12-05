@@ -10,8 +10,8 @@
 
 @interface RequestManager : NSObject
 
-//请求城市天气情况
-- (void)getWeatherWithCith:(NSString *)city success:(void (^)(id responseObject))success failure:(void (^)(NSString *errorMsg))failure;
+//银行卡类别查询
+- (void)getBankcardsilkRequestWithNum:(NSString *)num success:(void (^)(id responseObject))success failure:(void (^)(NSString *errorMsg))failure;
 
 + (instancetype)sharedInstance;
 

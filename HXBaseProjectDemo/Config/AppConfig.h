@@ -29,6 +29,9 @@ typedef enum ServerType {
 #define kReleaseSvrAddr @""
 #define kReleaseSvrPort 80
 
+//聚合数据接口 银行类型查询
+#define kJuHeAPPKEY @"c341fdab2d058c69fec71337b355f265"
+
 //七牛云存储 以下为本人的空间参数，仅供测试，不得用于非法用途
 #define kScope @"huangxuan518" //存储空间空间名 建议创建华东空间 默认就是华东空间的配置，其他空间需要自己设置
 #define kAccessKey @"qsR-Kbno05P7UKiw76WbgIuMUT1XBJS3uOaWbbkr" //AccessKey 见密钥管理

@@ -14,29 +14,5 @@
 		<key>badgeValue</key>
 		<string>0</string>
 	</dict>
-	<dict>
-		<key>class</key>
-		<string>HXAddImageViewController</string>
-		<key>title</key>
-		<string>图片</string>
-		<key>image</key>
-		<string>home_list1</string>
-		<key>selectedImage</key>
-		<string>home_list2</string>
-		<key>badgeValue</key>
-		<string>0</string>
-	</dict>
-	<dict>
-		<key>class</key>
-		<string>BaseTableViewController</string>
-		<key>title</key>
-		<string>我</string>
-		<key>image</key>
-		<string>home_me1</string>
-		<key>selectedImage</key>
-		<string>home_me2</string>
-		<key>badgeValue</key>
-		<string>0</string>
-	</dict>
 </array>
 </plist>

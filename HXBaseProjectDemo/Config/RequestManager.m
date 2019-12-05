@@ -9,7 +9,7 @@
 #import "RequestManager.h"
 #import <AFNetworking/AFNetworking.h>
 
-#define kBaseUrl @"http://apis.baidu.com/"
+#define kBaseUrl @"http://bankcardsilk.api.juhe.cn/"
 
 @interface RequestManager ()
 
@@ -39,8 +39,8 @@
         _sessionManager = [[AFHTTPSessionManager manager] initWithBaseURL:baseUrl];
         // Requests 请求Header参数
         _sessionManager.requestSerializer = [AFHTTPRequestSerializer serializer];
-        //自定义参数
-        [_sessionManager.requestSerializer setValue:@"fd0a97bd4bcb79b91c50b47c7fa8246d" forHTTPHeaderField:@"apikey"];
+//        //自定义参数
+//        [_sessionManager.requestSerializer setValue:@"fd0a97bd4bcb79b91c50b47c7fa8246d" forHTTPHeaderField:@"apikey"];
         //Responses 响应Header参数
         _sessionManager.responseSerializer = [AFJSONResponseSerializer serializer];
     }
@@ -49,22 +49,23 @@
 
 #pragma mark - 接口请求
 
-- (void)getWeatherWithCith:(NSString *)city success:(void (^)(id responseObject))success failure:(void (^)(NSString *errorMsg))failure {
-    if (city.length > 0) {
-        NSMutableDictionary *params = [[NSMutableDictionary alloc]init];
-    
-        [params setValue:city forKey:@"city"];
-        
-        [self getRequestWithUrl:@"heweather/weather/free" params:params success:^(id  _Nullable responseObject) {
-            if (success) {
-                success(responseObject);
-            }
-        } failure:^(NSError * _Nonnull error) {
-            if (failure) {
-                failure(error.domain);
-            }
-        }];
-    }
+////银行卡类别查询
+- (void)getBankcardsilkRequestWithNum:(NSString *)num success:(void (^)(id responseObject))success failure:(void (^)(NSString *errorMsg))failure {
+
+    NSMutableDictionary *params = [[NSMutableDictionary alloc]init];
+
+    [params setValue:kJuHeAPPKEY forKey:@"key"];
+    [params setValue:kSafeString(num) forKey:@"num"];
+
+    [self getRequestWithUrl:@"bankcardsilk/query.php" params:params success:^(id  _Nullable responseObject) {
+        if (success) {
+            success(responseObject);
+        }
+    } failure:^(NSError * _Nonnull error) {
+        if (failure) {
+            failure(error.domain);
+        }
+    }];
 }
 
 #pragma mark - 各种请求
